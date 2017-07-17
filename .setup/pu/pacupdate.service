@@ -1,0 +1,13 @@
+[Unit]
+    Description=Pacman Automatic Update
+    After=network-online.target
+
+[Service]
+    Type=simple
+    ExecStart=/usr/bin/pacman -Syyu --noconfirm
+    TimeoutStopSec=300
+    KillMode=process
+    KillSignal=SIGINT
+
+[Install]
+    WantedBy=multi-user.target

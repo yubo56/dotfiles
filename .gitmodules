@@ -1,0 +1,13 @@
+[submodule "vim"]
+    path = vim
+    url = git@github.com:yubo56/dotfiles-vim.git
+    branch = master
+[submodule ".setup/custom/dwmalt"]
+	path = .setup/custom/dwmalt
+	url = git@github.com:yubo56/dwm-yubo.git
+[submodule "sys"]
+	path = sys
+	url = git@github.com:yubo56/dotfiles-sys.git
+[submodule "private"]
+	path = private
+	url = git@bitbucket.org:yubo56/dotfiles-private.git

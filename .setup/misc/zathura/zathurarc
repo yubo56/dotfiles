@@ -1,0 +1,7 @@
+set scroll-step 20
+set scroll-hstep 10
+set recolor true
+set zoom-step 3
+
+unmap q
+map q toggle_statusbar

@@ -1,0 +1,3 @@
+*.swp
+*.o
+.setup/wpa_supplicant.conf
