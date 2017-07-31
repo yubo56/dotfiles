@@ -1380,6 +1380,9 @@
       "div.CodeMirror-lines": {
         "background-color": "#666666"
       },
+      "div.TableObject-item.TableObject-item--primary": {
+        "color": "#aaaaaa"
+      },
       "div.access-form-wrapper": {
         "background-color": "#222222"
       },
@@ -1460,6 +1463,9 @@
       },
       "div.diffbar": {
         "background-color": "#000000"
+      },
+      "div.discussion-item-header": {
+        "color": "#aaaaaa"
       },
       "div.discussion-timeline-actions": {
         "background-color": "#000000",
@@ -1562,6 +1568,12 @@
       },
       "div.review-thread-reply": {
         "background-color": "#000000"
+      },
+      "div.section.diffstat-summary": {
+        "color": "#aaaaaa"
+      },
+      "div.section.diffstat-summary strong": {
+        "color": "#aaaaaa"
       },
       "div.settings-next p": {
         "color": "#aaaaaa"
@@ -1683,6 +1695,9 @@
       "span.d-table-cell": {
         "color": "#aaaaaa"
       },
+      "span.discussion-item-entity": {
+        "color": "#aaaaaa"
+      },
       "span.js-issue-title": {
         "color": "#aaaaaa"
       },
@@ -1712,6 +1727,9 @@
       },
       "span.sha.user-select-contain": {
         "color": "#bb5555"
+      },
+      "span.text-emphasized": {
+        "color": "#aaaaaa"
       },
       "span.token-description strong": {
         "color": "#aaaaaa"
@@ -2855,6 +2873,9 @@
       "a.seeMore": {
         "background-color": "#000000",
         "color": "#aaaaaa"
+      },
+      "body": {
+        "background": "#000000"
       },
       "button._42ft._4jy0._4w98._4jy3._517h._51sy": {
         "background-color": "#000000"
