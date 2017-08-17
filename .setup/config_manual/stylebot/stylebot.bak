@@ -2827,8 +2827,14 @@
   "www.facebook.com": {
     "_enabled": true,
     "_rules": {
+      "#bottomContent": {
+        "background-color": "#000000"
+      },
       "#contentArea": {
         "background-color": "div."
+      },
+      "#headerArea": {
+        "background-color": "#000000"
       },
       "#mainContainer": {
         "background-color": "#000000"
@@ -2849,6 +2855,9 @@
         "color": "#aaaaaa"
       },
       ".fbEventHeader": {
+        "background-color": "#000000"
+      },
+      ".topborder": {
         "background-color": "#000000"
       },
       "a": {
@@ -2896,6 +2905,14 @@
       "div._1dwg": {
         "background-color": "#000000"
       },
+      "div._1iup": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div._29bg": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
       "div._2jyf": {
         "color": "#aaaaaa"
       },
@@ -2928,6 +2945,12 @@
         "background-color": "#000000"
       },
       "div._4-i0": {
+        "background-color": "#000000"
+      },
+      "div._4-i2._50f4 div div": {
+        "background-color": "#000000"
+      },
+      "div._4-i2._pig._50f4": {
         "background-color": "#000000"
       },
       "div._4-u2": {
@@ -2975,6 +2998,12 @@
       "div._5lc6": {
         "background-color": "#000000"
       },
+      "div._5lnf.uiOverlayFooter._5a8u": {
+        "background-color": "#000000"
+      },
+      "div._5lnf.uiOverlayFooter._5a8u._29bm": {
+        "background-color": "#000000"
+      },
       "div._5n2b": {
         "background-color": "#000000"
       },
@@ -3020,6 +3049,9 @@
       "div.loggedout_menubar_container": {
         "background-color": "#000000"
       },
+      "div.mbm.fwb": {
+        "color": "#aaaaaa"
+      },
       "div.mbs": {
         "color": "#aaaaaa"
       },
@@ -3030,6 +3062,9 @@
         "background-color": "#000000"
       },
       "div.userContentWrapper": {
+        "background-color": "#000000"
+      },
+      "form._s": {
         "background-color": "#000000"
       },
       "h1._5gmx": {
@@ -3046,6 +3081,9 @@
       },
       "input._1frb": {
         "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "label.uiInputLabelLabel": {
         "color": "#aaaaaa"
       },
       "li.empty.listGray": {
@@ -3079,7 +3117,16 @@
       "span.hasCaption": {
         "color": "#aaaaaa"
       },
+      "span.pas": {
+        "color": "#aaaaaa"
+      },
       "ul.UFIList": {
+        "background-color": "#000000"
+      },
+      "ul._54j2": {
+        "background-color": "#000000"
+      },
+      "ul.uiList._bz4._4kg": {
         "background-color": "#000000"
       }
     }
