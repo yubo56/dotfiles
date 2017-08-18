@@ -18,6 +18,7 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 ## misc notes
 - Screensaver on suspend uses 00xscreensaver on home, xscreensaver.service on Mac
 - `pm-suspend` still doesn't work on Mac
+- `karabiner.json` belongs in `~/.config/karabiner/karabiner.json`
 
 ## fonts
 - Under chrome: advanced font settings:
@@ -28,8 +29,6 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 
 ## Setup on Mac
 - `yaourt -S hid-apple-patched-git`, use config file from `.setup/config_manual`
-
-
 
 # Misc commands to save
 - resizing image while removing virtual canvas
