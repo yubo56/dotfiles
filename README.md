@@ -19,6 +19,8 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 - Screensaver on suspend uses 00xscreensaver on home, xscreensaver.service on Mac
 - `pm-suspend` still doesn't work on Mac
 - `karabiner.json` belongs in `~/.config/karabiner/karabiner.json`
+    - Rules are applied in reverse precedence
+    - Convention: map from only left modifiers, map only to right modifiers
 
 ## fonts
 - Under chrome: advanced font settings:
