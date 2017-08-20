@@ -258,9 +258,9 @@ goldendict:
 
 .PHONY: pull
 pull:
-	git pull
 	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
 		do ( cd $$i && git pull ); done
+	git pull
 
 .PHONY: ntp
 ntp: pacman
