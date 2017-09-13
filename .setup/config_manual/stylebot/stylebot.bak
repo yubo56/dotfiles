@@ -3,6 +3,73 @@
     "_enabled": false,
     "_rules": {}
   },
+  "arxiv.org": {
+    "_enabled": true,
+    "_rules": {
+      "#abs": {
+        "background-color": "#000000"
+      },
+      "#cu-identity": {
+        "background-color": "#000000"
+      },
+      "#footer": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#header": {
+        "background-color": "#000000",
+        "border-style": "none"
+      },
+      "a": {
+        "color": "#4477aa"
+      },
+      "body.with-cu-identity": {
+        "background-color": "#000000"
+      },
+      "div.bookmarks": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.browse": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.extra-ref-cite": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.extra-services": {
+        "border-style": "none"
+      },
+      "div.filter-field select": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.full-text": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.leftcolumn": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.subheader": {
+        "background-color": "#000000"
+      },
+      "div.subheader h1": {
+        "background-color": "#000000",
+        "border-style": "none",
+        "color": "#aaaaaa"
+      },
+      "h1.title": {
+        "color": "#aaaaaa"
+      },
+      "input.keyword-field": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      }
+    }
+  },
   "aws.amazon.com": {
     "_enabled": true,
     "_rules": {
@@ -1907,6 +1974,9 @@
       "body.logged-out.env-production.linux.page-two-factor-auth.session-authentication.page-responsive.min-width-0": {
         "background-color": "#000000"
       },
+      "body.logged-out.env-production.page-two-factor-auth.session-authentication.page-responsive.min-width-0.chrome-mouse": {
+        "background-color": "#000000"
+      },
       "button.btn-link": {
         "color": "#aaaaaa"
       },
@@ -2863,6 +2933,9 @@
       "a": {
         "color": "#aaaaaa"
       },
+      "a._1jf6": {
+        "background-color": "#000000"
+      },
       "a._33e._1_0e": {
         "background-color": "#000000"
       },
@@ -3020,8 +3093,17 @@
         "background-color": "#000000"
       },
       "div._8u": {},
+      "div._c24._50f4": {
+        "color": "#aaaaaa"
+      },
       "div._li": {
         "background-color": "#000000"
+      },
+      "div._mfs": {
+        "color": "#aaaaaa"
+      },
+      "div._mft": {
+        "color": "#aaaaaa"
       },
       "div._tqc": {
         "background-color": "#000000"
@@ -3104,6 +3186,9 @@
       },
       "span._4arz": {
         "background-color": "#000000"
+      },
+      "span._5pws._50f8._50f4._50f7": {
+        "color": "#aaaaaa"
       },
       "span._h24._h25": {
         "color": "#aaaaaa"
