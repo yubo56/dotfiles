@@ -301,7 +301,7 @@
                                     "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_command"
+                                            "right_command"
                                         ],
                                         "optional": [
                                             "any"
