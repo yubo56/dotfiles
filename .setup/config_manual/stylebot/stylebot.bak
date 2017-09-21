@@ -9,6 +9,9 @@
       "#abs": {
         "background-color": "#000000"
       },
+      "#content": {
+        "color": "#aaaaaa"
+      },
       "#cu-identity": {
         "background-color": "#000000"
       },

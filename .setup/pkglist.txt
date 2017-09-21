@@ -10,6 +10,7 @@ feh
 ghc
 git
 gnupg
+gvim
 haskell-hlint
 htop
 ibus

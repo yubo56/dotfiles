@@ -120,7 +120,7 @@ infinality: # pacman
 		sudo pacman-key --lsign-key 962DDE58
 	sudo pacman -Syy && sudo pacman -S infinality-bundle
 
-# set up vim with with-x=yes
+# set up vim with with-x=yes (deprecated if just install gvim instead)
 .PHONY: vim
 vim: # pacman
 	@printf '*** Cloning vim... ***\n'
