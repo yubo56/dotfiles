@@ -9,6 +9,9 @@
       "#abs": {
         "background-color": "#000000"
       },
+      "#content": {
+        "color": "#aaaaaa"
+      },
       "#cu-identity": {
         "background-color": "#000000"
       },
@@ -1733,6 +1736,9 @@
       "li.vcard-detail": {
         "color": "#aaaaaa"
       },
+      "p": {
+        "color": "#aaaaaa"
+      },
       "p.commit-title": {
         "color": "#aaaaaa"
       },
@@ -1992,6 +1998,15 @@
         "background-color": "#dddddd",
         "color": "#666666"
       },
+      "div p": {
+        "color": "#aaaaaa"
+      },
+      "div.Box-header.Box-header--blue": {
+        "background-color": "#000000"
+      },
+      "div.Box-row": {
+        "background-color": "#000000"
+      },
       "div.CodeMirror": {
         "background-color": "#333333",
         "color": "#aaaaaa"
@@ -2002,6 +2017,9 @@
       },
       "div.CodeMirror-lines": {
         "background-color": "#666666"
+      },
+      "div.Subhead-heading": {
+        "color": "#aaaaaa"
       },
       "div.access-form-wrapper": {
         "background-color": "#222222"
@@ -2104,6 +2122,9 @@
       },
       "div.form-actions": {
         "background-color": "#000000"
+      },
+      "div.form-checkbox label": {
+        "color": "#aaaaaa"
       },
       "div.get-repo-modal": {
         "background-color": "#000000"
@@ -2483,12 +2504,18 @@
       "a.task-link": {
         "color": "#4477aa"
       },
+      "div.add-item-name label": {
+        "color": "#aaaaaa"
+      },
       "div.clear": {
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
       "div.col-xs-24.pane-header": {
         "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.desc": {
         "color": "#aaaaaa"
       },
       "footer": {
@@ -2514,6 +2541,9 @@
         "color": "#aaaaaa"
       },
       "span.cm-operator": {
+        "color": "#aaaaaa"
+      },
+      "span.label": {
         "color": "#aaaaaa"
       },
       "span.page_generated": {
