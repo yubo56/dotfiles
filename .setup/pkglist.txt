@@ -1,6 +1,6 @@
-abs
 acpi
 alsa-utils
+asp
 bc
 ctags
 chromium
@@ -10,6 +10,7 @@ feh
 ghc
 git
 gnupg
+gvim
 haskell-hlint
 htop
 ibus

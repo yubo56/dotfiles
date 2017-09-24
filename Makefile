@@ -120,15 +120,13 @@ infinality: # pacman
 		sudo pacman-key --lsign-key 962DDE58
 	sudo pacman -Syy && sudo pacman -S infinality-bundle
 
-# set up vim with with-x=yes
+# set up vim with with-x=yes (deprecated if just install gvim instead)
 .PHONY: vim
 vim: # pacman
 	@printf '*** Cloning vim... ***\n'
 	@rm -rf ${VIM_TMP_DIR}
-	@sudo rm -rf /var/abs/extra/vim ${VIM_TMP_DIR}
-	@sudo abs /var/abs extra/vim > /dev/null
-	@mkdir -p ${VIM_TMP_DIR}
-	@cp -r /var/abs/extra/vim/. ${VIM_TMP_DIR}
+	@sudo rm -rf ${VIM_TMP_DIR}
+	@cd /tmp && asp export extra/vim > /dev/null
 	@printf '*** Building vim... ***\n'
 	cd ${VIM_TMP_DIR} &&\
 		sed -i 's/with-x=no/with-x=yes/g' PKGBUILD &&\
