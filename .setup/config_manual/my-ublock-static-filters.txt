@@ -1,1 +1,2 @@
 ||b.thumbs.redditmedia.com$stylesheet,domain=www.reddit.com
+||a.thumbs.redditmedia.com$stylesheet,domain=www.reddit.com
