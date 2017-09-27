@@ -169,6 +169,8 @@ stow: # pacman
 # mirrorlist sort
 .PHONY: mirrorlist
 mirrorlist: # pacman
+	@printf 'Checking whether mirrorlist is already processed...\n'
+	@grep 'United States' /etc/pacman.d/mirrorlist > /dev/null 2>&1
 	@sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.full
 	@tr '\n' ' ' < /etc/pacman.d/mirrorlist |\
 		sed 's/.*United\ States\ //g; s/##.*//g' |\
