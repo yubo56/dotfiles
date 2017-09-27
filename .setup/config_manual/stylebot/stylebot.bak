@@ -1239,6 +1239,9 @@
       "div.catlinks": {
         "background-color": "#000000"
       },
+      "div.frb": {
+        "display": "none"
+      },
       "div.mw-body": {
         "background-color": "#000000",
         "color": "#aaaaaa"
