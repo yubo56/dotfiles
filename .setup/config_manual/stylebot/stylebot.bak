@@ -260,6 +260,9 @@
       "a.flex_one": {
         "color": "#aaaaaa"
       },
+      "a.inline_block": {
+        "color": "#aaaaaa"
+      },
       "a.internal_member_link": {
         "color": "#4477aa"
       },
@@ -754,11 +757,64 @@
       "#vr-nav": {
         "background-color": "#000000"
       },
+      ".IIB0tc .ULpymb": {
+        "background-color": "#333333"
+      },
+      ".TUH0Sd .r4nke, .TUH0Sd:focus .r4nke, .TUH0Sd:hover .r4nke, .TUH0Sd.i8dSE.uGtG7d .r4nke": {
+        "background-color": "#4477aa",
+        "color": "#000000"
+      },
+      ".YvjgZe.F262Ye:after": {
+        "background-color": "#000000"
+      },
+      ".eh5oYe": {
+        "background-color": "#000000"
+      },
+      ".gb_yd": {
+        "background": "#000000",
+        "color": "#aaaaaa"
+      },
+      ".whsOnd.zHQkBf, .ndJi5d.snByac": {
+        "color": "#aaaaaa"
+      },
+      ".xjKiLb": {
+        "color": "#aaaaaa"
+      },
+      "::-webkit-scrollbar-thumb": {
+        "background": "#000000"
+      },
       "a.gb_Cb": {
         "background-color": "#222222",
         "color": "#dddddd"
       },
       "a.tab-label": {
+        "color": "#aaaaaa"
+      },
+      "div.ALy9T": {
+        "background-color": "#000000"
+      },
+      "div.GENA3c": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.Gk2izd": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.Mj8vl": {
+        "color": "#aaaaaa"
+      },
+      "div.MmhHI": {
+        "color": "#aaaaaa"
+      },
+      "div.NI2kfb": {
+        "color": "#aaaaaa"
+      },
+      "div.SU7tYb.F262Ye": {
+        "background-color": "#000000"
+      },
+      "div.Xro3Db-nUpftc": {
+        "background-color": "#000000",
         "color": "#aaaaaa"
       },
       "div.bubblemain": {
@@ -826,6 +882,9 @@
         "background-color": "#000000\n",
         "color": "#aaaaaa"
       },
+      "div.gb_dc svg path": {
+        "color": "#aaaaaa"
+      },
       "div.gb_lb": {
         "background-color": "#333333",
         "color": "#dddddd"
@@ -839,8 +898,18 @@
       "div.gcal-popup": {
         "background-color": "#000000"
       },
+      "div.hEtGGf": {
+        "background-color": "#000000"
+      },
+      "div.luliFb": {
+        "background-color": "#333333"
+      },
       "div.privacy-policy": {
         "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.r4nke": {
+        "background-color": "#333333",
         "color": "#aaaaaa"
       },
       "div.static-form-dialog": {
@@ -856,11 +925,17 @@
       "div.svalues-comment.svalues-head": {
         "color": "#aaaaaa"
       },
+      "div.tNDBE": {
+        "background-color": "#000000"
+      },
       "div.tg-markercell": {
         "background-color": "#000000"
       },
       "div.tile-content div": {
         "color": "#aaaaaa"
+      },
+      "div.u3WVdc": {
+        "background-color": "#333333"
       },
       "div.ui-sch-schmedit": {
         "color": "#aaaaaa"
@@ -868,9 +943,15 @@
       "div.ui-sch-view": {
         "color": "#aaaaaa"
       },
+      "div.v83gc": {
+        "background-color": "#000000"
+      },
       "div.wk-dayname": {
         "background-color": "#000000",
         "color": "#aaaaaa"
+      },
+      "form.gb_Se": {
+        "background": "#333333"
       },
       "h2.calHeader.goog-zippy-header.goog-zippy-expanded": {
         "background-color": "#000000",
@@ -880,6 +961,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "input.gb_Te": {
+        "color": "#aaaaaa"
+      },
       "input.gbqfif": {
         "color": "#aaaaaa"
       },
@@ -887,6 +971,12 @@
         "color": "#aaaaaa"
       },
       "li.goog-menuitem": {
+        "color": "#aaaaaa"
+      },
+      "span.NlWrkb": {
+        "color": "#aaa"
+      },
+      "span.cuBluc": {
         "color": "#aaaaaa"
       },
       "span.ep-gc-chip-text": {
@@ -1238,9 +1328,6 @@
       },
       "div.catlinks": {
         "background-color": "#000000"
-      },
-      "div.frb": {
-        "display": "none"
       },
       "div.mw-body": {
         "background-color": "#000000",
