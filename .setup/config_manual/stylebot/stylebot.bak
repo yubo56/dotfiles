@@ -760,9 +760,15 @@
       ".IIB0tc .ULpymb": {
         "background-color": "#333333"
       },
+      ".Kb2sf": {
+        "background-color": "#333333\n\n"
+      },
       ".TUH0Sd .r4nke, .TUH0Sd:focus .r4nke, .TUH0Sd:hover .r4nke, .TUH0Sd.i8dSE.uGtG7d .r4nke": {
         "background-color": "#4477aa",
         "color": "#000000"
+      },
+      ".TgcD5e": {
+        "background-color": "#333333"
       },
       ".YvjgZe.F262Ye:after": {
         "background-color": "#000000"
@@ -774,6 +780,12 @@
         "background": "#000000",
         "color": "#aaaaaa"
       },
+      ".hxbWqd .JAPqpe": {
+        "background-color": "#333333"
+      },
+      ".iUxJib": {
+        "background-color": "#333333"
+      },
       ".whsOnd.zHQkBf, .ndJi5d.snByac": {
         "color": "#aaaaaa"
       },
@@ -781,7 +793,7 @@
         "color": "#aaaaaa"
       },
       "::-webkit-scrollbar-thumb": {
-        "background": "#000000"
+        "background": "#222222"
       },
       "a.gb_Cb": {
         "background-color": "#222222",
@@ -790,7 +802,17 @@
       "a.tab-label": {
         "color": "#aaaaaa"
       },
+      "content.z80M1": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
       "div.ALy9T": {
+        "background-color": "#000000"
+      },
+      "div.B5S4ge": {
+        "background-color": "#000000"
+      },
+      "div.EQi2Gf": {
         "background-color": "#000000"
       },
       "div.GENA3c": {
@@ -807,11 +829,18 @@
       "div.MmhHI": {
         "color": "#aaaaaa"
       },
+      "div.MocG8c": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
       "div.NI2kfb": {
         "color": "#aaaaaa"
       },
       "div.SU7tYb.F262Ye": {
         "background-color": "#000000"
+      },
+      "div.VKy0Ic": {
+        "background-color": "#333333"
       },
       "div.Xro3Db-nUpftc": {
         "background-color": "#000000",
@@ -901,12 +930,22 @@
       "div.hEtGGf": {
         "background-color": "#000000"
       },
+      "div.lR3h6d": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
       "div.luliFb": {
+        "background-color": "#333333"
+      },
+      "div.ncFHed": {
         "background-color": "#333333"
       },
       "div.privacy-policy": {
         "background-color": "#000000",
         "color": "#aaaaaa"
+      },
+      "div.q1j8lf.Jyewjb-haAclf.cPMh0b": {
+        "background-color": "#333333"
       },
       "div.r4nke": {
         "background-color": "#333333",
@@ -961,6 +1000,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "input.WpDZC": {
+        "color": "#aaaaaa"
+      },
       "input.gb_Te": {
         "color": "#aaaaaa"
       },
@@ -971,6 +1013,9 @@
         "color": "#aaaaaa"
       },
       "li.goog-menuitem": {
+        "color": "#aaaaaa"
+      },
+      "p.Hld1td": {
         "color": "#aaaaaa"
       },
       "span.NlWrkb": {
