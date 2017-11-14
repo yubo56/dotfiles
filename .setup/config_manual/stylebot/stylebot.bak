@@ -300,6 +300,9 @@
       "button.channel_header_icon.btn_unstyle.blue_hover.channel_details_toggle.ts_tip.ts_tip_bottom.active": {
         "background-color": "#000000"
       },
+      "button.result_item_btn.btn_unstyle strong": {
+        "color": "#aaaaaa"
+      },
       "code.special_formatting": {
         "background-color": "#aaaaaa"
       },
@@ -482,6 +485,12 @@
         "color": "#aaaaaa"
       },
       "li.mpdm_member": {
+        "color": "#aaaaaa"
+      },
+      "li.no_bottom_padding.no_wrap label": {
+        "color": "#aaaaaa"
+      },
+      "li.no_top_padding.no_wrap label": {
         "color": "#aaaaaa"
       },
       "nav.top.persistent": {
