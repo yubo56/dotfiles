@@ -457,6 +457,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "div.tiny_top_margin.pinned_message_text.hide_scroll": {
+        "color": "#aaaaaa"
+      },
       "div.title": {
         "color": "#aaaaaa"
       },
