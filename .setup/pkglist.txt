@@ -23,6 +23,7 @@ jre8-openjdk
 jq
 keybase
 lm_sensors
+moreutils
 mplayer
 openssh
 perl-xml-simple
