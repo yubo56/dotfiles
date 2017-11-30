@@ -312,6 +312,9 @@
       "div.attachment_group": {
         "background": "#333333"
       },
+      "div.c-member__display-name.c-member__display-name--large": {
+        "color": "#aaaaaa"
+      },
       "div.card.align_center.span_4_of_6.col.float_none.margin_auto.large_bottom_margin.right_padding.large_bottom_padding": {
         "background-color": "#000000",
         "color": "#aaaaaa"
@@ -507,6 +510,9 @@
       },
       "p.alert.alert_info": {
         "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p.dm_explanation.margin_auto.align_left.clear_both": {
         "color": "#aaaaaa"
       },
       "pre.special_formatting": {
