@@ -253,6 +253,9 @@
       "a.channel_link": {
         "color": "#aaaaaa"
       },
+      "a.creator_link": {
+        "color": "#aaaaaa"
+      },
       "a.file_upload_btn": {
         "background-color": "#000000",
         "color": "#aaaaaa"
@@ -335,6 +338,9 @@
       },
       "div.channel_page_section.expanded": {
         "background-color": "#000000"
+      },
+      "div.channel_purpose_text": {
+        "color": "#aaaaaa"
       },
       "div.comment_body": {
         "color": "#aaaaaa"
@@ -522,6 +528,9 @@
       },
       "span.boxed.float_right.mini.boxed_enter.no_wrap": {
         "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "span.c-member__display-name": {
         "color": "#aaaaaa"
       },
       "span.channel_name": {
@@ -915,6 +924,9 @@
       },
       "div.eui-t": {
         "background-color": "#000000\n"
+      },
+      "div.gb_Bd.gb_7d": {
+        "background-color": "#000000"
       },
       "div.gb_Jb": {
         "color": "#bbbbbb"
