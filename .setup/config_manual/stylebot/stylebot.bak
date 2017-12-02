@@ -2972,7 +2972,56 @@
   "news.google.com": {
     "_enabled": true,
     "_rules": {
+      ".VOEIyf, .VOEIyf .jBmls, .oKubKe": {
+        "color": "#aaaaaa"
+      },
+      ".nCSYrb": {
+        "color": "#aaaaaa"
+      },
+      "a.BO3Tyc": {
+        "color": "#aaaaaa"
+      },
+      "a.MU4aFb": {
+        "color": "#aaaaaa"
+      },
+      "a.NiR9Yd.hzdq5d.ME7ew": {
+        "color": "#aaaaaa"
+      },
+      "a.j7rZgf": {},
+      "a.j7rZgf.ME7ew": {
+        "color": "#aaaaaa"
+      },
+      "a.nuEeue": {
+        "color": "#aaaaaa"
+      },
       "a.persistentblue": {
+        "color": "#aaaaaa"
+      },
+      "button.gb_1e": {
+        "background-color": "#333333"
+      },
+      "c-wiz.fWwQIb.ChVoCd.rOrCPc.AfWyGd": {
+        "background-color": "#000000"
+      },
+      "c-wiz.lPV2Xe.k3Pzib": {
+        "background-color": "#000000"
+      },
+      "content.vRMGwf.oJeWuf": {
+        "color": "#aaaaaa"
+      },
+      "content.z80M1.JQZRxb.WcbxEb": {
+        "background-color": "#333333"
+      },
+      "div.JyxFge": {
+        "background-color": "#000000"
+      },
+      "div.Q3vG6d.kzAuJ": {
+        "color": "#aaaaaa"
+      },
+      "div.QqU5xd": {
+        "color": "#aaaaaa"
+      },
+      "div.Rlm9Ze": {
         "color": "#aaaaaa"
       },
       "div.basic-title": {
@@ -2989,13 +3038,22 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "div.gb_Bd.gb_7d": {
+        "background-color": "#000000"
+      },
       "div.gb_R.gb_se": {
         "background-color": "#000000"
       },
       "div.gb_Rb.gb_R.gb_Vb": {
         "background-color": "#000000"
       },
+      "div.gb_ec svg path": {
+        "color": "#aaaaaa"
+      },
       "div.gb_ib.gb_wf.gb_R.gb_vf.gb_T": {
+        "background-color": "#000000"
+      },
+      "div.gb_mc": {
         "background-color": "#000000"
       },
       "div.gb_ye": {
@@ -3003,6 +3061,9 @@
       },
       "div.gbqfqw": {
         "background-color": "#444444"
+      },
+      "div.hxsxHf": {
+        "color": "#aaaaaa"
       },
       "div.kd-appbar": {
         "background-color": "#000000"
@@ -3013,13 +3074,62 @@
       "div.nav": {
         "background-color": "#000000"
       },
+      "div.shVjEd": {
+        "color": "#aaaaaa"
+      },
+      "div.u3WVdc.jBmls": {
+        "background-color": "#333333"
+      },
+      "form.gb_He": {
+        "background-color": "#333333"
+      },
       "html": {
         "background-color": "#000000"
+      },
+      "input.Ax4B8.ZAGvjd": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
       },
       "input.gbqfif": {
         "color": "#aaaaaa"
       },
+      "p.RLaW1": {
+        "color": "#aaaaaa"
+      },
+      "span.DPvwYc.sYvQuc.ME7ew": {
+        "color": "#aaaaaa"
+      },
+      "span.EhCuYd": {
+        "color": "#aaaaaa"
+      },
+      "span.FOvasf": {
+        "color": "#aaaaaa"
+      },
+      "span.JoEvud.hzdq5d.ME7ew": {
+        "color": "#aaaaaa"
+      },
+      "span.KNJonb": {
+        "color": "#aaaaaa"
+      },
+      "span.RveJvd.snByac": {
+        "color": "#aaaaaa"
+      },
+      "span.Xyuyg": {
+        "color": "#aaaaaa"
+      },
+      "span.adH5zf": {
+        "color": "#aaaaaa"
+      },
+      "span.cc5fC": {
+        "color": "#aaaaaa"
+      },
+      "span.gb_ge.gb_ce": {
+        "color": "#aaaaaa"
+      },
       "span.section-name": {
+        "color": "#aaaaaa"
+      },
+      "span.shVjEd": {
         "color": "#aaaaaa"
       },
       "span.title": {
