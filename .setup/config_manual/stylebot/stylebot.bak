@@ -866,6 +866,9 @@
       "div.SU7tYb.F262Ye": {
         "background-color": "#000000"
       },
+      "div.TIJ73d.gsTR5d.DbQnIe.BvQsje": {
+        "background-color": "#333333"
+      },
       "div.VKy0Ic": {
         "background-color": "#333333"
       },
@@ -968,6 +971,9 @@
         "background-color": "#333333"
       },
       "div.ncFHed": {
+        "background-color": "#333333"
+      },
+      "div.p261Pc": {
         "background-color": "#333333"
       },
       "div.privacy-policy": {
@@ -3296,6 +3302,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "div._2-gy": {
+        "background-color": "#000000"
+      },
       "div._29bg": {
         "background-color": "#000000",
         "color": "#aaaaaa"
@@ -3326,6 +3335,9 @@
         "background-color": "#000000"
       },
       "div._3t53._4ar-._ipn": {
+        "background-color": "#000000"
+      },
+      "div._3wvs": {
         "background-color": "#000000"
       },
       "div._3zsi": {
@@ -3442,6 +3454,9 @@
       "div.fbRemindersStory": {
         "background-color": "#000000"
       },
+      "div.fsm.fwn.fcg": {
+        "background-color": "#333333"
+      },
       "div.loggedout_menubar_container": {
         "background-color": "#000000"
       },
@@ -3450,6 +3465,9 @@
       },
       "div.mbs": {
         "color": "#aaaaaa"
+      },
+      "div.pam.uiBoxWhite.noborder": {
+        "background-color": "#333333"
       },
       "div.uiHeader": {
         "background-color": "#000000"
@@ -3524,6 +3542,9 @@
       },
       "ul._54j2": {
         "background-color": "#000000"
+      },
+      "ul.uiList._4kg._704._4ks": {
+        "background-color": "#333333"
       },
       "ul.uiList._bz4._4kg": {
         "background-color": "#000000"
