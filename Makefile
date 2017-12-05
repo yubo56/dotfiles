@@ -288,3 +288,7 @@ stylebot:
 .PHONY: stylebot_copy
 stylebot_copy:
 	xclip -selection c ${REL_PATH}/stylebot.bak
+
+.PHONY: stylebot_copy_mac
+stylebot_copy_mac:
+	pbcopy < ${REL_PATH}/stylebot.bak
