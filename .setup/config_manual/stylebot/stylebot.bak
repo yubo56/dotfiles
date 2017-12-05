@@ -178,437 +178,6 @@
       }
     }
   },
-  "slack.com": {
-    "_enabled": true,
-    "_rules": {
-      "#autocomplete_menu": {
-        "background-color": "#000000"
-      },
-      "#autocomplete_menu .boxed": {
-        "background-color": "#000000",
-        "color": "#000000"
-      },
-      "#channel_header_info": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "#channel_title": {
-        "color": "#aaaaaa"
-      },
-      "#client-ui": {
-        "background-color": "#000000"
-      },
-      "#client_body::before": {
-        "background": "#000000 \n"
-      },
-      "#col_flex": {
-        "background-color": "#000000"
-      },
-      "#details_tab_header": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "#filter_files": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "#filter_messages": {
-        "background-color": "#000000",
-        "color": "#AAAAAA"
-      },
-      "#footer": {
-        "background": "#000000"
-      },
-      "#fs_modal_header": {
-        "background-color": "#222222"
-      },
-      "#loading_welcome": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "#menu_items_scroller": {
-        "background": "#333333"
-      },
-      "#messages_container::after": {
-        "background": "rgba(0,0,0,0)"
-      },
-      "#messages_container::before": {
-        "background": "rgba(0,0,0,0)"
-      },
-      "#msgs_overlay_div": {
-        "background-color": "#000000"
-      },
-      "#page": {
-        "background-color": "#000000"
-      },
-      "#team_menu": {
-        "background-color": "#000000"
-      },
-      "#threads_msgs_scroller_div": {
-        "background": "#000000\n"
-      },
-      ".channel_overlay": {
-        "color": "#aaaaaa"
-      },
-      "a.channel_link": {
-        "color": "#aaaaaa"
-      },
-      "a.creator_link": {
-        "color": "#aaaaaa"
-      },
-      "a.file_upload_btn": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "a.flex_one": {
-        "color": "#aaaaaa"
-      },
-      "a.inline_block": {
-        "color": "#aaaaaa"
-      },
-      "a.internal_member_link": {
-        "color": "#4477aa"
-      },
-      "a.member": {
-        "color": "#aaaaaa"
-      },
-      "a.member_name": {
-        "color": "#aaaaaa"
-      },
-      "a.member_preview_link": {
-        "color": "#aaaaaa"
-      },
-      "a.message_sender.member.member_preview_link": {
-        "color": "#aaaaaa"
-      },
-      "a.ts_icon": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "b.mention": {
-        "background-color": "#777777",
-        "color": "#ffd296"
-      },
-      "body.widescreen footer": {
-        "background-color": "#000000"
-      },
-      "button.btn_unstyle.file_upload_btn": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "button.channel_header_icon": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "button.channel_header_icon.btn_unstyle.blue_hover.channel_details_toggle.ts_tip.ts_tip_bottom.active": {
-        "background-color": "#000000"
-      },
-      "button.result_item_btn.btn_unstyle strong": {
-        "color": "#aaaaaa"
-      },
-      "code.special_formatting": {
-        "background-color": "#aaaaaa"
-      },
-      "div.attachment_group": {
-        "background": "#333333"
-      },
-      "div.c-member__display-name.c-member__display-name--large": {
-        "color": "#aaaaaa"
-      },
-      "div.card.align_center.span_4_of_6.col.float_none.margin_auto.large_bottom_margin.right_padding.large_bottom_padding": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.channel_actions_container": {
-        "background-color": "#000000"
-      },
-      "div.channel_header": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.channel_options_header": {
-        "color": "#aaaaaa"
-      },
-      "div.channel_page_member_row": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.channel_page_notif_prefs": {
-        "background-color": "#000000"
-      },
-      "div.channel_page_section": {
-        "background-color": "#000000"
-      },
-      "div.channel_page_section.expanded": {
-        "background-color": "#000000"
-      },
-      "div.channel_purpose_text": {
-        "color": "#aaaaaa"
-      },
-      "div.comment_body": {
-        "color": "#aaaaaa"
-      },
-      "div.contents_container": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.day_divider": {
-        "background-color": "#000000"
-      },
-      "div.day_divider_label": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.day_msgs": {
-        "background-color": "#333333",
-        "color": "#aaaaaa"
-      },
-      "div.flex_content_scroller": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.footer_msg_input": {
-        "background": "#000000"
-      },
-      "div.heading": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.member_title.lato": {
-        "color": "#aaaaaa"
-      },
-      "div.messages_banner": {
-        "background-color": "#000000",
-        "color": "#aa0000"
-      },
-      "div.modal-footer": {
-        "background-color": "#333333"
-      },
-      "div.modal-header": {
-        "background-color": "#333333"
-      },
-      "div.modal-header.c-modal_header--default": {
-        "background-color": "#666666"
-      },
-      "div.modal-header.c-modal_header--default h3": {
-        "color": "#dddddd"
-      },
-      "div.modal.c-modal--default": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.modal.hide.fade.in": {
-        "background": "#333333",
-        "color": "#aaaaaa"
-      },
-      "div.monkey_scroll_bar": {
-        "width": "0"
-      },
-      "div.monkey_scroll_bar_native_scrollbar_shim": {
-        "width": "0"
-      },
-      "div.monkey_scroll_handle_inner": {
-        "width": "0"
-      },
-      "div.monkey_scroll_wrapper": {
-        "background-color": "#000000"
-      },
-      "div.ql-container": {
-        "background": "#000000"
-      },
-      "div.ql-editor": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.row-fluid": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.search_menu": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.search_message_result": {
-        "background-color": "#333333"
-      },
-      "div.search_message_result_text": {},
-      "div.search_result_with_extract": {
-        "background-color": "#333333"
-      },
-      "div.section_content": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.section_header": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.section_header::before": {
-        "background-color": "#000000\n"
-      },
-      "div.show_which_channel_is_active": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.subheading p": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.tab_complete_ui_header": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.tab_complete_ui_scroller": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.tab_panels": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "div.tiny_top_margin.pinned_message_text.hide_scroll": {
-        "color": "#aaaaaa"
-      },
-      "div.title": {
-        "color": "#aaaaaa"
-      },
-      "div.wide": {
-        "background-color": "#000000"
-      },
-      "h1.channel_modal_header.no_bottom_margin": {
-        "color": "#aaaaaa"
-      },
-      "h2": {
-        "color": "#aaaaaa"
-      },
-      "h3": {
-        "color": "#aaaaaa"
-      },
-      "h4": {
-        "color": "#aaaaaa"
-      },
-      "header.headroom": {
-        "background-color": "#000000"
-      },
-      "header.query_header": {
-        "background-color": "#000000"
-      },
-      "label.inline_block": {
-        "color": "#aaaaaa"
-      },
-      "li.mpdm_member": {
-        "color": "#aaaaaa"
-      },
-      "li.no_bottom_padding.no_wrap label": {
-        "color": "#aaaaaa"
-      },
-      "li.no_top_padding.no_wrap label": {
-        "color": "#aaaaaa"
-      },
-      "nav.top.persistent": {
-        "background-color": "#000000"
-      },
-      "p.alert.alert_info": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "p.dm_explanation.margin_auto.align_left.clear_both": {
-        "color": "#aaaaaa"
-      },
-      "pre.special_formatting": {
-        "background-color": "#333333",
-        "border-color": "#ffffff",
-        "color": "#aaaaaa"
-      },
-      "section.tab_pane.selected": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "span.away": {
-        "background-color": "#333333",
-        "color": "#aaaaaa"
-      },
-      "span.bot_label": {
-        "background-color": "#333333",
-        "color": "#aaaaaa"
-      },
-      "span.boxed.float_right.mini.boxed_enter.no_wrap": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "span.c-member__display-name": {
-        "color": "#aaaaaa"
-      },
-      "span.channel_name": {
-        "color": "#aaaaaa"
-      },
-      "span.divider_label": {
-        "background-color": "#000000",
-        "color": "#aa0000"
-      },
-      "span.emoji-outer.emoji-sizer.emoji-only": {
-        "font-size": "128px"
-      },
-      "span.emoji.emoji-sizer.emoji-only": {
-        "font-size": "128px"
-      },
-      "span.header_label.menu_mini": {
-        "background": "#333333"
-      },
-      "span.history_query": {
-        "color": "#aaaaaa\n"
-      },
-      "span.member_real_name": {
-        "color": "#aaaaaa"
-      },
-      "span.message_sender a": {
-        "color": "#aaaaaa"
-      },
-      "span.no_jumbomoji": {
-        "background-color": "#000000"
-      },
-      "span.overflow_ellipsis": {
-        "color": "#dddddd"
-      },
-      "span.section_title": {
-        "color": "#aaaaaa"
-      },
-      "span.timezone_label": {
-        "color": "#aaaaaa"
-      },
-      "strong.overflow_ellipsis.search_query_preview": {
-        "color": "#aaaaaa\n"
-      },
-      "textarea": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "tr td a": {
-        "color": "#aaaaaa"
-      },
-      "ts-jumper.active ts-jumper-container": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "ts-jumper.active ts-jumper-container input": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "ts-message.message.feature_fix_files": {
-        "background-color": "#333333",
-        "color": "#aaaaaa"
-      },
-      "ts-thread": {
-        "background": "#000000\n"
-      },
-      "ul li a": {
-        "color": "#aaaaaa"
-      },
-      "ul li strong": {
-        "color": "#aaaaaa"
-      }
-    }
-  },
   "blendlabs.atlassian.net": {
     "_enabled": true,
     "_rules": {
@@ -2151,6 +1720,9 @@
       "body.logged-in.env-production.windows": {
         "background-color": "#000000"
       },
+      "body.logged-out": {
+        "background-color": "#000000"
+      },
       "body.logged-out.env-production.linux.page-two-factor-auth.session-authentication.page-responsive.min-width-0": {
         "background-color": "#000000"
       },
@@ -2287,6 +1859,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "div.featurette": {
+        "background-color": "#000000"
+      },
       "div.file-header": {
         "background-color": "#000000",
         "color": "#aaaaaa"
@@ -2316,6 +1891,9 @@
       "div.header.header-logged-in.true": {
         "background-color": "#000000"
       },
+      "div.header.header-logged-out.width-full.pt-5.pb-4": {
+        "background-color": "#000000"
+      },
       "div.inline-comment-form": {
         "background-color": "#000000"
       },
@@ -2323,6 +1901,9 @@
         "background-color": "#dddddd"
       },
       "div.js-suggester-container.js-previewable-comment-form.previewable-comment-form.write-selected": {
+        "background-color": "#000000"
+      },
+      "div.jumbotron": {
         "background-color": "#000000"
       },
       "div.markdown-body": {
@@ -2379,6 +1960,9 @@
         "background-color": "#000000"
       },
       "div.review-thread-reply": {
+        "background-color": "#000000"
+      },
+      "div.rounded-1.text-gray.bg-gray-light.py-4.px-4.px-md-3.px-lg-4": {
         "background-color": "#000000"
       },
       "div.settings-next p": {
@@ -3152,6 +2736,444 @@
         "color": "#aaaaaa"
       },
       "tr td a": {
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "slack.com": {
+    "_enabled": true,
+    "_rules": {
+      "#autocomplete_menu": {
+        "background-color": "#000000"
+      },
+      "#autocomplete_menu .boxed": {
+        "background-color": "#000000",
+        "color": "#000000"
+      },
+      "#channel_header_info": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#channel_title": {
+        "color": "#aaaaaa"
+      },
+      "#client-ui": {
+        "background-color": "#000000"
+      },
+      "#client_body::before": {
+        "background": "#000000 \n"
+      },
+      "#col_flex": {
+        "background-color": "#000000"
+      },
+      "#details_tab_header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#filter_files": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#filter_messages": {
+        "background-color": "#000000",
+        "color": "#AAAAAA"
+      },
+      "#footer": {
+        "background": "#000000"
+      },
+      "#fs_modal_footer": {
+        "background-color": "#000000"
+      },
+      "#fs_modal_header": {
+        "background-color": "#222222"
+      },
+      "#loading_welcome": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#menu_items_scroller": {
+        "background": "#333333"
+      },
+      "#messages_container::after": {
+        "background": "rgba(0,0,0,0)"
+      },
+      "#messages_container::before": {
+        "background": "rgba(0,0,0,0)"
+      },
+      "#msgs_overlay_div": {
+        "background-color": "#000000"
+      },
+      "#page": {
+        "background-color": "#000000"
+      },
+      "#team_menu": {
+        "background-color": "#000000"
+      },
+      "#threads_msgs_scroller_div": {
+        "background": "#000000\n"
+      },
+      ".channel_overlay": {
+        "color": "#aaaaaa"
+      },
+      "a.channel_link": {
+        "color": "#aaaaaa"
+      },
+      "a.creator_link": {
+        "color": "#aaaaaa"
+      },
+      "a.file_upload_btn": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.flex_one": {
+        "color": "#aaaaaa"
+      },
+      "a.inline_block": {
+        "color": "#aaaaaa"
+      },
+      "a.internal_member_link": {
+        "color": "#4477aa"
+      },
+      "a.member": {
+        "color": "#aaaaaa"
+      },
+      "a.member_name": {
+        "color": "#aaaaaa"
+      },
+      "a.member_preview_link": {
+        "color": "#aaaaaa"
+      },
+      "a.message_sender.member.member_preview_link": {
+        "color": "#aaaaaa"
+      },
+      "a.ts_icon": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "b.mention": {
+        "background-color": "#777777",
+        "color": "#ffd296"
+      },
+      "body.widescreen footer": {
+        "background-color": "#000000"
+      },
+      "button.btn_unstyle.file_upload_btn": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "button.channel_header_icon": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "button.channel_header_icon.btn_unstyle.blue_hover.channel_details_toggle.ts_tip.ts_tip_bottom.active": {
+        "background-color": "#000000"
+      },
+      "button.result_item_btn.btn_unstyle strong": {
+        "color": "#aaaaaa"
+      },
+      "code.special_formatting": {
+        "background-color": "#aaaaaa"
+      },
+      "div.attachment_group": {
+        "background": "#333333"
+      },
+      "div.c-member__display-name.c-member__display-name--large": {
+        "color": "#aaaaaa"
+      },
+      "div.card.align_center.span_4_of_6.col.float_none.margin_auto.large_bottom_margin.right_padding.large_bottom_padding": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.channel_actions_container": {
+        "background-color": "#000000"
+      },
+      "div.channel_header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.channel_options_header": {
+        "color": "#aaaaaa"
+      },
+      "div.channel_page_member_row": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.channel_page_notif_prefs": {
+        "background-color": "#000000"
+      },
+      "div.channel_page_section": {
+        "background-color": "#000000"
+      },
+      "div.channel_page_section.expanded": {
+        "background-color": "#000000"
+      },
+      "div.channel_purpose_text": {
+        "color": "#aaaaaa"
+      },
+      "div.comment_body": {
+        "color": "#aaaaaa"
+      },
+      "div.contents_container": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.day_divider": {
+        "background-color": "#000000"
+      },
+      "div.day_divider_label": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.day_msgs": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.flex_content_scroller": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.footer_msg_input": {
+        "background": "#000000"
+      },
+      "div.heading": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.member_title.lato": {
+        "color": "#aaaaaa"
+      },
+      "div.messages_banner": {
+        "background-color": "#000000",
+        "color": "#aa0000"
+      },
+      "div.modal-footer": {
+        "background-color": "#333333"
+      },
+      "div.modal-header": {
+        "background-color": "#333333"
+      },
+      "div.modal-header.c-modal_header--default": {
+        "background-color": "#666666"
+      },
+      "div.modal-header.c-modal_header--default h3": {
+        "color": "#dddddd"
+      },
+      "div.modal.c-modal--default": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.modal.hide.fade.in": {
+        "background": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.monkey_scroll_bar": {
+        "width": "0"
+      },
+      "div.monkey_scroll_bar_native_scrollbar_shim": {
+        "width": "0"
+      },
+      "div.monkey_scroll_handle_inner": {
+        "width": "0"
+      },
+      "div.monkey_scroll_wrapper": {
+        "background-color": "#000000"
+      },
+      "div.ql-container": {
+        "background": "#000000"
+      },
+      "div.ql-editor": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.row-fluid": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.search_menu": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.search_message_result": {
+        "background-color": "#333333"
+      },
+      "div.search_message_result_text": {},
+      "div.search_result_with_extract": {
+        "background-color": "#333333"
+      },
+      "div.section_content": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.section_header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.section_header::before": {
+        "background-color": "#000000\n"
+      },
+      "div.show_which_channel_is_active": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.subheading p": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.tab_complete_ui_header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.tab_complete_ui_scroller": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.tab_panels": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.tiny_top_margin.pinned_message_text.hide_scroll": {
+        "color": "#aaaaaa"
+      },
+      "div.title": {
+        "color": "#aaaaaa"
+      },
+      "div.wide": {
+        "background-color": "#000000"
+      },
+      "h1.channel_modal_header.no_bottom_margin": {
+        "color": "#aaaaaa"
+      },
+      "h2": {
+        "color": "#aaaaaa"
+      },
+      "h3": {
+        "color": "#aaaaaa"
+      },
+      "h4": {
+        "color": "#aaaaaa"
+      },
+      "header.headroom": {
+        "background-color": "#000000"
+      },
+      "header.query_header": {
+        "background-color": "#000000"
+      },
+      "input.no_bottom_margin": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "label.inline_block": {
+        "color": "#aaaaaa"
+      },
+      "li.mpdm_member": {
+        "color": "#aaaaaa"
+      },
+      "li.no_bottom_padding.no_wrap label": {
+        "color": "#aaaaaa"
+      },
+      "li.no_top_padding.no_wrap label": {
+        "color": "#aaaaaa"
+      },
+      "nav.top.persistent": {
+        "background-color": "#000000"
+      },
+      "p.alert.alert_info": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p.dm_explanation.margin_auto.align_left.clear_both": {
+        "color": "#aaaaaa"
+      },
+      "pre.special_formatting": {
+        "background-color": "#333333",
+        "border-color": "#ffffff",
+        "color": "#aaaaaa"
+      },
+      "section.tab_pane.selected": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "span.away": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "span.bot_label": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "span.boxed.float_right.mini.boxed_enter.no_wrap": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "span.c-member__display-name": {
+        "color": "#aaaaaa"
+      },
+      "span.channel_name": {
+        "color": "#aaaaaa"
+      },
+      "span.divider_label": {
+        "background-color": "#000000",
+        "color": "#aa0000"
+      },
+      "span.emoji-outer.emoji-sizer.emoji-only": {
+        "font-size": "128px"
+      },
+      "span.emoji.emoji-sizer.emoji-only": {
+        "font-size": "128px"
+      },
+      "span.header_label.menu_mini": {
+        "background": "#333333"
+      },
+      "span.history_query": {
+        "color": "#aaaaaa\n"
+      },
+      "span.member_real_name": {
+        "color": "#aaaaaa"
+      },
+      "span.message_sender a": {
+        "color": "#aaaaaa"
+      },
+      "span.no_jumbomoji": {
+        "background-color": "#000000"
+      },
+      "span.overflow_ellipsis": {
+        "color": "#dddddd"
+      },
+      "span.section_title": {
+        "color": "#aaaaaa"
+      },
+      "span.timezone_label": {
+        "color": "#aaaaaa"
+      },
+      "strong.overflow_ellipsis.search_query_preview": {
+        "color": "#aaaaaa\n"
+      },
+      "textarea": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "tr td a": {
+        "color": "#aaaaaa"
+      },
+      "ts-jumper.active ts-jumper-container": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "ts-jumper.active ts-jumper-container input": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "ts-message.message.feature_fix_files": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "ts-thread": {
+        "background": "#000000\n"
+      },
+      "ul li a": {
+        "color": "#aaaaaa"
+      },
+      "ul li strong": {
         "color": "#aaaaaa"
       }
     }
