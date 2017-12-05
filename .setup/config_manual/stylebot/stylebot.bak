@@ -564,6 +564,9 @@
       "span.message_sender a": {
         "color": "#aaaaaa"
       },
+      "span.no_jumbomoji": {
+        "background-color": "#000000"
+      },
       "span.overflow_ellipsis": {
         "color": "#dddddd"
       },
