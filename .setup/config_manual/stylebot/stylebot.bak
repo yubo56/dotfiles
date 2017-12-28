@@ -2404,7 +2404,7 @@
         "color": "#aaaaaa"
       },
       "div.Ar": {
-        "background-color": "#000000\n"
+        "background-color": "#000000"
       },
       "div.G-atb": {
         "background-color": "#000000"
@@ -3539,6 +3539,9 @@
         "background-color": "#000000"
       },
       "span.UFICommentBody span": {
+        "color": "#aaaaaa"
+      },
+      "span._3-9y": {
         "color": "#aaaaaa"
       },
       "span._3f-j._50f4": {
