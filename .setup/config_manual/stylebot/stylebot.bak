@@ -2821,6 +2821,9 @@
       ".channel_overlay": {
         "color": "#aaaaaa"
       },
+      "a.c-message__sender_link": {
+        "color": "#aaaaaa"
+      },
       "a.channel_link": {
         "color": "#aaaaaa"
       },
@@ -2885,6 +2888,21 @@
       },
       "div.c-member__display-name.c-member__display-name--large": {
         "color": "#aaaaaa"
+      },
+      "div.c-message.c-message--light": {
+        "background-color": "#000000"
+      },
+      "div.c-message_attachment__field_title span": {
+        "color": "#aaaaaa"
+      },
+      "div.c-message_attachment__field_value span": {
+        "color": "#aaaaaa"
+      },
+      "div.c-scrollbar__hider": {
+        "background-color": "#000000"
+      },
+      "div.c-scrollbar__hider:before": {
+        "background-color": "#000000"
       },
       "div.card.align_center.span_4_of_6.col.float_none.margin_auto.large_bottom_margin.right_padding.large_bottom_padding": {
         "background-color": "#000000",
@@ -3112,6 +3130,15 @@
         "color": "#aaaaaa"
       },
       "span.c-member__display-name": {
+        "color": "#aaaaaa"
+      },
+      "span.c-message__body": {
+        "color": "#aaaaaa"
+      },
+      "span.c-message_attachment__pretext span": {
+        "color": "#aaaaaa"
+      },
+      "span.c-message_attachment__text span": {
         "color": "#aaaaaa"
       },
       "span.channel_name": {
@@ -3591,7 +3618,7 @@
       }
     }
   },
-  "www.google.com": {
+  "www.google": {
     "_enabled": true,
     "_rules": {
       "#_eEe a": {
