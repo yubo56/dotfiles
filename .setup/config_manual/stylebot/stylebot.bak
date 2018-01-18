@@ -2821,6 +2821,9 @@
       ".channel_overlay": {
         "color": "#aaaaaa"
       },
+      ".p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before": {
+        "box-shadow": "0 32px #000"
+      },
       "a.c-message__sender_link": {
         "color": "#aaaaaa"
       },
@@ -3134,6 +3137,9 @@
       },
       "span.c-message__body": {
         "color": "#aaaaaa"
+      },
+      "span.c-message__bot_label": {
+        "background-color": "#000000"
       },
       "span.c-message_attachment__pretext span": {
         "color": "#aaaaaa"
