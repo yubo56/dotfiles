@@ -1080,6 +1080,9 @@
       "#markdown-toc li": {
         "color": "#aaaaaa"
       },
+      ".form-checkbox label": {
+        "color": "#aaaaaa"
+      },
       ".menu-item": {
         "background-color": "#000000"
       },
@@ -1521,6 +1524,9 @@
         "color": "#aaaaaa"
       },
       "span.js-issue-title": {
+        "color": "#aaaaaa"
+      },
+      "span.note": {
         "color": "#aaaaaa"
       },
       "span.num.text-emphasized": {
@@ -3293,6 +3299,14 @@
       "#mainContainer": {
         "background-color": "#000000"
       },
+      "._2aha": {
+        "background": "#333333",
+        "color": "#aaaaaa"
+      },
+      "._42ft": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
       "._5803": {
         "color": "#aaaaaa"
       },
@@ -3340,6 +3354,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "a.uiButton": {
+        "background-color": "#333333"
+      },
       "body": {
         "background": "#000000"
       },
@@ -3359,6 +3376,12 @@
       "div.UFIRow": {
         "background-color": "#000000"
       },
+      "div._10lo": {
+        "background-color": "#000000"
+      },
+      "div._16ve": {
+        "border-top": "0px"
+      },
       "div._1dwg": {
         "background-color": "#000000"
       },
@@ -3366,8 +3389,21 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "div._1jf6._2pi9._2pi3._9bn._50z3": {
+        "background-color": "#000000"
+      },
+      "div._1s48._2ph_": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div._1z7g span": {
+        "color": "#aaaaaa"
+      },
       "div._2-gy": {
         "background-color": "#000000"
+      },
+      "div._2-gz span": {
+        "color": "#aaaaaa"
       },
       "div._29bg": {
         "background-color": "#000000",
@@ -3399,6 +3435,9 @@
         "background-color": "#000000"
       },
       "div._3t53._4ar-._ipn": {
+        "background-color": "#000000"
+      },
+      "div._3ubp._sg2": {
         "background-color": "#000000"
       },
       "div._3wvs": {
@@ -3486,6 +3525,9 @@
       "div._c24._50f4": {
         "color": "#aaaaaa"
       },
+      "div._fmi._613v.UFIInputContainer": {
+        "background-color": "#000000"
+      },
       "div._li": {
         "background-color": "#000000"
       },
@@ -3519,7 +3561,7 @@
         "background-color": "#000000"
       },
       "div.fsm.fwn.fcg": {
-        "background-color": "#333333"
+        "background-color": "#000000"
       },
       "div.fsm.fwn.fcg.UFICommentActions": {
         "background-color": "#000000"
@@ -3531,6 +3573,9 @@
         "color": "#aaaaaa"
       },
       "div.mbs": {
+        "color": "#aaaaaa"
+      },
+      "div.mtm._5pco p": {
         "color": "#aaaaaa"
       },
       "div.pam.uiBoxWhite.noborder": {
@@ -3595,7 +3640,14 @@
       "span._5pws._50f8._50f4._50f7": {
         "color": "#aaaaaa"
       },
+      "span._5qtp": {
+        "color": "#aaaaaa"
+      },
       "span._h24._h25": {
+        "color": "#aaaaaa"
+      },
+      "span._sg1": {
+        "background-color": "#000000",
         "color": "#aaaaaa"
       },
       "span.fragmentText": {
@@ -3608,6 +3660,12 @@
         "color": "#aaaaaa"
       },
       "span.pas": {
+        "color": "#aaaaaa"
+      },
+      "span.uiButtonText": {
+        "color": "#aaaaaa"
+      },
+      "span.userContentSecondary._c24": {
         "color": "#aaaaaa"
       },
       "ul.UFIList": {
