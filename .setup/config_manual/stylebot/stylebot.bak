@@ -2629,21 +2629,40 @@
       "div.Rlm9Ze": {
         "color": "#aaaaaa"
       },
+      "div.VjFXz": {
+        "background-color": "#000000"
+      },
+      "div.XTTHS": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
       "div.basic-title": {
         "background-color": "#222222"
       },
       "div.content-pane": {
         "background-color": "#000000"
       },
+      "div.e6jznb": {
+        "color": "#aaaaaa"
+      },
       "div.esc-inner": {
         "background-color": "#000000",
         "color": "#aaaaaa"
+      },
+      "div.fQVVSc": {
+        "color": "#aaaaaa"
+      },
+      "div.fWwQIb.ChVoCd.rOrCPc.AfWyGd": {
+        "background-color": "#000000"
       },
       "div.footer": {
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
       "div.gb_Bd.gb_7d": {
+        "background-color": "#000000"
+      },
+      "div.gb_Bd.gb_8d.gb_Id": {
         "background-color": "#000000"
       },
       "div.gb_R.gb_se": {
@@ -2673,6 +2692,9 @@
       "div.kd-appbar": {
         "background-color": "#000000"
       },
+      "div.lD1fib.eGN7Re": {
+        "background-color": "#000000"
+      },
       "div.main-wrapper": {
         "background-color": "#000000"
       },
@@ -2684,6 +2706,9 @@
       },
       "div.u3WVdc.jBmls": {
         "background-color": "#333333"
+      },
+      "div.wStogf": {
+        "color": "#aaaaaa"
       },
       "form.gb_He": {
         "background-color": "#333333"
@@ -2729,6 +2754,9 @@
         "color": "#aaaaaa"
       },
       "span.gb_ge.gb_ce": {
+        "color": "#aaaaaa"
+      },
+      "span.gb_he.gb_de": {
         "color": "#aaaaaa"
       },
       "span.section-name": {
@@ -2792,6 +2820,9 @@
       },
       "#footer": {
         "background": "#000000"
+      },
+      "#footer_archives_preview": {
+        "background-color": "#333333"
       },
       "#fs_modal_footer": {
         "background-color": "#000000"
@@ -2894,6 +2925,9 @@
       },
       "div.attachment_group": {
         "background": "#333333"
+      },
+      "div.c-archive_footer__title": {
+        "color": "#aaaaaa"
       },
       "div.c-member__display-name.c-member__display-name--large": {
         "color": "#aaaaaa"
