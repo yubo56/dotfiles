@@ -375,6 +375,10 @@
       ".eh5oYe": {
         "background-color": "#000000"
       },
+      ".gb_Je": {
+        "background": "#333333",
+        "color": "#aaaaaa"
+      },
       ".gb_yd": {
         "background": "#000000",
         "color": "#aaaaaa"
@@ -519,8 +523,9 @@
       "div.gb_Bd.gb_7d": {
         "background-color": "#000000"
       },
-      "div.gb_Bd.gb_8d": {
-        "background-color": "#000000"
+      "div.gb_Cd.gb_9d": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
       },
       "div.gb_Jb": {
         "color": "#bbbbbb"
@@ -532,7 +537,7 @@
       "div.gb_dc svg path": {
         "color": "#aaaaaa"
       },
-      "div.gb_ec svg": {
+      "div.gb_fc svg": {
         "color": "#aaaaaa"
       },
       "div.gb_lb": {
@@ -634,6 +639,9 @@
         "color": "#aaaaaa"
       },
       "input.WpDZC": {
+        "color": "#aaaaaa"
+      },
+      "input.gb_1e": {
         "color": "#aaaaaa"
       },
       "input.gb_Te": {
@@ -2690,6 +2698,10 @@
       "div.gb_Bd.gb_8d.gb_Id": {
         "background-color": "#000000"
       },
+      "div.gb_Cd.gb_9d.gb_Jd": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
       "div.gb_R.gb_se": {
         "background-color": "#000000"
       },
@@ -2697,6 +2709,9 @@
         "background-color": "#000000"
       },
       "div.gb_ec svg path": {
+        "color": "#aaaaaa"
+      },
+      "div.gb_fc svg": {
         "color": "#aaaaaa"
       },
       "div.gb_ib.gb_wf.gb_R.gb_vf.gb_T": {
@@ -2736,6 +2751,9 @@
         "color": "#aaaaaa"
       },
       "form.gb_He": {
+        "background-color": "#333333"
+      },
+      "form.gb_Je": {
         "background-color": "#333333"
       },
       "html": {
