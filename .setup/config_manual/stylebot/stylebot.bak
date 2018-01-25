@@ -1,11 +1,2571 @@
 {
-  "mail.google.com": {
+  "*": {
+    "_enabled": false,
+    "_rules": {}
+  },
+  "arxiv.org": {
     "_enabled": true,
     "_rules": {
-      "div.a3s": {
+      "#abs": {
+        "background-color": "#000000"
+      },
+      "#content": {
+        "color": "#aaaaaa"
+      },
+      "#cu-identity": {
+        "background-color": "#000000"
+      },
+      "#footer": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#header": {
+        "background-color": "#000000",
+        "border-style": "none"
+      },
+      "a": {
+        "color": "#4477aa"
+      },
+      "body.with-cu-identity": {
+        "background-color": "#000000"
+      },
+      "div.bookmarks": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.browse": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.extra-ref-cite": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.extra-services": {
+        "border-style": "none"
+      },
+      "div.filter-field select": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.full-text": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.leftcolumn": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.subheader": {
+        "background-color": "#000000"
+      },
+      "div.subheader h1": {
+        "background-color": "#000000",
+        "border-style": "none",
+        "color": "#aaaaaa"
+      },
+      "h1.title": {
+        "color": "#aaaaaa"
+      },
+      "input.keyword-field": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "aws.amazon.com": {
+    "_enabled": true,
+    "_rules": {
+      "#content-container": {
+        "background-color": "#000000"
+      },
+      "#feedback-message": {
+        "color": "#aaaaaa"
+      },
+      "#footer": {
+        "background-color": "#000000"
+      },
+      "#footer-left": {
+        "color": "#aaaaaa"
+      },
+      "#guide-info": {
+        "color": "#aaaaaa"
+      },
+      "#left-col-header": {
+        "background-color": "#000000"
+      },
+      "#main": {
+        "background-color": "#000000"
+      },
+      "#menu a": {
+        "color": "#aaaaaa"
+      },
+      "#pagetoc": {
+        "background-color": "#000000"
+      },
+      "#service-name": {
+        "color": "#aaaaaa"
+      },
+      "#toc": {
+        "background-color": "#000000"
+      },
+      "#topnav-flyout-menu": {
+        "background-color": "#000000"
+      },
+      "#topnav-flyout-menu-container": {
+        "background-color": "#000000"
+      },
+      "a.awstoc.selected": {
+        "color": "#aaaaaa"
+      },
+      "div p": {
+        "color": "#aaaaaa"
+      },
+      "div.aws-code pre": {
+        "background-color": "#dddddd"
+      },
+      "div.aws-nav-header": {
+        "background-color": "#000000"
+      },
+      "div.aws-nav-header-right": {
+        "background-color": "#000000"
+      },
+      "div.ui-resizable": {
+        "background-color": "#000000"
+      },
+      "h2": {
+        "color": "#aaaaaa\n"
+      },
+      "h3": {
+        "color": "#aaaaaa\n"
+      },
+      "li.awstoc": {
+        "background-color": "#000000"
+      },
+      "li.ui-menu-item": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p.tag_title tt": {
+        "color": "#aaaaaa"
+      },
+      "pre.code.javascript": {
+        "background-color": "#dddddd"
+      },
+      "section p": {
+        "color": "#aaaaaa"
+      },
+      "span.breadcrumb": {
+        "color": "#aaaaaa"
+      },
+      "strong": {
+        "color": "#aaaaaa"
+      },
+      "tbody": {
+        "color": "#aaaaaa"
+      },
+      "ul.awstoc": {
+        "background-color": "#000000"
+      },
+      "ul.option li": {
+        "color": "#aaaaaa"
+      },
+      "ul.param li": {
+        "color": "#aaaaaa"
+      },
+      "ul.return li": {
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "blendlabs.atlassian.net": {
+    "_enabled": true,
+    "_rules": {
+      "#content": {
+        "background-color": "#000000"
+      },
+      "#footer": {
+        "background-color": "#000000"
+      },
+      "#footer-logo": {
+        "background-color": "#000000"
+      },
+      "#ghx-header": {
+        "background-color": "#000000"
+      },
+      "#ghx-operations": {
+        "background-color": "#000000"
+      },
+      "#ghx-pool": {
+        "background-color": "#000000"
+      },
+      "a.aui-nav-link": {
+        "color": "#aaaaaa"
+      },
+      "div.aui-item": {
+        "background-color": "#000000"
+      },
+      "div.aui-page-header": {
+        "background-color": "#000000"
+      },
+      "div.aui-page-panel": {
+        "background-color": "#000000"
+      },
+      "div.aui-page-panel.indra-two-wide": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.aui-sidebar-body": {
+        "background-color": "#000000"
+      },
+      "div.aui-sidebar-footer": {
+        "background-color": "#000000"
+      },
+      "div.buttons-container.form-footer": {
+        "background-color": "#000000"
+      },
+      "div.command-bar": {
+        "background-color": "#000000"
+      },
+      "div.dashboard-item-content": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.description p": {
+        "color": "#aaaaaa"
+      },
+      "div.field-group label": {
+        "color": "#aaaaaa"
+      },
+      "div.form-body": {
+        "background-color": "#000000"
+      },
+      "div.ghx-backlog-container": {
+        "background-color": "#000000"
+      },
+      "div.ghx-busted": {
+        "background-color": "#000000"
+      },
+      "div.ghx-column-header-group.ghx-fixed": {
+        "background-color": "#000000"
+      },
+      "div.ghx-heading": {
+        "color": "#aaaaaa"
+      },
+      "div.ghx-issue": {
+        "background-color": "#000000",
+        "color": "#aaaaaa\n"
+      },
+      "div.ghx-marker": {
+        "background-color": "#000000"
+      },
+      "div.ghx-meta": {
+        "background-color": "#000000"
+      },
+      "div.ghx-name": {
+        "color": "#aaaaaa"
+      },
+      "div.issue-body-content": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.issue-view": {
+        "background-color": "#000000\n"
+      },
+      "div.jira-dialog-heading": {
+        "background-color": "#000000"
+      },
+      "div.layout": {
+        "background-color": "#000000"
+      },
+      "div.list-panel": {},
+      "div.navigator-sidebar": {
+        "background-color": "#000000"
+      },
+      "form.navigator-search": {
+        "background-color": "#000000"
+      },
+      "h1": {
         "color": "#aaaaaa"
       },
       "h2": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "header.aui-page-header": {
+        "background-color": "#000000"
+      },
+      "header.saved-search-selector": {
+        "background-color": "#000000"
+      },
+      "html": {
+        "background-color": "#000000"
+      },
+      "input.text": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "li": {
+        "border-bottom": "#000000\n"
+      },
+      "li.ghx-column": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "nav": {
+        "background-color": "#000000"
+      },
+      "p.whoslooking-onlookers-list": {
+        "background": "#000000",
+        "color": "#aaaaaa"
+      },
+      "span.field-value.js-editable-field.js-edit-epicLabel-trigger": {
+        "color": "#aaaaaa"
+      },
+      "textarea": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "tr": {
+        "background-color": "#000000",
+        "color": "#aaaaaa\n"
+      },
+      "ul.ghx-column-headers": {
+        "background-color": "#000000"
+      }
+    }
+  },
+  "calendar.google.com": {
+    "_enabled": true,
+    "_rules": {
+      "#calmaster": {
+        "background-color": "#000000"
+      },
+      "#gridcontainer": {
+        "background": "#000000"
+      },
+      "#mainnav": {
+        "background-color": "#000000"
+      },
+      "#sbody": {
+        "background-color": "#000000"
+      },
+      "#set": {
+        "background-color": "#000000"
+      },
+      "#vr-nav": {
+        "background-color": "#000000"
+      },
+      ".IIB0tc .ULpymb": {
+        "background-color": "#333333"
+      },
+      ".Kb2sf": {
+        "background-color": "#333333\n\n"
+      },
+      ".TUH0Sd .r4nke, .TUH0Sd:focus .r4nke, .TUH0Sd:hover .r4nke, .TUH0Sd.i8dSE.uGtG7d .r4nke": {
+        "background-color": "#4477aa",
+        "color": "#000000"
+      },
+      ".TgcD5e": {
+        "background-color": "#333333"
+      },
+      ".YvjgZe.F262Ye:after": {
+        "background-color": "#000000"
+      },
+      ".eh5oYe": {
+        "background-color": "#000000"
+      },
+      ".gb_Je": {
+        "background": "#333333",
+        "color": "#aaaaaa"
+      },
+      ".gb_yd": {
+        "background": "#000000",
+        "color": "#aaaaaa"
+      },
+      ".hxbWqd .JAPqpe": {
+        "background-color": "#333333"
+      },
+      ".iUxJib": {
+        "background-color": "#333333"
+      },
+      ".whsOnd.zHQkBf, .ndJi5d.snByac": {
+        "color": "#aaaaaa"
+      },
+      ".xjKiLb": {
+        "color": "#aaaaaa"
+      },
+      "::-webkit-scrollbar-thumb": {
+        "background": "#222222"
+      },
+      "a.gb_Cb": {
+        "background-color": "#222222",
+        "color": "#dddddd"
+      },
+      "a.tab-label": {
+        "color": "#aaaaaa"
+      },
+      "content.z80M1": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.ALy9T": {
+        "background-color": "#000000"
+      },
+      "div.B5S4ge": {
+        "background-color": "#000000"
+      },
+      "div.EQi2Gf": {
+        "background-color": "#000000"
+      },
+      "div.GENA3c": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.Gk2izd": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.JRtysb.WzwrXb.rF3YF.EwnKv.lAIgp": {
+        "color": "#aaaaaa"
+      },
+      "div.JRtysb.WzwrXb.rF3YF.uRguKd.oFBMuc": {
+        "color": "#aaaaaa"
+      },
+      "div.MDfQ7": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.Mj8vl": {
+        "color": "#aaaaaa"
+      },
+      "div.MmhHI": {
+        "color": "#aaaaaa"
+      },
+      "div.MocG8c": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.NI2kfb": {
+        "color": "#aaaaaa"
+      },
+      "div.SU7tYb.F262Ye": {
+        "background-color": "#000000"
+      },
+      "div.TIJ73d.gsTR5d.DbQnIe.BvQsje": {
+        "background-color": "#333333"
+      },
+      "div.VKy0Ic": {
+        "background-color": "#333333"
+      },
+      "div.Xro3Db-nUpftc": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.bubblemain": {
+        "background-color": "#333333",
+        "color": "#dddddd"
+      },
+      "div.calList": {
+        "background-color": "#000000"
+      },
+      "div.calListLabel span": {
+        "color": "#aaaaaa"
+      },
+      "div.calListLabel-sel": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.calListLabelOuter": {
+        "background-color": "#000000"
+      },
+      "div.caldesc": {
+        "color": "#aaaaaa"
+      },
+      "div.chromeColor": {
+        "background-color": "#000000"
+      },
+      "div.date-top": {
+        "color": "#aaaaaa"
+      },
+      "div.desc": {
+        "color": "#aaaaaa"
+      },
+      "div.dpdiv": {
+        "background-color": "#000000"
+      },
+      "div.ep-dp": {
+        "background-color": "#000000"
+      },
+      "div.ep-es-dialog": {
+        "background-color": "#000000"
+      },
+      "div.ep-es-dialog-content": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.ep-es-dialog-title": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.ep-gl-head": {
+        "color": "#aaaaaa"
+      },
+      "div.ep-gl-oa-legend": {
+        "color": "#aaaaaa"
+      },
+      "div.ep-rc-div": {
+        "background-color": "#000000"
+      },
+      "div.eui-t": {
+        "background-color": "#000000\n"
+      },
+      "div.gb_Bd.gb_7d": {
+        "background-color": "#000000"
+      },
+      "div.gb_Cd.gb_9d": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.gb_Jb": {
+        "color": "#bbbbbb"
+      },
+      "div.gb_R": {
+        "background-color": "#000000\n",
+        "color": "#aaaaaa"
+      },
+      "div.gb_dc svg path": {
+        "color": "#aaaaaa"
+      },
+      "div.gb_fc svg": {
+        "color": "#aaaaaa"
+      },
+      "div.gb_lb": {
+        "background-color": "#333333",
+        "color": "#dddddd"
+      },
+      "div.gb_nb a": {
+        "color": "#4477aa"
+      },
+      "div.gb_xb": {
+        "background-color": "#333333"
+      },
+      "div.gcal-popup": {
+        "background-color": "#000000"
+      },
+      "div.hEtGGf": {
+        "background-color": "#000000"
+      },
+      "div.jO7h3c": {
+        "color": "#aaaaaa"
+      },
+      "div.lR3h6d": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.luliFb": {
+        "background-color": "#333333"
+      },
+      "div.ncFHed": {
+        "background-color": "#333333"
+      },
+      "div.p261Pc": {
+        "background-color": "#333333"
+      },
+      "div.privacy-policy": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.q1j8lf.Jyewjb-haAclf.cPMh0b": {
+        "background-color": "#333333"
+      },
+      "div.r4nke": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.static-form-dialog": {
+        "background-color": "#000000"
+      },
+      "div.static-form-dialog-content": {
+        "background-color": "#000000"
+      },
+      "div.static-form-dialog-title.static-form-dialog-title-draggable": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.svalues-comment.svalues-head": {
+        "color": "#aaaaaa"
+      },
+      "div.tNDBE": {
+        "background-color": "#000000"
+      },
+      "div.tg-markercell": {
+        "background-color": "#000000"
+      },
+      "div.tile-content div": {
+        "color": "#aaaaaa"
+      },
+      "div.u3WVdc": {
+        "background-color": "#333333"
+      },
+      "div.ui-sch-schmedit": {
+        "color": "#aaaaaa"
+      },
+      "div.ui-sch-view": {
+        "color": "#aaaaaa"
+      },
+      "div.v83gc": {
+        "background-color": "#000000"
+      },
+      "div.w61Ns.pCoqfc": {
+        "color": "#aaaaaa"
+      },
+      "div.wk-dayname": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.xWId8e": {
+        "background-color": "#000000"
+      },
+      "form.gb_Se": {
+        "background": "#333333"
+      },
+      "h2.calHeader.goog-zippy-header.goog-zippy-expanded": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "h2.stitle": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "input.WpDZC": {
+        "color": "#aaaaaa"
+      },
+      "input.gb_1e": {
+        "color": "#aaaaaa"
+      },
+      "input.gb_Te": {
+        "color": "#aaaaaa"
+      },
+      "input.gbqfif": {
+        "color": "#aaaaaa"
+      },
+      "label": {
+        "color": "#aaaaaa"
+      },
+      "li.goog-menuitem": {
+        "color": "#aaaaaa"
+      },
+      "p.Hld1td": {
+        "color": "#aaaaaa"
+      },
+      "span.NlWrkb": {
+        "color": "#aaa"
+      },
+      "span.cuBluc": {
+        "color": "#aaaaaa"
+      },
+      "span.ebZ3od.MANBAf": {
+        "color": "#aaaaaa"
+      },
+      "span.ep-gc-chip-text": {
+        "color": "#aaaaaa"
+      },
+      "span.oj6B2e": {
+        "color": "#aaaaaa"
+      },
+      "td": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "th": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "caolan.github.io": {
+    "_enabled": true,
+    "_rules": {
+      "#main-container": {
+        "background-color": "#222222"
+      },
+      "#main-container section": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      "#toc": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "code": {
+        "background-color": "#dddddd"
+      },
+      "div.navbar": {
+        "background-color": "#000000"
+      },
+      "h1": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      "h4": {
+        "color": "#aaaaaa"
+      },
+      "li.toc-header a": {
+        "color": "#aaaaaa"
+      },
+      "section article h5": {
+        "color": "#aaaaaa"
+      },
+      "th": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      "ul.nav.methods": {
+        "background-color": "#000000"
+      }
+    }
+  },
+  "ci.prod.vpn.blendlabs.com": {
+    "_enabled": true,
+    "_rules": {
+      "#breadcrumbs": {
+        "background-color": "#000000"
+      },
+      "#main-panel div": {
+        "background-color": "#000000"
+      },
+      "a": {
+        "color": "#4477aa"
+      },
+      "a.model-link.inside.breadcrumbBarAnchor": {
+        "color": "#aaaaaa"
+      },
+      "a.task-link": {
+        "color": "#4477aa"
+      },
+      "div.clear": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.col-xs-24.pane-header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "form.jenkins-config": {
+        "background-color": "#000000"
+      },
+      "html": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p": {
+        "color": "#aaaaaa"
+      },
+      "pre b span": {
+        "color": "#aaaaaa"
+      },
+      "td": {
+        "color": "#aaaaaa"
+      },
+      "td form label": {
+        "color": "#aaaaaa"
+      },
+      "td.build-row-cell": {
+        "background-color": "#000000"
+      },
+      "td.pane-header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "tr": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "console.aws.amazon.com": {
+    "_enabled": true,
+    "_rules": {
+      "#b": {
+        "background-color": "#000000"
+      },
+      "#c": {
+        "background-color": "#000000"
+      },
+      "#content-container": {
+        "background-color": "#000000"
+      },
+      "#f": {
+        "background-color": "#000000"
+      },
+      "#feedback-message": {
+        "color": "#aaaaaa"
+      },
+      "#footer": {
+        "background-color": "#000000"
+      },
+      "#footer-left": {
+        "color": "#aaaaaa"
+      },
+      "#guide-info": {
+        "color": "#aaaaaa"
+      },
+      "#h": {
+        "background-color": "#000000"
+      },
+      "#left-col-header": {
+        "background-color": "#000000"
+      },
+      "#main": {
+        "background-color": "#000000"
+      },
+      "#menu a": {
+        "color": "#aaaaaa"
+      },
+      "#pagetoc": {
+        "background-color": "#000000"
+      },
+      "#service-name": {
+        "color": "#aaaaaa"
+      },
+      "#toc": {
+        "background-color": "#000000"
+      },
+      "#topnav-flyout-menu": {
+        "background-color": "#000000"
+      },
+      "#topnav-flyout-menu-container": {
+        "background-color": "#000000"
+      },
+      "a": {
+        "color": "#aaaaaa"
+      },
+      "a.awstoc.selected": {
+        "color": "#aaaaaa"
+      },
+      "div p": {
+        "color": "#aaaaaa"
+      },
+      "div.aws-code pre": {
+        "background-color": "#dddddd"
+      },
+      "div.aws-nav-header": {
+        "background-color": "#000000"
+      },
+      "div.aws-nav-header-right": {
+        "background-color": "#000000"
+      },
+      "div.awsui": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.ecs-animate-switch": {
+        "background-color": "#000000\n"
+      },
+      "div.ecs-header-description": {
+        "color": "#aaaaaa"
+      },
+      "div.nav-menu-content": {
+        "background-color": "#000000"
+      },
+      "div.service-desc": {
+        "color": "#aaaaaa"
+      },
+      "div.serviceName": {
+        "color": "#aaaaaa"
+      },
+      "div.tableField": {
+        "color": "#aaaaaa"
+      },
+      "div.tickLabel": {
+        "color": "#aaaaaa"
+      },
+      "div.ui-grid-cell": {
+        "background-color": "#000000"
+      },
+      "div.ui-grid-cell-contents": {
+        "background-color": "#000000"
+      },
+      "div.ui-grid-cell.expander-row": {
+        "background-color": "#000000"
+      },
+      "div.ui-resizable": {
+        "background-color": "#000000"
+      },
+      "h1": {
+        "color": "#aaaaaa"
+      },
+      "h2": {
+        "color": "#aaaaaa\n"
+      },
+      "h3": {
+        "color": "#aaaaaa\n"
+      },
+      "html": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "li.awstoc": {
+        "background-color": "#000000"
+      },
+      "li.ui-menu-item": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "pre.code.javascript": {
+        "background-color": "#dddddd"
+      },
+      "section p": {
+        "color": "#aaaaaa"
+      },
+      "span.breadcrumb": {
+        "color": "#aaaaaa"
+      },
+      "span.gwt-InlineLabel": {
+        "color": "#aaaaaa"
+      },
+      "span.service-label": {
+        "color": "#aaaaaa"
+      },
+      "strong": {
+        "color": "#aaaaaa"
+      },
+      "tbody": {
+        "color": "#aaaaaa"
+      },
+      "td.GIJIJ4YDPWE": {
+        "color": "#aaaaaa"
+      },
+      "th.GIJIJ4YDAXE": {
+        "color": "#aaaaaa"
+      },
+      "ul.awstoc": {
+        "background-color": "#000000"
+      },
+      "ul.option li": {
+        "color": "#aaaaaa"
+      },
+      "ul.param li": {
+        "color": "#aaaaaa"
+      },
+      "ul.return li": {
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "docs.datadoghq.com": {
+    "_enabled": true,
+    "_rules": {
+      "a.dropdown-toggle": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.navbar": {
+        "background-color": "#000000"
+      },
+      "div.row.floating-header": {
+        "background-color": "#000000"
+      },
+      "html body": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "pre.code-block.code-block-python": {
+        "background-color": "#dddddd"
+      },
+      "ul.dropdown-menu": {
+        "background-color": "#000000"
+      },
+      "ul.dropdown-menu li a": {
+        "color": "#aaaaaa"
+      },
+      "ul.nav.navbar-nav.navbar-right li a": {
+        "background-color": "#000000"
+      }
+    }
+  },
+  "en.wikipedia.org": {
+    "_enabled": true,
+    "_rules": {
+      "#mw-head": {
+        "background-color": "#000000"
+      },
+      "#searchInput": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#simpleSearch": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a": {
+        "color": "#4477aa"
+      },
+      "a.image img": {
+        "background-color": "#ffffff"
+      },
+      "body.mediawiki": {
+        "background-color": "#000000"
+      },
+      "code": {
+        "background-color": "#000000",
+        "color": "#bb5555"
+      },
+      "div.NavHead": {
+        "background-color": "#000000"
+      },
+      "div.barbox": {
+        "background": "#000000"
+      },
+      "div.catlinks": {
+        "background-color": "#000000"
+      },
+      "div.mw-body": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.mw-content-ltr p a": {
+        "color": "#4477aa"
+      },
+      "div.mw-content-ltr pre": {
+        "background-color": "#000000",
+        "color": "#bb5555"
+      },
+      "div.navbox": {
+        "background-color": "#000000"
+      },
+      "div.special-label": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.special-query": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.suggestions-result": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.toc": {
+        "background-color": "#000000"
+      },
+      "h1.firstHeading": {
+        "color": "#aaaaaa"
+      },
+      "h2": {
+        "color": "#aaaaaa"
+      },
+      "h3": {
+        "color": "#aaaaaa"
+      },
+      "img": {
+        "background-color": "#aaaaaa"
+      },
+      "input.searchButton": {
+        "background-color": "#000000"
+      },
+      "span a": {
+        "background-color": "#000000"
+      },
+      "span.mw-headline": {
+        "color": "#aaaaaa"
+      },
+      "span.tocnumber": {
+        "color": "#aaaaaa"
+      },
+      "table.infobox.vcard": {
+        "background-color": "#000000"
+      },
+      "table.infobox.vevent": {
+        "background-color": "#000000"
+      },
+      "table.vertical-navbox": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "tbody tr td": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "td.navbox-list": {
+        "background-color": "#000000"
+      },
+      "th": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "git.blendlabs.com": {
+    "_enabled": true,
+    "_rules": {
+      "#content-wrapper": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#js-pjax-container": {
+        "background-color": "#000000"
+      },
+      "#js-repo-pjax-container": {
+        "background-color": "#000000"
+      },
+      "#markdown-toc li": {
+        "color": "#aaaaaa"
+      },
+      ".form-checkbox label": {
+        "color": "#aaaaaa"
+      },
+      ".menu-item": {
+        "background-color": "#000000"
+      },
+      "a": {
+        "color": "#aaaaaa"
+      },
+      "a.author": {
+        "color": "#aaaaaa"
+      },
+      "a.commit-id": {
+        "background-color": "#333333"
+      },
+      "a.css-truncate-target": {
+        "color": "#aaaaaa"
+      },
+      "a.diff-expander.js-expand": {
+        "background-color": "#000000",
+        "color": "#dddddd"
+      },
+      "a.file-info.link-gray-dark": {
+        "color": "#aaaaaa"
+      },
+      "a.header-nav-link": {
+        "color": "#4477aa"
+      },
+      "a.js-navigation-open": {
+        "color": "#4477aa"
+      },
+      "a.js-selected-navigation-item.header-nav-link": {
+        "color": "#4477aa"
+      },
+      "a.js-selected-navigation-item.selected.reponav-item": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.link-gray-dark": {
+        "color": "#aaaaaa"
+      },
+      "a.message": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "a.tabnav-tab.selected": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.tabnav-tab.selected.js-pjax-history-navigate": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.text-emphasized": {
+        "color": "#ffaaaa"
+      },
+      "a.text-gray-dark": {
+        "color": "#aaaaaa"
+      },
+      "a.title-link": {
+        "color": "#aaaaaa"
+      },
+      "a.underline-nav-item": {
+        "color": "#aaaaaa"
+      },
+      "a.user-mention": {
+        "color": "#4477aa"
+      },
+      "a.wiki-page-link": {
+        "color": "#4477aa"
+      },
+      "article.markdown-body pre": {
+        "background-color": "#dddddd"
+      },
+      "article.markdown-body.entry-content": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "body.api": {
+        "background-color": "#000000"
+      },
+      "body.logged-in": {
+        "background-color": "#000000"
+      },
+      "body.logged-in.env-production.macintosh": {
+        "background-color": "#000000"
+      },
+      "body.logged-in.env-production.macintosh.vis-private": {
+        "background-color": "#000000"
+      },
+      "body.logged-in.env-production.windows": {
+        "background-color": "#000000"
+      },
+      "body.logged-out.env-production.linux.page-two-factor-auth.session-authentication.page-responsive.min-width-0": {
+        "background-color": "#000000"
+      },
+      "button.btn-link": {
+        "color": "#aaaaaa"
+      },
+      "button.btn-link.tabnav-tab.write-tab.js-write-tab.selected": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "button.review-thread-reply-button.width-full.text-gray.text-left.form-control.js-toggle-inline-comment-form": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "code": {
+        "background-color": "#dddddd",
+        "color": "#666666"
+      },
+      "div.CodeMirror": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.CodeMirror-gutters": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      "div.CodeMirror-lines": {
+        "background-color": "#666666"
+      },
+      "div.TableObject-item.TableObject-item--primary": {
+        "color": "#aaaaaa"
+      },
+      "div.access-form-wrapper": {
+        "background-color": "#222222"
+      },
+      "div.article-body h4": {
+        "color": "#aaaaaa"
+      },
+      "div.auth-form-body.mt-3": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.blankslate.blankslate-large": {
+        "background-color": "#000000"
+      },
+      "div.blankslate.blankslate-large p": {
+        "color": "#aaaaaa"
+      },
+      "div.blankslate.blankslate-spacious.blankslate-large": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.boxed-group p": {
+        "color": "#aaaaaa"
+      },
+      "div.boxed-group-inner": {
+        "background-color": "#222222"
+      },
+      "div.boxed-group.flush.js-notifications-browser h3": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.branch-action-item": {
+        "background-color": "#000000"
+      },
+      "div.branch-action.branch-action-state-dirty": {
+        "background-color": "#000000"
+      },
+      "div.clone-options": {
+        "color": "#aaaaaa"
+      },
+      "div.closed-banner": {
+        "display": "none"
+      },
+      "div.comment-body.markdown-body": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.comment-form-head.tabnav": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.commit": {
+        "background-color": "#000000"
+      },
+      "div.commit-meta": {},
+      "div.commit-tease": {
+        "background-color": "#333333"
+      },
+      "div.commit-tease-contributors": {
+        "background-color": "#333333"
+      },
+      "div.commit-tease.js-details-container": {
+        "background-color": "#333333"
+      },
+      "div.contact-github p": {
+        "color": "#aaaaaa"
+      },
+      "div.content p": {
+        "color": "#aaaaaa"
+      },
+      "div.content ul li": {
+        "color": "#aaaaaa"
+      },
+      "div.content.col-md-8 pre": {
+        "background-color": "#dddddd"
+      },
+      "div.copyable-terminal": {
+        "background-color": "#dddddd"
+      },
+      "div.diffbar": {
+        "background-color": "#000000"
+      },
+      "div.discussion-item-header": {
+        "color": "#aaaaaa"
+      },
+      "div.discussion-timeline-actions": {
+        "background-color": "#000000",
+        "border-style": "none"
+      },
+      "div.discussion-topic-header": {
+        "background-color": "#000000"
+      },
+      "div.facebox-content": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.file-header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.filter-bar": {
+        "background-color": "#222222"
+      },
+      "div.form-actions": {
+        "background-color": "#000000"
+      },
+      "div.get-repo-modal": {
+        "background-color": "#000000"
+      },
+      "div.gist-welcome.gist-banner.text-center": {
+        "background-image": "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0))"
+      },
+      "div.header-search-scope": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.header.gist-header.header-logged-in": {
+        "background-color": "#000000"
+      },
+      "div.header.header-logged-in.true": {
+        "background-color": "#000000"
+      },
+      "div.inline-comment-form": {
+        "background-color": "#000000"
+      },
+      "div.js-comment-body pre": {
+        "background-color": "#dddddd"
+      },
+      "div.js-suggester-container.js-previewable-comment-form.previewable-comment-form.write-selected": {
+        "background-color": "#000000"
+      },
+      "div.markdown-body": {
+        "color": "#aaaaaa"
+      },
+      "div.markdown-body pre": {
+        "background-color": "#dddddd"
+      },
+      "div.merge-message": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.merge-status-item": {
+        "background-color": "#000000"
+      },
+      "div.message.markdown-body blockquote p": {
+        "color": "#888888"
+      },
+      "div.outline-box": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.pagehead.orghead": {
+        "background-color": "#000000"
+      },
+      "div.pagehead.repohead.instapaper_ignore.readability-menu.experiment-repo-nav": {
+        "background-color": "#000000",
+        "border-style": "none"
+      },
+      "div.pr-toolbar": {
+        "background-color": "#000000"
+      },
+      "div.profile-timeline-card": {
+        "background-color": "#000000"
+      },
+      "div.profile-timeline-year-list.bg-white.col-2.float-right.pl-5.js-profile-timeline-year-list.js-sticky": {
+        "background-color": "#000000"
+      },
+      "div.protip": {
+        "color": "#aaaaaa"
+      },
+      "div.pull-request-review-menu.dropdown-menu.dropdown-menu-sw.p-0 form": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.readme.boxed-group.clearfix.announce.instapaper_body.md h3": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.review-comment.js-comment.js-task-list-container.commit-comment.current-user.previewable-edit.js-reorderable-task-lists.reorderable-task-lists": {
+        "background-color": "#000000"
+      },
+      "div.review-summary-form-wrapper form": {
+        "background-color": "#000000"
+      },
+      "div.review-thread-reply": {
+        "background-color": "#000000"
+      },
+      "div.section.diffstat-summary": {
+        "color": "#aaaaaa"
+      },
+      "div.section.diffstat-summary strong": {
+        "color": "#aaaaaa"
+      },
+      "div.settings-next p": {
+        "color": "#aaaaaa"
+      },
+      "div.thread-subscription-status.js-thread-subscription-status.js-socket-channel.js-updatable-content": {
+        "background-color": "#000000"
+      },
+      "div.timeline-comment-header": {
+        "background-color": "#333333"
+      },
+      "div.timeline-comment-header-text": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.timeline-comment-wrapper.js-comment-container": {
+        "border-style": "none"
+      },
+      "div.title": {
+        "color": "#aaaaaa"
+      },
+      "div.toc-diff-stats": {
+        "color": "#aaaaaa"
+      },
+      "div.token-scope": {
+        "color": "#aaaaaa"
+      },
+      "div.two-factor-help.clearfix": {
+        "color": "#aaaaaa"
+      },
+      "div.user-profile-nav": {
+        "background-color": "#000000"
+      },
+      "div.user-profile-sticky-bar": {
+        "background-color": "#000000"
+      },
+      "div.user-profile-sticky-bar::after": {
+        "background-color": "#000000"
+      },
+      "dl.form-group dt label": {
+        "color": "#aaaaaa"
+      },
+      "h1": {
+        "color": "#aaaaaa"
+      },
+      "h2": {
+        "color": "#aaaaaa"
+      },
+      "h3": {
+        "color": "#aaaaaa"
+      },
+      "h3.discussion-sidebar-heading": {
+        "background-color": "#000000"
+      },
+      "h4": {
+        "color": "#aaaaaa"
+      },
+      "header.orghead": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "html": {
+        "background-color": "#000000\n"
+      },
+      "input.form-control": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "input.form-control.header-search-input.js-site-search-focus.js-site-search-field.is-clearable": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "label.d-block": {
+        "color": "#aaaaaa"
+      },
+      "label.form-control.header-search-wrapper.js-chromeless-input-container": {
+        "background-color": "#000000"
+      },
+      "label.wide": {
+        "color": "#aaaaaa"
+      },
+      "li ul li": {
+        "color": "#aaaaaa"
+      },
+      "li.list-group-item": {
+        "background-color": "#000000"
+      },
+      "li.navigation-focus": {
+        "background-color": "#333333"
+      },
+      "li.vcard-detail": {
+        "color": "#aaaaaa"
+      },
+      "p": {
+        "color": "#aaaaaa"
+      },
+      "p.commit-title": {
+        "color": "#aaaaaa"
+      },
+      "p.drag-and-drop": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p.merge-pr-more-commits": {
+        "color": "#aaaaaa"
+      },
+      "p.reason.text-small.text-gray": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p.text-center": {
+        "color": "#aaaaaa"
+      },
+      "pre.highlight": {
+        "background-color": "#dddddd"
+      },
+      "span.blob-code-inner": {
+        "color": "#dddddd"
+      },
+      "span.commit-author-section": {
+        "color": "#aaaaaa"
+      },
+      "span.d-table-cell": {
+        "color": "#aaaaaa"
+      },
+      "span.discussion-item-entity": {
+        "color": "#aaaaaa"
+      },
+      "span.js-issue-title": {
+        "color": "#aaaaaa"
+      },
+      "span.note": {
+        "color": "#aaaaaa"
+      },
+      "span.num.text-emphasized": {
+        "color": "#aaaaaa"
+      },
+      "span.pl-pds": {
+        "color": "#4477aa"
+      },
+      "span.pl-s": {
+        "color": "#4477aa"
+      },
+      "span.pl-s1": {
+        "color": "#aaaaaa"
+      },
+      "span.pl-smi": {
+        "color": "#1f731e"
+      },
+      "span.renamed-is": {
+        "color": "#aaaaaa"
+      },
+      "span.renamed-was": {
+        "color": "#aaaaaa"
+      },
+      "span.select-menu-item-text": {
+        "color": "#aaaaaa"
+      },
+      "span.sha.user-select-contain": {
+        "color": "#bb5555"
+      },
+      "span.text-emphasized": {
+        "color": "#aaaaaa"
+      },
+      "span.token-description strong": {
+        "color": "#aaaaaa"
+      },
+      "strong.text-emphasized": {
+        "color": "#aaaaaa"
+      },
+      "svg.octicon.octicon-git-commit": {
+        "background-color": "#333333"
+      },
+      "td": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "td.blob-code": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "td.blob-code.blob-code-addition": {
+        "background-color": "#003000"
+      },
+      "td.blob-code.blob-code-deletion": {
+        "background-color": "#400000"
+      },
+      "td.blob-num.blob-num-addition.js-linkable-line-number": {
+        "background-color": "#000000",
+        "color": "#55bb55"
+      },
+      "td.blob-num.blob-num-context.js-linkable-line-number": {
+        "background-color": "#000000",
+        "color": "#dddddd"
+      },
+      "td.blob-num.blob-num-deletion.js-linkable-line-number": {
+        "background-color": "#000000",
+        "color": "#bb5555"
+      },
+      "td.blob-num.blob-num-empty.empty-cell": {
+        "background-color": "#000000"
+      },
+      "td.code-review.blob-code": {
+        "background-color": "#000000",
+        "color": "#dddddd"
+      },
+      "td.code-review.blob-code.blob-code-addition": {
+        "background-color": "#003000"
+      },
+      "td.code-review.blob-code.blob-code-deletion": {
+        "background-color": "#400000"
+      },
+      "td.empty-cell.js-deletion": {
+        "background-color": "#000000"
+      },
+      "textarea.form-control.input-contrast.comment-form-textarea.js-comment-field.js-improved-comment-field.js-task-list-field.js-quick-submit.js-size-to-fit.js-suggester-field.js-quote-selection-target.js-session-resumable": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "textarea.form-control.input-contrast.comment-form-textarea.js-comment-field.js-improved-comment-field.js-task-list-field.js-quick-submit.js-suggester-field.js-quote-selection-target.js-session-resumable": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "ul li": {
+        "color": "#aaaaaa"
+      },
+      "ul.numbers-summary li a": {
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "github.com": {
+    "_enabled": true,
+    "_rules": {
+      "#content-wrapper": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#js-pjax-container": {
+        "background-color": "#000000"
+      },
+      "#js-repo-pjax-container": {
+        "background-color": "#000000"
+      },
+      "#markdown-toc li": {
+        "color": "#aaaaaa"
+      },
+      ".menu-item": {
+        "background-color": "#000000"
+      },
+      "a": {
+        "color": "#aaaaaa"
+      },
+      "a.author": {
+        "color": "#aaaaaa"
+      },
+      "a.commit-id": {
+        "background-color": "#333333"
+      },
+      "a.css-truncate-target": {
+        "color": "#aaaaaa"
+      },
+      "a.diff-expander.js-expand": {
+        "background-color": "#000000",
+        "color": "#dddddd"
+      },
+      "a.file-info.link-gray-dark": {
+        "color": "#aaaaaa"
+      },
+      "a.header-nav-link": {
+        "color": "#4477aa"
+      },
+      "a.js-navigation-open": {
+        "color": "#4477aa"
+      },
+      "a.js-selected-navigation-item.header-nav-link": {
+        "color": "#4477aa"
+      },
+      "a.js-selected-navigation-item.selected.reponav-item": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.link-gray-dark": {
+        "color": "#aaaaaa"
+      },
+      "a.message": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "a.tabnav-tab.selected": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.tabnav-tab.selected.js-pjax-history-navigate": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.text-emphasized": {
+        "color": "#ffaaaa"
+      },
+      "a.text-gray-dark": {
+        "color": "#aaaaaa"
+      },
+      "a.title-link": {
+        "color": "#aaaaaa"
+      },
+      "a.underline-nav-item": {
+        "color": "#aaaaaa"
+      },
+      "a.user-mention": {
+        "color": "#4477aa"
+      },
+      "a.wiki-page-link": {
+        "color": "#4477aa"
+      },
+      "article.markdown-body pre": {
+        "background-color": "#dddddd"
+      },
+      "article.markdown-body.entry-content": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "body.api": {
+        "background-color": "#000000"
+      },
+      "body.logged-in": {
+        "background-color": "#000000"
+      },
+      "body.logged-in.env-production.macintosh": {
+        "background-color": "#000000"
+      },
+      "body.logged-in.env-production.macintosh.vis-private": {
+        "background-color": "#000000"
+      },
+      "body.logged-in.env-production.windows": {
+        "background-color": "#000000"
+      },
+      "body.logged-out": {
+        "background-color": "#000000"
+      },
+      "body.logged-out.env-production.linux.page-two-factor-auth.session-authentication.page-responsive.min-width-0": {
+        "background-color": "#000000"
+      },
+      "body.logged-out.env-production.page-two-factor-auth.session-authentication.page-responsive.min-width-0.chrome-mouse": {
+        "background-color": "#000000"
+      },
+      "button.btn-link": {
+        "color": "#aaaaaa"
+      },
+      "button.btn-link.tabnav-tab.write-tab.js-write-tab.selected": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "button.review-thread-reply-button.width-full.text-gray.text-left.form-control.js-toggle-inline-comment-form": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "code": {
+        "background-color": "#dddddd",
+        "color": "#666666"
+      },
+      "div p": {
+        "color": "#aaaaaa"
+      },
+      "div.Box-header.Box-header--blue": {
+        "background-color": "#000000"
+      },
+      "div.Box-row": {
+        "background-color": "#000000"
+      },
+      "div.CodeMirror": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.CodeMirror-gutters": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      "div.CodeMirror-lines": {
+        "background-color": "#666666"
+      },
+      "div.Subhead-heading": {
+        "color": "#aaaaaa"
+      },
+      "div.access-form-wrapper": {
+        "background-color": "#222222"
+      },
+      "div.article-body h4": {
+        "color": "#aaaaaa"
+      },
+      "div.auth-form-body.mt-3": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.blankslate.blankslate-large": {
+        "background-color": "#000000"
+      },
+      "div.blankslate.blankslate-large p": {
+        "color": "#aaaaaa"
+      },
+      "div.blankslate.blankslate-spacious.blankslate-large": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.boxed-group p": {
+        "color": "#aaaaaa"
+      },
+      "div.boxed-group-inner": {
+        "background-color": "#222222"
+      },
+      "div.boxed-group.flush.js-notifications-browser h3": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.branch-action-item": {
+        "background-color": "#000000"
+      },
+      "div.branch-action.branch-action-state-dirty": {
+        "background-color": "#000000"
+      },
+      "div.clone-options": {
+        "color": "#aaaaaa"
+      },
+      "div.closed-banner": {
+        "display": "none"
+      },
+      "div.comment-body.markdown-body": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.comment-form-head.tabnav": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.commit": {
+        "background-color": "#000000"
+      },
+      "div.commit-meta": {},
+      "div.commit-tease": {
+        "background-color": "#333333"
+      },
+      "div.commit-tease-contributors": {
+        "background-color": "#333333"
+      },
+      "div.commit-tease.js-details-container": {
+        "background-color": "#333333"
+      },
+      "div.contact-github p": {
+        "color": "#aaaaaa"
+      },
+      "div.content p": {
+        "color": "#aaaaaa"
+      },
+      "div.content ul li": {
+        "color": "#aaaaaa"
+      },
+      "div.content.col-md-8 pre": {
+        "background-color": "#dddddd"
+      },
+      "div.copyable-terminal": {
+        "background-color": "#dddddd"
+      },
+      "div.diffbar": {
+        "background-color": "#000000"
+      },
+      "div.discussion-timeline-actions": {
+        "background-color": "#000000",
+        "border-style": "none"
+      },
+      "div.discussion-topic-header": {
+        "background-color": "#000000"
+      },
+      "div.facebox-content": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.featurette": {
+        "background-color": "#000000"
+      },
+      "div.file-header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.filter-bar": {
+        "background-color": "#222222"
+      },
+      "div.form-actions": {
+        "background-color": "#000000"
+      },
+      "div.form-checkbox label": {
+        "color": "#aaaaaa"
+      },
+      "div.get-repo-modal": {
+        "background-color": "#000000"
+      },
+      "div.gist-welcome.gist-banner.text-center": {
+        "background-image": "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0))"
+      },
+      "div.header-search-scope": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.header.gist-header.header-logged-in": {
+        "background-color": "#000000"
+      },
+      "div.header.header-logged-in.true": {
+        "background-color": "#000000"
+      },
+      "div.header.header-logged-out.width-full.pt-5.pb-4": {
+        "background-color": "#000000"
+      },
+      "div.inline-comment-form": {
+        "background-color": "#000000"
+      },
+      "div.js-comment-body pre": {
+        "background-color": "#dddddd"
+      },
+      "div.js-suggester-container.js-previewable-comment-form.previewable-comment-form.write-selected": {
+        "background-color": "#000000"
+      },
+      "div.jumbotron": {
+        "background-color": "#000000"
+      },
+      "div.markdown-body": {
+        "color": "#aaaaaa"
+      },
+      "div.markdown-body pre": {
+        "background-color": "#dddddd"
+      },
+      "div.merge-message": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.merge-status-item": {
+        "background-color": "#000000"
+      },
+      "div.message.markdown-body blockquote p": {
+        "color": "#888888"
+      },
+      "div.outline-box": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.pagehead.orghead": {
+        "background-color": "#000000"
+      },
+      "div.pagehead.repohead.instapaper_ignore.readability-menu.experiment-repo-nav": {
+        "background-color": "#000000",
+        "border-style": "none"
+      },
+      "div.pr-toolbar": {
+        "background-color": "#000000"
+      },
+      "div.profile-timeline-card": {
+        "background-color": "#000000"
+      },
+      "div.profile-timeline-year-list.bg-white.col-2.float-right.pl-5.js-profile-timeline-year-list.js-sticky": {
+        "background-color": "#000000"
+      },
+      "div.protip": {
+        "color": "#aaaaaa"
+      },
+      "div.pull-request-review-menu.dropdown-menu.dropdown-menu-sw.p-0 form": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.readme.boxed-group.clearfix.announce.instapaper_body.md h3": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.review-comment.js-comment.js-task-list-container.commit-comment.current-user.previewable-edit.js-reorderable-task-lists.reorderable-task-lists": {
+        "background-color": "#000000"
+      },
+      "div.review-summary-form-wrapper form": {
+        "background-color": "#000000"
+      },
+      "div.review-thread-reply": {
+        "background-color": "#000000"
+      },
+      "div.rounded-1.text-gray.bg-gray-light.py-4.px-4.px-md-3.px-lg-4": {
+        "background-color": "#000000"
+      },
+      "div.settings-next p": {
+        "color": "#aaaaaa"
+      },
+      "div.thread-subscription-status.js-thread-subscription-status.js-socket-channel.js-updatable-content": {
+        "background-color": "#000000"
+      },
+      "div.timeline-comment-header": {
+        "background-color": "#333333"
+      },
+      "div.timeline-comment-header-text": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.timeline-comment-wrapper.js-comment-container": {
+        "border-style": "none"
+      },
+      "div.title": {
+        "color": "#aaaaaa"
+      },
+      "div.toc-diff-stats": {
+        "color": "#aaaaaa"
+      },
+      "div.token-scope": {
+        "color": "#aaaaaa"
+      },
+      "div.two-factor-help.clearfix": {
+        "color": "#aaaaaa"
+      },
+      "div.user-profile-nav": {
+        "background-color": "#000000"
+      },
+      "div.user-profile-sticky-bar": {
+        "background-color": "#000000"
+      },
+      "div.user-profile-sticky-bar::after": {
+        "background-color": "#000000"
+      },
+      "dl.form-group dt label": {
+        "color": "#aaaaaa"
+      },
+      "h1": {
+        "color": "#aaaaaa"
+      },
+      "h2": {
+        "color": "#aaaaaa"
+      },
+      "h3": {
+        "color": "#aaaaaa"
+      },
+      "h3.discussion-sidebar-heading": {
+        "background-color": "#000000"
+      },
+      "h4": {
+        "color": "#aaaaaa"
+      },
+      "header.orghead": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "html": {
+        "background-color": "#000000\n"
+      },
+      "input.form-control": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "input.form-control.header-search-input.js-site-search-focus.js-site-search-field.is-clearable": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "label.d-block": {
+        "color": "#aaaaaa"
+      },
+      "label.form-control.header-search-wrapper.js-chromeless-input-container": {
+        "background-color": "#000000"
+      },
+      "label.wide": {
+        "color": "#aaaaaa"
+      },
+      "li ul li": {
+        "color": "#aaaaaa"
+      },
+      "li.list-group-item": {
+        "background-color": "#000000"
+      },
+      "li.navigation-focus": {
+        "background-color": "#333333"
+      },
+      "li.vcard-detail": {
+        "color": "#aaaaaa"
+      },
+      "p.commit-title": {
+        "color": "#aaaaaa"
+      },
+      "p.drag-and-drop": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p.merge-pr-more-commits": {
+        "color": "#aaaaaa"
+      },
+      "p.reason.text-small.text-gray": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p.text-center": {
+        "color": "#aaaaaa"
+      },
+      "pre.highlight": {
+        "background-color": "#dddddd"
+      },
+      "span.blob-code-inner": {
+        "color": "#dddddd"
+      },
+      "span.commit-author-section": {
+        "color": "#aaaaaa"
+      },
+      "span.d-table-cell": {
+        "color": "#aaaaaa"
+      },
+      "span.js-issue-title": {
+        "color": "#aaaaaa"
+      },
+      "span.num.text-emphasized": {
+        "color": "#aaaaaa"
+      },
+      "span.pl-pds": {
+        "color": "#4477aa"
+      },
+      "span.pl-s": {
+        "color": "#4477aa"
+      },
+      "span.pl-s1": {
+        "color": "#aaaaaa"
+      },
+      "span.pl-smi": {
+        "color": "#1f731e"
+      },
+      "span.renamed-is": {
+        "color": "#aaaaaa"
+      },
+      "span.renamed-was": {
+        "color": "#aaaaaa"
+      },
+      "span.select-menu-item-text": {
+        "color": "#aaaaaa"
+      },
+      "span.sha.user-select-contain": {
+        "color": "#bb5555"
+      },
+      "span.token-description strong": {
+        "color": "#aaaaaa"
+      },
+      "strong.text-emphasized": {
+        "color": "#aaaaaa"
+      },
+      "svg.octicon.octicon-git-commit": {
+        "background-color": "#333333"
+      },
+      "td": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "td.blob-code": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "td.blob-num.blob-num-addition.js-linkable-line-number": {
+        "background-color": "#000000",
+        "color": "#55bb55"
+      },
+      "td.blob-num.blob-num-context.js-linkable-line-number": {
+        "background-color": "#000000",
+        "color": "#dddddd"
+      },
+      "td.blob-num.blob-num-deletion.js-linkable-line-number": {
+        "background-color": "#000000",
+        "color": "#bb5555"
+      },
+      "td.blob-num.blob-num-empty.empty-cell": {
+        "background-color": "#000000"
+      },
+      "td.code-review.blob-code": {
+        "background-color": "#000000",
+        "color": "#dddddd"
+      },
+      "td.code-review.blob-code.blob-code-addition": {
+        "background-color": "#003000"
+      },
+      "td.code-review.blob-code.blob-code-deletion": {
+        "background-color": "#400000"
+      },
+      "td.empty-cell.js-deletion": {
+        "background-color": "#000000"
+      },
+      "textarea.form-control.input-contrast.comment-form-textarea.js-comment-field.js-improved-comment-field.js-task-list-field.js-quick-submit.js-size-to-fit.js-suggester-field.js-quote-selection-target.js-session-resumable": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "textarea.form-control.input-contrast.comment-form-textarea.js-comment-field.js-improved-comment-field.js-task-list-field.js-quick-submit.js-suggester-field.js-quote-selection-target.js-session-resumable": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "ul li": {
+        "color": "#aaaaaa"
+      },
+      "ul.numbers-summary li a": {
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "hire.lever.co": {
+    "_enabled": true,
+    "_rules": {
+      "#page": {
+        "background": "#000000"
+      },
+      "a.active": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "div.feedback-nav": {
+        "background": "#000000"
+      },
+      "div.interview-header": {
+        "background": "#000000"
+      },
+      "div.interview-row": {
+        "background": "#000000"
+      },
+      "div.interviews-inner h2 b": {
+        "color": "#aaaaaa"
+      },
+      "div.interviews-top-area": {
+        "background": "#000000"
+      },
+      "div.main": {
+        "background": "#000000"
+      },
+      "div.modal.modal-slide-down.doc": {
+        "background-color": "#666666"
+      },
+      "div.profile-flyover-link": {
+        "background": "#000000"
+      },
+      "div.profiles-summary": {
+        "background": "#000000"
+      },
+      "div.text": {
+        "color": "#aaaaaa"
+      },
+      "h1.form b": {
+        "color": "#aaaaaa"
+      },
+      "h3": {
+        "color": "#aaaaaa"
+      },
+      "h5": {
+        "color": "#aaaaaa"
+      },
+      "input.card-field-input.classic-input": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "p.position-summary.vert-space-2": {
+        "color": "#aaaaaa"
+      },
+      "span.application-answer-alternative": {
+        "color": "#aaaaaa"
+      },
+      "textarea": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "ul.feedback-nav": {
+        "background": "#000000"
+      }
+    }
+  },
+  "jenkins*.sandbox.blendlabs.com": {
+    "_enabled": true,
+    "_rules": {
+      "#breadcrumbs": {
+        "background-color": "#000000"
+      },
+      "#main-panel div": {
+        "background-color": "#000000"
+      },
+      "a": {
+        "color": "#4477aa"
+      },
+      "a.model-link.inside.breadcrumbBarAnchor": {
+        "color": "#aaaaaa"
+      },
+      "a.task-link": {
+        "color": "#4477aa"
+      },
+      "div.add-item-name label": {
+        "color": "#aaaaaa"
+      },
+      "div.clear": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.col-xs-24.pane-header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.desc": {
+        "color": "#aaaaaa"
+      },
+      "footer": {
+        "background": "#000000"
+      },
+      "form.jenkins-config": {
+        "background-color": "#000000"
+      },
+      "html": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p": {
+        "color": "#aaaaaa"
+      },
+      "pre b span": {
+        "color": "#aaaaaa"
+      },
+      "span.cm-atom": {
+        "color": "#aaaaaa"
+      },
+      "span.cm-attribute": {
+        "color": "#aaaaaa"
+      },
+      "span.cm-operator": {
+        "color": "#aaaaaa"
+      },
+      "span.label": {
+        "color": "#aaaaaa"
+      },
+      "span.page_generated": {
+        "color": "#aaaaaa"
+      },
+      "td": {
+        "color": "#aaaaaa"
+      },
+      "td form label": {
+        "color": "#aaaaaa"
+      },
+      "td.build-row-cell": {
+        "background-color": "#000000"
+      },
+      "td.pane-header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "tr": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "lodash.com": {
+    "_enabled": true,
+    "_rules": {
+      "body.layout-default": {
+        "background-color": "#000000"
+      },
+      "body.layout-default header": {
+        "background-color": "#000000"
+      },
+      "code": {
+        "color": "#aaaaaa"
+      },
+      "div div p": {
+        "color": "#aaaaaa"
+      },
+      "div ol li": {
+        "color": "#aaaaaa"
+      },
+      "div.container": {
+        "background-color": "#000000"
+      },
+      "div.doc-container": {
+        "background-color": "#222222"
+      },
+      "div.header-group h1": {
+        "color": "#aaaaaa"
+      },
+      "div.react-menu-container div h2": {
+        "color": "#aaaaaa"
+      },
+      "div.search input": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      "div.toc-container": {
+        "background-color": "#000000"
+      },
+      "h3": {
+        "background-color": "#666666"
+      },
+      "h4": {
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "mail.google.com": {
+    "_enabled": true,
+    "_rules": {
+      "#bm a": {
+        "color": "#4477aa"
+      },
+      "#loading": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.Ep": {
+        "color": "#bbbbbb\n"
+      },
+      "a.gb1": {
+        "color": "#4477aa"
+      },
+      "a.l9": {
+        "color": "#aaaaaa"
+      },
+      "div ul li": {
+        "color": "#aaaaaa"
+      },
+      "div.Am": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.Ar": {
+        "background-color": "#000000"
+      },
+      "div.G-atb": {
+        "background-color": "#000000"
+      },
+      "div.G3": {
+        "background-color": "#000\n"
+      },
+      "div.J-JK-Jz": {
+        "color": "#aaaaaa"
+      },
+      "div.J-LC-Jz": {
+        "color": "#aaaaaa"
+      },
+      "div.J-M": {
+        "background-color": "#000000"
+      },
+      "div.J-N-Jz": {
+        "color": "#aaaaaa"
+      },
+      "div.SK": {
+        "background-color": "#000000"
+      },
+      "div.ZZ": {
+        "background-color": "#000000"
+      },
+      "div.a3s": {
+        "color": "#aaaaaa"
+      },
+      "div.a3s div": {
+        "color": "#aaaaaa"
+      },
+      "div.aC3": {
+        "background-color": "#000000"
+      },
+      "div.aHz": {
+        "color": "#aaaaaa"
+      },
+      "div.aRo": {
+        "color": "#aaaaaa"
+      },
+      "div.aX5": {
+        "color": "#aaaaaa"
+      },
+      "div.aXt": {
+        "background-color": "#000000"
+      },
+      "div.ajB.gt": {},
+      "div.amG.J-M.jQjAxd": {
+        "background-color": "#000000"
+      },
+      "div.aoq": {
+        "background-color": "#000000"
+      },
+      "div.azX": {
+        "background-color": "#000000"
+      },
+      "div.bY": {
+        "color": "#aaaaaa"
+      },
+      "div.card-mask": {
+        "background-color": "#000000"
+      },
+      "div.card.signin-card.pre-shift.no-name": {
+        "background-color": "#000000"
+      },
+      "div.cj": {
+        "color": "#aaaaaa"
+      },
+      "div.gmail_default font": {
+        "color": "#aaaaaa"
+      },
+      "div.iA": {
+        "color": "#aaaaaa"
+      },
+      "div.l6": {
+        "color": "#aaaaaa"
+      },
+      "div.md": {
+        "color": "#aaaaaa"
+      },
+      "div.nH": {
+        "background-color": "#000000"
+      },
+      "div.one-google": {
+        "background-color": "#000000"
+      },
+      "h2": {
+        "color": "#aaaaaa"
+      },
+      "h3": {
+        "color": "#aaaaaa"
+      },
+      "html body": {
+        "background-color": "#000000"
+      },
+      "input": {
+        "color": "#aaaaaa"
+      },
+      "input.i": {
+        "background-color": "#444444",
+        "color": "#dddddd"
+      },
+      "label.aD": {
+        "color": "#aaaaaa"
+      },
+      "p span": {
+        "color": "#aaaaaa"
+      },
+      "p.MsoNormal": {
+        "color": "#aaaaaa"
+      },
+      "span.adx": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "span.aeD label": {
+        "color": "#aaaaaa"
+      },
+      "span.g2.ac2": {
+        "color": "#aaaaaa"
+      },
+      "span.g3": {
         "color": "#aaaaaa"
       },
       "span.gD": {
@@ -14,8 +2574,2320 @@
       "span.go": {
         "color": "#aaaaaa"
       },
+      "span.ts": {
+        "color": "#4477aa"
+      },
+      "table": {
+        "background-color": "#000000"
+      },
+      "table.cf.An": {
+        "background-color": "#000000"
+      },
+      "td": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
       "td.Bu": {
         "background-color": "#000000"
+      },
+      "textarea.i": {
+        "background-color": "#444444",
+        "color": "#dddddd"
+      },
+      "textarea.mi": {
+        "background-color": "#444444",
+        "color": "#dddddd"
+      },
+      "tr": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "tr td a": {
+        "color": "#4477aa"
+      }
+    }
+  },
+  "news.google.com": {
+    "_enabled": true,
+    "_rules": {
+      ".VOEIyf, .VOEIyf .jBmls, .oKubKe": {
+        "color": "#aaaaaa"
+      },
+      ".nCSYrb": {
+        "color": "#aaaaaa"
+      },
+      "a.BO3Tyc": {
+        "color": "#aaaaaa"
+      },
+      "a.MU4aFb": {
+        "color": "#aaaaaa"
+      },
+      "a.NiR9Yd.hzdq5d.ME7ew": {
+        "color": "#aaaaaa"
+      },
+      "a.j7rZgf": {},
+      "a.j7rZgf.ME7ew": {
+        "color": "#aaaaaa"
+      },
+      "a.nuEeue": {
+        "color": "#aaaaaa"
+      },
+      "a.persistentblue": {
+        "color": "#aaaaaa"
+      },
+      "button.gb_1e": {
+        "background-color": "#333333"
+      },
+      "c-wiz.fWwQIb.ChVoCd.rOrCPc.AfWyGd": {
+        "background-color": "#000000"
+      },
+      "c-wiz.lPV2Xe.k3Pzib": {
+        "background-color": "#000000"
+      },
+      "content.vRMGwf.oJeWuf": {
+        "color": "#aaaaaa"
+      },
+      "content.z80M1.JQZRxb.WcbxEb": {
+        "background-color": "#333333"
+      },
+      "div.JyxFge": {
+        "background-color": "#000000"
+      },
+      "div.Q3vG6d.kzAuJ": {
+        "color": "#aaaaaa"
+      },
+      "div.QqU5xd": {
+        "color": "#aaaaaa"
+      },
+      "div.Rlm9Ze": {
+        "color": "#aaaaaa"
+      },
+      "div.VjFXz": {
+        "background-color": "#000000"
+      },
+      "div.XTTHS": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.basic-title": {
+        "background-color": "#222222"
+      },
+      "div.content-pane": {
+        "background-color": "#000000"
+      },
+      "div.e6jznb": {
+        "color": "#aaaaaa"
+      },
+      "div.esc-inner": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.fQVVSc": {
+        "color": "#aaaaaa"
+      },
+      "div.fWwQIb.ChVoCd.rOrCPc.AfWyGd": {
+        "background-color": "#000000"
+      },
+      "div.footer": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.gb_Bd.gb_7d": {
+        "background-color": "#000000"
+      },
+      "div.gb_Bd.gb_8d.gb_Id": {
+        "background-color": "#000000"
+      },
+      "div.gb_Cd.gb_9d.gb_Jd": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.gb_R.gb_se": {
+        "background-color": "#000000"
+      },
+      "div.gb_Rb.gb_R.gb_Vb": {
+        "background-color": "#000000"
+      },
+      "div.gb_ec svg path": {
+        "color": "#aaaaaa"
+      },
+      "div.gb_fc svg": {
+        "color": "#aaaaaa"
+      },
+      "div.gb_ib.gb_wf.gb_R.gb_vf.gb_T": {
+        "background-color": "#000000"
+      },
+      "div.gb_mc": {
+        "background-color": "#000000"
+      },
+      "div.gb_ye": {
+        "background-color": "#000000"
+      },
+      "div.gbqfqw": {
+        "background-color": "#444444"
+      },
+      "div.hxsxHf": {
+        "color": "#aaaaaa"
+      },
+      "div.kd-appbar": {
+        "background-color": "#000000"
+      },
+      "div.lD1fib.eGN7Re": {
+        "background-color": "#000000"
+      },
+      "div.main-wrapper": {
+        "background-color": "#000000"
+      },
+      "div.nav": {
+        "background-color": "#000000"
+      },
+      "div.shVjEd": {
+        "color": "#aaaaaa"
+      },
+      "div.u3WVdc.jBmls": {
+        "background-color": "#333333"
+      },
+      "div.wStogf": {
+        "color": "#aaaaaa"
+      },
+      "form.gb_He": {
+        "background-color": "#333333"
+      },
+      "form.gb_Je": {
+        "background-color": "#333333"
+      },
+      "html": {
+        "background-color": "#000000"
+      },
+      "input.Ax4B8.ZAGvjd": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "input.gbqfif": {
+        "color": "#aaaaaa"
+      },
+      "p.RLaW1": {
+        "color": "#aaaaaa"
+      },
+      "span.DPvwYc.sYvQuc.ME7ew": {
+        "color": "#aaaaaa"
+      },
+      "span.EhCuYd": {
+        "color": "#aaaaaa"
+      },
+      "span.FOvasf": {
+        "color": "#aaaaaa"
+      },
+      "span.JoEvud.hzdq5d.ME7ew": {
+        "color": "#aaaaaa"
+      },
+      "span.KNJonb": {
+        "color": "#aaaaaa"
+      },
+      "span.RveJvd.snByac": {
+        "color": "#aaaaaa"
+      },
+      "span.Xyuyg": {
+        "color": "#aaaaaa"
+      },
+      "span.adH5zf": {
+        "color": "#aaaaaa"
+      },
+      "span.cc5fC": {
+        "color": "#aaaaaa"
+      },
+      "span.gb_ge.gb_ce": {
+        "color": "#aaaaaa"
+      },
+      "span.gb_he.gb_de": {
+        "color": "#aaaaaa"
+      },
+      "span.section-name": {
+        "color": "#aaaaaa"
+      },
+      "span.shVjEd": {
+        "color": "#aaaaaa"
+      },
+      "span.title": {
+        "color": "#aaaaaa"
+      },
+      "td.tab.s_SPORTS_TD": {
+        "color": "#aaaaaa"
+      },
+      "tr": {
+        "background-color": "#000000\n",
+        "color": "#aaaaaa"
+      },
+      "tr td a": {
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "piazza.com": {
+    "_enabled": true,
+    "_rules": {
+      "#special_mentions": {
+        "background-color": "#000000",
+        "text-shadow": "0 0px 0 black"
+      },
+      ".page_feed": {
+        "background": "#000000"
+      },
+      ".page_feed .feed_item.unanswered": {
+        "text-shadow": "0 0px 0 #000000"
+      },
+      ".page_feed .page_feed_bucket_header": {
+        "background": "#000000"
+      },
+      ".page_feed .page_feed_tool_bar": {
+        "background-image": "none",
+        "color": "#aaaaaa"
+      },
+      ".post_region_text": {
+        "color": "#aaaaaa"
+      },
+      ".top_bar .navbar-inner": {
+        "background": "#000000"
+      },
+      "a.tag.folder": {
+        "color": "#aaaaaa"
+      },
+      "body": {
+        "background-color": "#000000"
+      },
+      "div.clarifying_discussion.clearFix": {
+        "background-color": "#000000"
+      },
+      "div.dashboard_toolbar": {
+        "background-color": "#000000",
+        "background-image": "none"
+      },
+      "div.dashboard_toolbar.special_mentions_wrapper": {
+        "background-color": "#000000"
+      },
+      "div.discussion_replies.existing_reply.clearFix": {
+        "background-color": "#000000"
+      },
+      "div.post_region_actions": {
+        "background-color": "#000000"
+      },
+      "div.post_region_content": {
+        "background-color": "#000000"
+      },
+      "div.post_region_header": {
+        "background-color": "#000000"
+      },
+      "div.post_subtitle": {
+        "color": "#aaaaaa"
+      },
+      "div.post_title": {
+        "color": "#aaaaaa"
+      },
+      "div.question_history_slider_label": {
+        "color": "#aaaaaa",
+        "text-shadow": "0 0px 0 #000000"
+      },
+      "div.scrollable": {
+        "background-color": "#000000"
+      },
+      "div.snippet": {
+        "color": "#aaaaaa",
+        "text-decoration": "none",
+        "text-transform": "none"
+      },
+      "div.start_open.page_feed_bucket_header span": {
+        "color": "#aaaaaa",
+        "text-shadow": "0 0px 0 #000000"
+      },
+      "h1": {
+        "color": "#aaaaaa"
+      },
+      "li.feed_item.clearfix.has_sr": {
+        "background-color": "#000000"
+      },
+      "li.feed_item.clearfix.note": {
+        "background-color": "#000000"
+      },
+      "li.feed_item.clearfix.unanswered.private": {
+        "background-color": "#000000"
+      },
+      "span.title_text": {
+        "color": "#aaaaaa"
+      },
+      "span.user_name": {
+        "color": "#aaaaaa"
+      },
+      "ul.clearFix": {
+        "background-color": "#000000"
+      }
+    }
+  },
+  "slack.com": {
+    "_enabled": true,
+    "_rules": {
+      "#autocomplete_menu": {
+        "background-color": "#000000"
+      },
+      "#autocomplete_menu .boxed": {
+        "background-color": "#000000",
+        "color": "#000000"
+      },
+      "#channel_header_info": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#channel_title": {
+        "color": "#aaaaaa"
+      },
+      "#client-ui": {
+        "background-color": "#000000"
+      },
+      "#client_body::before": {
+        "background": "#000000 \n"
+      },
+      "#col_flex": {
+        "background-color": "#000000"
+      },
+      "#details_tab_header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#filter_files": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#filter_messages": {
+        "background-color": "#000000",
+        "color": "#AAAAAA"
+      },
+      "#footer": {
+        "background": "#000000"
+      },
+      "#footer_archives_preview": {
+        "background-color": "#333333"
+      },
+      "#fs_modal_footer": {
+        "background-color": "#000000"
+      },
+      "#fs_modal_header": {
+        "background-color": "#222222"
+      },
+      "#loading_welcome": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#menu_items_scroller": {
+        "background": "#333333"
+      },
+      "#messages_container::after": {
+        "background": "rgba(0,0,0,0)"
+      },
+      "#messages_container::before": {
+        "background": "rgba(0,0,0,0)"
+      },
+      "#msgs_overlay_div": {
+        "background-color": "#000000"
+      },
+      "#page": {
+        "background-color": "#000000"
+      },
+      "#team_menu": {
+        "background-color": "#000000"
+      },
+      "#threads_msgs_scroller_div": {
+        "background": "#000000\n"
+      },
+      ".channel_overlay": {
+        "color": "#aaaaaa"
+      },
+      ".p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before": {
+        "box-shadow": "0 32px #000"
+      },
+      "a.c-message__sender_link": {
+        "color": "#aaaaaa"
+      },
+      "a.channel_link": {
+        "color": "#aaaaaa"
+      },
+      "a.creator_link": {
+        "color": "#aaaaaa"
+      },
+      "a.file_upload_btn": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.flex_one": {
+        "color": "#aaaaaa"
+      },
+      "a.inline_block": {
+        "color": "#aaaaaa"
+      },
+      "a.internal_member_link": {
+        "color": "#4477aa"
+      },
+      "a.member": {
+        "color": "#aaaaaa"
+      },
+      "a.member_name": {
+        "color": "#aaaaaa"
+      },
+      "a.member_preview_link": {
+        "color": "#aaaaaa"
+      },
+      "a.message_sender.member.member_preview_link": {
+        "color": "#aaaaaa"
+      },
+      "a.ts_icon": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "b.mention": {
+        "background-color": "#777777",
+        "color": "#ffd296"
+      },
+      "body.widescreen footer": {
+        "background-color": "#000000"
+      },
+      "button.btn_unstyle.file_upload_btn": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "button.channel_header_icon": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "button.channel_header_icon.btn_unstyle.blue_hover.channel_details_toggle.ts_tip.ts_tip_bottom.active": {
+        "background-color": "#000000"
+      },
+      "button.result_item_btn.btn_unstyle strong": {
+        "color": "#aaaaaa"
+      },
+      "code.special_formatting": {
+        "background-color": "#aaaaaa"
+      },
+      "div.attachment_group": {
+        "background": "#333333"
+      },
+      "div.c-archive_footer__title": {
+        "color": "#aaaaaa"
+      },
+      "div.c-member__display-name.c-member__display-name--large": {
+        "color": "#aaaaaa"
+      },
+      "div.c-message.c-message--light": {
+        "background-color": "#000000"
+      },
+      "div.c-message_attachment__field_title span": {
+        "color": "#aaaaaa"
+      },
+      "div.c-message_attachment__field_value span": {
+        "color": "#aaaaaa"
+      },
+      "div.c-scrollbar__hider": {
+        "background-color": "#000000"
+      },
+      "div.c-scrollbar__hider:before": {
+        "background-color": "#000000"
+      },
+      "div.card.align_center.span_4_of_6.col.float_none.margin_auto.large_bottom_margin.right_padding.large_bottom_padding": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.channel_actions_container": {
+        "background-color": "#000000"
+      },
+      "div.channel_header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.channel_options_header": {
+        "color": "#aaaaaa"
+      },
+      "div.channel_page_member_row": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.channel_page_notif_prefs": {
+        "background-color": "#000000"
+      },
+      "div.channel_page_section": {
+        "background-color": "#000000"
+      },
+      "div.channel_page_section.expanded": {
+        "background-color": "#000000"
+      },
+      "div.channel_purpose_text": {
+        "color": "#aaaaaa"
+      },
+      "div.comment_body": {
+        "color": "#aaaaaa"
+      },
+      "div.contents_container": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.day_divider": {
+        "background-color": "#000000"
+      },
+      "div.day_divider_label": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.day_msgs": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.flex_content_scroller": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.footer_msg_input": {
+        "background": "#000000"
+      },
+      "div.heading": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.member_title.lato": {
+        "color": "#aaaaaa"
+      },
+      "div.messages_banner": {
+        "background-color": "#000000",
+        "color": "#aa0000"
+      },
+      "div.modal-footer": {
+        "background-color": "#333333"
+      },
+      "div.modal-header": {
+        "background-color": "#333333"
+      },
+      "div.modal-header.c-modal_header--default": {
+        "background-color": "#666666"
+      },
+      "div.modal-header.c-modal_header--default h3": {
+        "color": "#dddddd"
+      },
+      "div.modal.c-modal--default": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.modal.hide.fade.in": {
+        "background": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.monkey_scroll_bar": {
+        "width": "0"
+      },
+      "div.monkey_scroll_bar_native_scrollbar_shim": {
+        "width": "0"
+      },
+      "div.monkey_scroll_handle_inner": {
+        "width": "0"
+      },
+      "div.monkey_scroll_wrapper": {
+        "background-color": "#000000"
+      },
+      "div.ql-container": {
+        "background": "#000000"
+      },
+      "div.ql-editor": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.row-fluid": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.search_menu": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.search_message_result": {
+        "background-color": "#333333"
+      },
+      "div.search_message_result_text": {},
+      "div.search_result_with_extract": {
+        "background-color": "#333333"
+      },
+      "div.section_content": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.section_header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.section_header::before": {
+        "background-color": "#000000\n"
+      },
+      "div.show_which_channel_is_active": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.subheading p": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.tab_complete_ui_header": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.tab_complete_ui_scroller": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.tab_panels": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.tiny_top_margin.pinned_message_text.hide_scroll": {
+        "color": "#aaaaaa"
+      },
+      "div.title": {
+        "color": "#aaaaaa"
+      },
+      "div.wide": {
+        "background-color": "#000000"
+      },
+      "h1.channel_modal_header.no_bottom_margin": {
+        "color": "#aaaaaa"
+      },
+      "h2": {
+        "color": "#aaaaaa"
+      },
+      "h3": {
+        "color": "#aaaaaa"
+      },
+      "h4": {
+        "color": "#aaaaaa"
+      },
+      "header.headroom": {
+        "background-color": "#000000"
+      },
+      "header.query_header": {
+        "background-color": "#000000"
+      },
+      "input.no_bottom_margin": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "label.inline_block": {
+        "color": "#aaaaaa"
+      },
+      "li.mpdm_member": {
+        "color": "#aaaaaa"
+      },
+      "li.no_bottom_padding.no_wrap label": {
+        "color": "#aaaaaa"
+      },
+      "li.no_top_padding.no_wrap label": {
+        "color": "#aaaaaa"
+      },
+      "nav.top.persistent": {
+        "background-color": "#000000"
+      },
+      "p.alert.alert_info": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p.dm_explanation.margin_auto.align_left.clear_both": {
+        "color": "#aaaaaa"
+      },
+      "pre.special_formatting": {
+        "background-color": "#333333",
+        "border-color": "#ffffff",
+        "color": "#aaaaaa"
+      },
+      "section.tab_pane.selected": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "span.away": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "span.bot_label": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "span.boxed.float_right.mini.boxed_enter.no_wrap": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "span.c-member__display-name": {
+        "color": "#aaaaaa"
+      },
+      "span.c-message__body": {
+        "color": "#aaaaaa"
+      },
+      "span.c-message__bot_label": {
+        "background-color": "#000000"
+      },
+      "span.c-message_attachment__pretext span": {
+        "color": "#aaaaaa"
+      },
+      "span.c-message_attachment__text span": {
+        "color": "#aaaaaa"
+      },
+      "span.channel_name": {
+        "color": "#aaaaaa"
+      },
+      "span.divider_label": {
+        "background-color": "#000000",
+        "color": "#aa0000"
+      },
+      "span.emoji-outer.emoji-sizer.emoji-only": {
+        "font-size": "128px"
+      },
+      "span.emoji.emoji-sizer.emoji-only": {
+        "font-size": "128px"
+      },
+      "span.header_label.menu_mini": {
+        "background": "#333333"
+      },
+      "span.history_query": {
+        "color": "#aaaaaa\n"
+      },
+      "span.member_real_name": {
+        "color": "#aaaaaa"
+      },
+      "span.message_sender a": {
+        "color": "#aaaaaa"
+      },
+      "span.no_jumbomoji": {
+        "background-color": "#000000"
+      },
+      "span.overflow_ellipsis": {
+        "color": "#dddddd"
+      },
+      "span.section_title": {
+        "color": "#aaaaaa"
+      },
+      "span.timezone_label": {
+        "color": "#aaaaaa"
+      },
+      "strong.overflow_ellipsis.search_query_preview": {
+        "color": "#aaaaaa\n"
+      },
+      "textarea": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "tr td a": {
+        "color": "#aaaaaa"
+      },
+      "ts-jumper.active ts-jumper-container": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "ts-jumper.active ts-jumper-container input": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "ts-message.message.feature_fix_files": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "ts-thread": {
+        "background": "#000000\n"
+      },
+      "ul li a": {
+        "color": "#aaaaaa"
+      },
+      "ul li strong": {
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "stackoverflow.com": {
+    "_enabled": true,
+    "_rules": {
+      "#h-linked": {
+        "color": "#aaaaaa"
+      },
+      "a.question-hyperlink": {
+        "color": "#aaaaaa"
+      },
+      "code": {
+        "background-color": "#dddddd"
+      },
+      "div.alternate": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.container": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.post-text pre": {
+        "background-color": "#dddddd"
+      },
+      "div.snippet-hidden": {
+        "background-color": "#000000"
+      },
+      "h2": {
+        "color": "#aaaaaa"
+      },
+      "pre.default.prettyprint.prettyprinted": {
+        "background-color": "#dddddd"
+      },
+      "span.atn": {
+        "background-color": "#dddddd"
+      },
+      "span.atv": {
+        "background-color": "#dddddd"
+      },
+      "span.com": {
+        "background-color": "#dddddd\n"
+      },
+      "span.kwd": {
+        "background-color": "#dddddd"
+      },
+      "span.pln": {
+        "background-color": "#dddddd"
+      },
+      "span.pun": {
+        "background-color": "#dddddd"
+      },
+      "span.str": {
+        "background-color": "#dddddd"
+      },
+      "span.tag": {
+        "background-color": "#dddddd"
+      },
+      "span.typ": {
+        "background-color": "#dddddd"
+      }
+    }
+  },
+  "www.facebook.com": {
+    "_enabled": true,
+    "_rules": {
+      "#bottomContent": {
+        "background-color": "#000000"
+      },
+      "#contentArea": {
+        "background-color": "div."
+      },
+      "#headerArea": {
+        "background-color": "#000000"
+      },
+      "#mainContainer": {
+        "background-color": "#000000"
+      },
+      "._2aha": {
+        "background": "#333333",
+        "color": "#aaaaaa"
+      },
+      "._42ft": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "._5803": {
+        "color": "#aaaaaa"
+      },
+      "._580i": {
+        "color": "#aaaaaa"
+      },
+      "._5xhk": {
+        "color": "#aaaaaa"
+      },
+      "._fbEventsPermalink__mainColLayout": {
+        "background-color": "#000000"
+      },
+      "._fbReactionComponent__eventDetailsContentTags": {
+        "color": "#aaaaaa"
+      },
+      ".fbEventHeader": {
+        "background-color": "#000000"
+      },
+      ".topborder": {
+        "background-color": "#000000"
+      },
+      "a": {
+        "color": "#aaaaaa"
+      },
+      "a._1jf6": {
+        "background-color": "#000000"
+      },
+      "a._33e._1_0e": {
+        "background-color": "#000000"
+      },
+      "a._3t3": {
+        "background-color": "#000000"
+      },
+      "a._54nc._54nu": {
+        "background-color": "#000000"
+      },
+      "a._6i1": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.messagesContent": {
+        "background-color": "#000000"
+      },
+      "a.seeMore": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.uiButton": {
+        "background-color": "#333333"
+      },
+      "body": {
+        "background": "#000000"
+      },
+      "button._42ft._4jy0._4w98._4jy3._517h._51sy": {
+        "background-color": "#000000"
+      },
+      "div.UFIAddCommentInput": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.UFIList": {
+        "background-color": "#000000"
+      },
+      "div.UFIReplyList": {
+        "background-color": "#000000"
+      },
+      "div.UFIRow": {
+        "background-color": "#000000"
+      },
+      "div._10lo": {
+        "background-color": "#000000"
+      },
+      "div._16ve": {
+        "border-top": "0px"
+      },
+      "div._1dwg": {
+        "background-color": "#000000"
+      },
+      "div._1iup": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div._1jf6._2pi9._2pi3._9bn._50z3": {
+        "background-color": "#000000"
+      },
+      "div._1s48._2ph_": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div._1z7g span": {
+        "color": "#aaaaaa"
+      },
+      "div._2-gy": {
+        "background-color": "#000000"
+      },
+      "div._2-gz span": {
+        "color": "#aaaaaa"
+      },
+      "div._29bg": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div._2jyf": {
+        "color": "#aaaaaa"
+      },
+      "div._2kg4": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div._2t-a": {
+        "background-color": "#444444"
+      },
+      "div._30f": {
+        "background-color": "#000000"
+      },
+      "div._32w2 span": {
+        "color": "#aaaaaa"
+      },
+      "div._3cz": {
+        "background-color": "#000000"
+      },
+      "div._3ekx": {
+        "background-color": "#000000"
+      },
+      "div._3t09": {
+        "background-color": "#000000"
+      },
+      "div._3t53._4ar-._ipn": {
+        "background-color": "#000000"
+      },
+      "div._3ubp._sg2": {
+        "background-color": "#000000"
+      },
+      "div._3wvs": {
+        "background-color": "#000000"
+      },
+      "div._3zsi": {
+        "background-color": "#000000"
+      },
+      "div._4-i0": {
+        "background-color": "#000000"
+      },
+      "div._4-i2._50f4 div div": {
+        "background-color": "#000000"
+      },
+      "div._4-i2._pig._50f4": {
+        "background-color": "#000000"
+      },
+      "div._4-u2": {
+        "background-color": "#000000"
+      },
+      "div._4bl9": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div._4d6h": {
+        "background-color": "#000000"
+      },
+      "div._4ms4": {
+        "background-color": "#000000"
+      },
+      "div._50dz div": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div._50f3": {
+        "color": "#aaaaaa"
+      },
+      "div._51cp": {
+        "color": "#aaaaaa"
+      },
+      "div._53ij": {
+        "background-color": "#000000"
+      },
+      "div._55nm": {
+        "background-color": "#000000"
+      },
+      "div._577b": {
+        "color": "#aaaaaa"
+      },
+      "div._585-": {
+        "background-color": "#000000"
+      },
+      "div._5bov": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div._5gmv": {
+        "background": "#000000"
+      },
+      "div._5lc6": {
+        "background-color": "#000000"
+      },
+      "div._5lnf.uiOverlayFooter._5a8u": {
+        "background-color": "#000000"
+      },
+      "div._5lnf.uiOverlayFooter._5a8u._29bm": {
+        "background-color": "#000000"
+      },
+      "div._5n2b": {
+        "background-color": "#000000"
+      },
+      "div._5pbx.userContent div p": {
+        "color": "#aaaaaa"
+      },
+      "div._5pbx.userContent p": {
+        "color": "#aaaaaa"
+      },
+      "div._5va3": {
+        "background-color": "#000000"
+      },
+      "div._5vb_": {
+        "background-color": "#000000"
+      },
+      "div._8u": {},
+      "div._c24._50f4": {
+        "color": "#aaaaaa"
+      },
+      "div._fmi._613v.UFIInputContainer": {
+        "background-color": "#000000"
+      },
+      "div._li": {
+        "background-color": "#000000"
+      },
+      "div._mfs": {
+        "color": "#aaaaaa"
+      },
+      "div._mft": {
+        "color": "#aaaaaa"
+      },
+      "div._tqc": {
+        "background-color": "#000000"
+      },
+      "div.author.fixemoji span": {
+        "color": "#aaaaaa"
+      },
+      "div.back": {
+        "background-color": "#000000"
+      },
+      "div.clearfix": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.clearfix._42ef": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.fbChatSidebar": {
+        "width": "0px"
+      },
+      "div.fbRemindersStory": {
+        "background-color": "#000000"
+      },
+      "div.fsm.fwn.fcg": {
+        "background-color": "#000000"
+      },
+      "div.fsm.fwn.fcg.UFICommentActions": {
+        "background-color": "#000000"
+      },
+      "div.loggedout_menubar_container": {
+        "background-color": "#000000"
+      },
+      "div.mbm.fwb": {
+        "color": "#aaaaaa"
+      },
+      "div.mbs": {
+        "color": "#aaaaaa"
+      },
+      "div.mtm._5pco p": {
+        "color": "#aaaaaa"
+      },
+      "div.pam.uiBoxWhite.noborder": {
+        "background-color": "#333333"
+      },
+      "div.uiHeader": {
+        "background-color": "#000000"
+      },
+      "div.uiScrollableAreaContent": {
+        "background-color": "#000000"
+      },
+      "div.userContentWrapper": {
+        "background-color": "#000000"
+      },
+      "form._s": {
+        "background-color": "#000000"
+      },
+      "h1._5gmx": {
+        "color": "#aaaaaa"
+      },
+      "h3": {
+        "color": "#aaaaaa"
+      },
+      "h3.uiHeaderTitle": {
+        "color": "#aaaaaa"
+      },
+      "html": {
+        "background-color": "#000000"
+      },
+      "input._1frb": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "label.uiInputLabelLabel": {
+        "color": "#aaaaaa"
+      },
+      "li.empty.listGray": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "li.objectListItem": {
+        "background-color": "#000000"
+      },
+      "span.UFICommentActorAndBody": {
+        "background-color": "#000000"
+      },
+      "span.UFICommentBody span": {
+        "color": "#aaaaaa"
+      },
+      "span._3-9y": {
+        "color": "#aaaaaa"
+      },
+      "span._3f-j._50f4": {
+        "color": "#aaaaaa"
+      },
+      "span._3xgd": {
+        "color": "#aaaaaa"
+      },
+      "span._4arz": {
+        "background-color": "#000000"
+      },
+      "span._5pws._50f8._50f4._50f7": {
+        "color": "#aaaaaa"
+      },
+      "span._5qtp": {
+        "color": "#aaaaaa"
+      },
+      "span._h24._h25": {
+        "color": "#aaaaaa"
+      },
+      "span._sg1": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "span.fragmentText": {
+        "color": "#aaaaaa"
+      },
+      "span.fsm": {
+        "color": "#aaaaaa"
+      },
+      "span.hasCaption": {
+        "color": "#aaaaaa"
+      },
+      "span.pas": {
+        "color": "#aaaaaa"
+      },
+      "span.uiButtonText": {
+        "color": "#aaaaaa"
+      },
+      "span.userContentSecondary._c24": {
+        "color": "#aaaaaa"
+      },
+      "ul.UFIList": {
+        "background-color": "#000000"
+      },
+      "ul._54j2": {
+        "background-color": "#000000"
+      },
+      "ul.uiList._4kg._704._4ks": {
+        "background-color": "#333333"
+      },
+      "ul.uiList._bz4._4kg": {
+        "background-color": "#000000"
+      }
+    }
+  },
+  "www.google": {
+    "_enabled": true,
+    "_rules": {
+      "#_eEe a": {
+        "color": "#000000"
+      },
+      "#cnt": {
+        "background-color": "#000000"
+      },
+      "#hdtb-msb": {
+        "background-color": "#000000"
+      },
+      "#hdtbSum": {
+        "background-color": "#000000"
+      },
+      "#rcnt": {
+        "background-color": "#000000"
+      },
+      "#resultStats": {
+        "color": "#abadad"
+      },
+      "#topabar": {
+        "background-color": "#000000"
+      },
+      "._cif ._eif": {
+        "background-color": "#686d6e"
+      },
+      "._dif._Ohf": {
+        "background-color": "#4a4c4d",
+        "color": "#000000"
+      },
+      "._eFb ._xdb .fl": {
+        "color": "#aaaaaa "
+      },
+      "._nif._Ohf": {
+        "background-color": "#686d6e"
+      },
+      "._srb.vk_c.vk_bk": {
+        "background-color": "#686d6e",
+        "border-radius": "5px"
+      },
+      ".ads-ad ._wEo a": {
+        "color": "#f27c3d"
+      },
+      ".ads-ad a": {
+        "color": "#000000"
+      },
+      ".ads-ad h3 a": {
+        "color": "#f27c3d"
+      },
+      "a._Dk": {
+        "color": "#aaaaaa"
+      },
+      "a._Eu._H2._rwl span": {
+        "color": "#93f0f0"
+      },
+      "a._Eu.irg-footer": {
+        "color": "#93f0f0"
+      },
+      "a._T6c": {
+        "color": "#e06421"
+      },
+      "a._sQb": {
+        "color": "#d4d4d4"
+      },
+      "a._vnd": {
+        "color": "#ffffff"
+      },
+      "a.fl": {
+        "color": "#aaaaaa"
+      },
+      "a.fl.q._KCd._tWc": {
+        "color": "#aaaaaa"
+      },
+      "a.hdtb-tl": {
+        "color": "#a8a8a8"
+      },
+      "a.pla-unit-title-link": {
+        "color": "#4477aa"
+      },
+      "a.q.qs": {
+        "color": "#a8a8a8"
+      },
+      "a.spell": {
+        "color": "#f75540"
+      },
+      "a.spell_orig": {
+        "color": "#f75540"
+      },
+      "a.vk_bk.lr-s-din": {
+        "color": "#aaaaaa"
+      },
+      "a:link": {
+        "color": "#4477aa"
+      },
+      "cite._Rm": {
+        "color": "#4477aa"
+      },
+      "cite._Rm.bc": {
+        "color": "#4477aa"
+      },
+      "div._AOf": {
+        "color": "#aaaaaa"
+      },
+      "div._B8k": {
+        "color": "#aaaaaa"
+      },
+      "div._Ck.kv cite": {
+        "color": "#3333aa"
+      },
+      "div._Icb._kk._wI a": {
+        "color": "#93f0f0"
+      },
+      "div._Jig span": {
+        "color": "#aaaaaa"
+      },
+      "div._NZg": {
+        "color": "#aaaaaa"
+      },
+      "div._Qqb._tX.ellip": {
+        "color": "#93f0f0"
+      },
+      "div._Qsh i": {
+        "color": "#aaaaaa"
+      },
+      "div._RBg": {
+        "color": "#aaaaaa"
+      },
+      "div._Tib s": {
+        "color": "#d6d6d6"
+      },
+      "div._Tib span": {
+        "color": "#f5684f"
+      },
+      "div._V9o": {
+        "color": "#aaaaaa"
+      },
+      "div._W5e._X5e": {
+        "color": "#aaaaaa"
+      },
+      "div._W5e._X5e a": {
+        "color": "#dedede"
+      },
+      "div._XWk": {
+        "color": "#aaaaaa"
+      },
+      "div._Zvd": {
+        "background-color": "#000000"
+      },
+      "div._kk._wI": {
+        "color": "#f8ffe3"
+      },
+      "div._pgd": {
+        "color": "#b8b8b8"
+      },
+      "div._pk": {
+        "color": "#aaaaaa"
+      },
+      "div._rhf": {
+        "color": "#aaaaaa"
+      },
+      "div._tN.mod :hover": {
+        "background-color": "#3b3b3b"
+      },
+      "div._zXc": {
+        "color": "#aaaaaa"
+      },
+      "div.add_trans_bar_border": {
+        "background-color": "#000000"
+      },
+      "div.big": {
+        "background-color": "#000000"
+      },
+      "div.c._oc.commercial-unit-desktop-top": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.content": {
+        "background-color": "#000000"
+      },
+      "div.ctr-p": {
+        "background-color": "#000000"
+      },
+      "div.ellip": {
+        "color": "#adadad"
+      },
+      "div.ellip.ads-creative": {
+        "color": "#abadad"
+      },
+      "div.ellip.ads-creative b": {
+        "color": "#aaaaaa"
+      },
+      "div.event": {
+        "color": "#aaaaaa"
+      },
+      "div.f.nwd": {
+        "color": "#d1d1d1"
+      },
+      "div.f.slp": {
+        "color": "#8d8f8f"
+      },
+      "div.fbar": {
+        "background-color": "#000000"
+      },
+      "div.fjfe-bodywrapper": {
+        "background-color": "#000000"
+      },
+      "div.fjfe-recentquotes-quotes": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.fl.ellip._NRl": {
+        "color": "#aaaaaa"
+      },
+      "div.g-unit.g-first.gf-control": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.g-unit.gf-control": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.gb_df.gb_bg": {
+        "background-color": "#000000"
+      },
+      "div.goog-inline-block": {
+        "background-color": "#000000"
+      },
+      "div.gstl_0": {
+        "background-color": "#000000"
+      },
+      "div.id-pf-add-trans-toggle-btn": {
+        "background-color": "#000000"
+      },
+      "div.kno-ecr-pt.kno-fb-ctx": {
+        "color": "#aaaaaa"
+      },
+      "div.kno-rdesc.r-iW8HxUYQIUCg span": {
+        "color": "#ebebeb"
+      },
+      "div.lr_c_stnl": {
+        "color": "#4477aa"
+      },
+      "div.lr_c_tf": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.lr_c_vn": {
+        "color": "#aaaaaa"
+      },
+      "div.lr_dct_sf_h i span": {
+        "color": "#aaaaaa"
+      },
+      "div.lsbb.kpbb": {
+        "background-color": "#000000"
+      },
+      "div.sbib_b": {
+        "background-color": "#000000"
+      },
+      "div.sbsb_a": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.sfbgg": {
+        "background-color": "#000000"
+      },
+      "div.snippet": {
+        "color": "#aaaaaa"
+      },
+      "div.st": {
+        "color": "#d4d4d4"
+      },
+      "div.std-ts": {
+        "color": "#4477aa"
+      },
+      "div.tb_h": {
+        "color": "#aaaaaa"
+      },
+      "div.vk_ans span": {
+        "color": "#aaaaaa"
+      },
+      "div.vk_c._cy.obcontainer.card-section": {
+        "background-color": "#000000"
+      },
+      "div.vk_c.vk_gy.vk_sh.card-section._MZc": {
+        "background-color": "#6f918f",
+        "border-radius": "5px"
+      },
+      "div.vk_c.vk_gy.vk_sh.card-section._MZc span": {
+        "color": "#191a1a"
+      },
+      "div.vk_gy.vk_sh": {
+        "color": "#191a1a"
+      },
+      "h3.med._wI": {
+        "color": "#aaaaaa"
+      },
+      "h3.med._wI._kk": {
+        "color": "#aaaaaa"
+      },
+      "h3.r a": {
+        "color": "#aaaaaa"
+      },
+      "h4": {
+        "background-color": "#000000",
+        "color": "#aaa"
+      },
+      "html": {
+        "background": "#000000"
+      },
+      "input.gsfi": {
+        "background-color": "#000000",
+        "color": "#aaaaaa",
+        "width": "500px"
+      },
+      "input.gsfi.lst-d-f": {
+        "color": "#aaaaaa"
+      },
+      "li._AXc": {
+        "color": "#aaaaaa"
+      },
+      "li.sbsb_d": {
+        "background-color": "#000000"
+      },
+      "p._e4b a": {
+        "color": "#e6e6e6"
+      },
+      "select._dif._Ohf.iNptXfY9sVoA-y69YkR-bRoA": {
+        "background-color": "#4a4c4d"
+      },
+      "span._G2b span": {
+        "color": "#ffffff"
+      },
+      "span._PWm._ZWm": {
+        "color": "#aaaaaa"
+      },
+      "span._Sb": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "span._Tgc": {
+        "color": "#aaaaaa"
+      },
+      "span._Xbe": {
+        "color": "#aaaaaa"
+      },
+      "span._Xbe.kno-fv": {
+        "color": "#ebebeb"
+      },
+      "span._tQb._IId": {
+        "color": "#3333aa"
+      },
+      "span._tvg": {
+        "color": "#aaaaaa"
+      },
+      "span._vvg": {
+        "color": "#aaaaaa"
+      },
+      "span._xdb": {
+        "color": "#8e9c9e"
+      },
+      "span.f": {
+        "color": "#7dbaff"
+      },
+      "span.lr_dct_ph span": {
+        "color": "#aaaaaa"
+      },
+      "span.mn-hd-txt": {
+        "color": "#a8a8a8"
+      },
+      "span.msgtxt": {
+        "color": "#aaaaaa"
+      },
+      "span.sbpqs_a": {
+        "color": "#aaaaaa"
+      },
+      "span.sortable-label": {
+        "color": "#aaaaaa"
+      },
+      "span.spell": {
+        "color": "#b1b3b3"
+      },
+      "span.spell a": {
+        "color": "#eb6363"
+      },
+      "span.spell_orig": {
+        "color": "#b1b3b3"
+      },
+      "span.spell_orig a": {
+        "color": "#eb6363"
+      },
+      "span.st": {
+        "color": "#d6d6d6"
+      },
+      "span.st em": {
+        "color": "#aaaaaa"
+      },
+      "span.vk_bk.lr_c_h": {
+        "color": "#aaaaaa"
+      },
+      "tbody tr td": {
+        "color": "#aaaaaa"
+      },
+      "tbody tr th": {
+        "color": "#aaaaaa"
+      },
+      "td.lft.pf-table-cell": {
+        "color": "#aaaaaa"
+      },
+      "th.lft": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "th.sortable": {
+        "background-color": "#000000"
+      },
+      "tr.hilite.portfolio-value-row td": {
+        "background-color": "#000000"
+      }
+    }
+  },
+  "www.messenger.com": {
+    "_enabled": true,
+    "_rules": {
+      "a._1ht5": {
+        "background-color": "#000000"
+      },
+      "div._1enh": {
+        "background-color": "#000000"
+      },
+      "div._1mf._1mj span span": {
+        "color": "#aaaaaa"
+      },
+      "div._1t_p.clearfix": {
+        "background-color": "#000000"
+      },
+      "div._1ut7": {
+        "background-color": "#000000"
+      },
+      "div._225b": {
+        "color": "#aaaaaa"
+      },
+      "div._2y8y._5l-3": {
+        "background-color": "#000000"
+      },
+      "div._364g": {
+        "color": "#aaaaaa"
+      },
+      "div._36ic._5l-3": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div._3eus span": {
+        "color": "#aaaaaa"
+      },
+      "div._3q34 span span": {
+        "color": "#aaaaaa"
+      },
+      "div._3szq": {
+        "color": "#aaaaaa"
+      },
+      "div._4_j5": {
+        "background-color": "#000000"
+      },
+      "div._4jgt._14-7": {
+        "background-color": "#000000"
+      },
+      "div._4rpj": {
+        "color": "#aaaaaa"
+      },
+      "div._4rv3": {
+        "background-color": "#000000"
+      },
+      "div._4u-c._1wfr._9hq": {
+        "background-color": "#000000"
+      },
+      "div._5742": {
+        "background-color": "#000000"
+      },
+      "div._5jdr": {
+        "background-color": "#000000"
+      },
+      "div._5jei": {
+        "background-color": "#000000"
+      },
+      "div.__6k": {
+        "color": "#aaaaaa\n"
+      },
+      "div.__6l": {
+        "color": "#aaaaaa\n"
+      },
+      "div.__6m": {
+        "color": "#aaaaaa\n"
+      },
+      "div.__i_": {
+        "background-color": "#000000"
+      },
+      "div.uiScrollableAreaWrap": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "em._4qba": {
+        "color": "#aaaaaa"
+      },
+      "h2": {
+        "color": "#aaaaaa"
+      },
+      "h4": {
+        "color": "#aaaaaa"
+      },
+      "input._58al": {
+        "background-color": "#000000",
+        "border-style": "solid",
+        "border-width": "1px",
+        "color": "#aaaaaa"
+      },
+      "label._55r1": {
+        "background-color": "#000000"
+      },
+      "span span span": {
+        "color": "#aaaaaa"
+      },
+      "span._1ht6": {
+        "color": "#aaaaaa"
+      },
+      "span._1htf": {
+        "color": "#aaaaaa"
+      },
+      "span._2jnv span": {
+        "color": "#aaaaaa"
+      },
+      "span._2v6o": {
+        "color": "#aaaaaa"
+      },
+      "span._5iwm._150g._58ah": {
+        "background-color": "#000000"
+      }
+    }
+  },
+  "www.npmjs.com": {
+    "_enabled": true,
+    "_rules": {
+      "#marketing-texthed a": {
+        "color": "#aaaaaa"
+      },
+      "a.active": {
+        "color": "#aaaaaa"
+      },
+      "a.quiet": {
+        "color": "#666666"
+      },
+      "a.type-neutral-1": {
+        "color": "#aaaaaa"
+      },
+      "div.autocomplete-suggestion": {
+        "background-color": "#222222"
+      },
+      "div.autoselect-wrapper.npm-install.icon-download input": {
+        "color": "#aaaaaa"
+      },
+      "div.highlight": {
+        "background-color": "#666666",
+        "color": "#aaaaaa"
+      },
+      "div.markdown h2": {
+        "color": "#aaaaaa"
+      },
+      "div.markdown h3": {
+        "color": "#aaaaaa"
+      },
+      "div.markdown p": {
+        "color": "#aaaaaa"
+      },
+      "div.markdown p code": {
+        "background-color": "#444444"
+      },
+      "div.markdown ul li": {
+        "color": "#aaaaaa"
+      },
+      "div.marketing p": {
+        "color": "#aaaaaa"
+      },
+      "div.pane": {
+        "background-color": "#000"
+      },
+      "div.pane.bg-neutral-11.pbxxl": {
+        "background-color": "#000000"
+      },
+      "div.sidebar h3": {
+        "color": "#aaaaaa"
+      },
+      "footer.pane.bg-npm-navy-1": {
+        "background-color": "#000000"
+      },
+      "h1.deep-link a": {
+        "color": "#aaaaaa"
+      },
+      "h2.centered.ruled": {
+        "color": "#aaaaaa"
+      },
+      "h2.deep-link a": {
+        "color": "#aaaaaa"
+      },
+      "h3 a": {
+        "color": "#aaaaaa"
+      },
+      "h4 a": {
+        "color": "#aaaaaa"
+      },
+      "html.js body": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p.keywords": {
+        "color": "#aaaaaa"
+      },
+      "span.source.js": {
+        "color": "#000000"
+      },
+      "span.stars": {
+        "color": "#aaaaaa"
+      },
+      "span.version": {
+        "color": "#aaaaaa"
+      },
+      "ul li code": {
+        "background-color": "#444444"
+      },
+      "ul.box li": {
+        "color": "#aaaaaa"
+      }
+    }
+  },
+  "www.reddit.com": {
+    "_enabled": true,
+    "_rules": {
+      "#header-bottom-left": {
+        "background-color": "#555555"
+      },
+      "#header-bottom-right": {
+        "background-color": "#000000"
+      },
+      "#remember-me label": {
+        "color": "#aaaaaa"
+      },
+      "#search input": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "#shortlink-text": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "a.author.may-blank.id-t2_tv7gj": {
+        "color": "#4477aa"
+      },
+      "a.choice": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.hover": {
+        "color": "#aaaaaa"
+      },
+      "a.login-required": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "a.nohavemail": {
+        "background-color": "#000000"
+      },
+      "a.title": {
+        "color": "#aaaaaa"
+      },
+      "a.title.may-blank.loggedin": {
+        "color": "#4477aa"
+      },
+      "body.listing-page": {
+        "background-color": "#000000"
+      },
+      "body.listing-page.loggedin.hot-page": {
+        "background-color": "#000000"
+      },
+      "body.listing-page.loggedin.new-page": {
+        "background-color": "#000000"
+      },
+      "body.listing-page.new-page": {
+        "background-color": "#000000"
+      },
+      "body.loggedin": {
+        "background-color": "#000000"
+      },
+      "body.loggedin.messages-page": {
+        "background-color": "#000000"
+      },
+      "body.single-page": {
+        "background-color": "#000000"
+      },
+      "div.commentarea": {
+        "background-color": "#000000"
+      },
+      "div.content": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.entry.unvoted": {
+        "background-color": "#000000"
+      },
+      "div.footer-parent": {
+        "background-color": "#000000"
+      },
+      "div.footer.rounded": {
+        "background-color": "#000000"
+      },
+      "div.grippy": {
+        "display": "none"
+      },
+      "div.linkinfo": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.listing-chooser": {
+        "background-color": "#000000",
+        "display": "none"
+      },
+      "div.md": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.md p": {
+        "color": "#aaaaaa"
+      },
+      "div.md textarea": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.menuarea": {
+        "background-color": "#000000"
+      },
+      "div.modal-body": {
+        "background-color": "#000000"
+      },
+      "div.nub": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.panestack-title": {
+        "background-color": "#000000"
+      },
+      "div.reddit-infobar": {
+        "background-color": "#000000"
+      },
+      "div.side": {
+        "background-color": "#000000"
+      },
+      "div.sidecontentbox": {
+        "background-color": "#000000"
+      },
+      "div.spacer": {
+        "background-color": "#000000"
+      },
+      "div.subtitle": {
+        "color": "#aaaaaa"
+      },
+      "div.tagline": {
+        "background-color": "#000000"
+      },
+      "div.thing": {
+        "background-color": "#000000 "
+      },
+      "div.titlebox": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.usertext-body": {
+        "background-color": "#000000"
+      },
+      "div.width-clip": {
+        "background-color": "#000000"
+      },
+      "form.toggle.flairtoggle": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "form.usertext": {
+        "background-color": "#000000"
+      },
+      "h1 a": {
+        "color": "#aaaaaa"
+      },
+      "h1.hover.redditname": {
+        "background-color": "#000000"
+      },
+      "p.debuginfo": {
+        "background-color": "#000000"
+      },
+      "p.users-online": {
+        "background-color": "#000000"
+      },
+      "span.linkflairlabel": {
+        "background-color": "#4477aa",
+        "color": "#aaaaaa"
+      },
+      "span.subscribers": {
+        "background-color": "#000000"
+      }
+    }
+  },
+  "www.teamliquid.net": {
+    "_enabled": true,
+    "_rules": {
+      "#fp_postbtn": {
+        "background-color": "#666666",
+        "color": "dddddd"
+      },
+      "#main-content": {
+        "background-color": "#222222"
+      },
+      "#news_articles": {
+        "background-color": "#222222"
+      },
+      "#news_column_left": {
+        "background-color": "#222222"
+      },
+      "#news_column_right": {
+        "background-color": "#222222"
+      },
+      "#news_community": {
+        "background-color": "#222222"
+      },
+      "#reply_area": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      "#timebar": {
+        "color": "#aaaaaa"
+      },
+      "#ubb_bar_options": {
+        "background-color": "#444444"
+      },
+      "#video_description": {
+        "color": "#aaaaaa"
+      },
+      "a": {
+        "color": "#aaaaaa"
+      },
+      "a.block_header": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "a.postop1": {
+        "background-color": "#aaaaaa"
+      },
+      "a.postop10": {
+        "background-color": "#aaaaaa"
+      },
+      "a.postop2": {
+        "background-color": "#aaaaaa"
+      },
+      "a.postop3": {
+        "background-color": "#aaaaaa"
+      },
+      "a.postop4": {
+        "background-color": "#aaaaaa"
+      },
+      "a.postop5": {
+        "background-color": "#aaaaaa"
+      },
+      "a.postop6": {
+        "background-color": "#aaaaaa"
+      },
+      "a.postop7": {
+        "background-color": "#aaaaaa"
+      },
+      "a.postop8": {
+        "background-color": "#aaaaaa"
+      },
+      "a.postop9": {
+        "background-color": "#aaaaaa"
+      },
+      "article.forumPost section": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      "div div b": {
+        "color": "#aaaaaa"
+      },
+      "div p strong": {
+        "color": "#aaaaaa"
+      },
+      "div.author span a": {
+        "color": "#aaaaaa"
+      },
+      "div.calendar_content": {
+        "background-color": "#222222"
+      },
+      "div.ev-block.ev-live": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      "div.forummsginfo": {
+        "background-color": "#444444"
+      },
+      "div.forumsig": {
+        "background-color": "#444444"
+      },
+      "div.forumsig div": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "div.fp_box_content": {
+        "background-color": "#222222"
+      },
+      "div.fpost-postinfo": {
+        "background-color": "#444444"
+      },
+      "div.fpost-username span": {
+        "color": "#aaaaaa"
+      },
+      "div.lp-lgblock": {
+        "background-color": "#222222"
+      },
+      "div.lp-lgblock h2": {
+        "color": "#aaaaaa"
+      },
+      "div.pagination a": {
+        "background-color": "#444444"
+      },
+      "div.rep-controls input": {
+        "background-color": "#666666",
+        "color": "#dddddd"
+      },
+      "div.rsb-block": {
+        "background-color": "#222222"
+      },
+      "div.sb-blck a": {
+        "color": "#aaaaaa"
+      },
+      "div.sbcontents": {
+        "background-color": "#222222"
+      },
+      "div.sbcontents a": {
+        "color": "#aaaaaa"
+      },
+      "div.sbcontents.block-starcraft2": {
+        "background-color": "#222222"
+      },
+      "div.sbtitle a": {
+        "color": "#aaaaaa"
+      },
+      "div.solid footer": {
+        "background-color": "#444444"
+      },
+      "div.subheading": {
+        "color": "#aaaaaa"
+      },
+      "div.subtitle": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "div.text": {
+        "color": "#aaaaaa"
+      },
+      "h1.title": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "h2.fp_header": {
+        "background-color": "#444444"
+      },
+      "h2.fp_header a": {
+        "background-color": "#444444"
+      },
+      "h4": {
+        "background-color": "#222222"
+      },
+      "header.titelhigh.newspost": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "html body": {
+        "background-color": "#000000"
+      },
+      "p.description": {
+        "color": "#aaaaaa"
+      },
+      "section div p": {
+        "color": "#aaaaaa"
+      },
+      "section.pnt01": {
+        "background-color": "#222222"
+      },
+      "span": {
+        "color": "#aaaaaa"
+      },
+      "span.submessage label": {
+        "color": "#aaaaaa"
+      },
+      "td.forummsginfo.titelbalk": {
+        "background-color": "#444444"
+      },
+      "td.forummsginfo.titelbalk div": {
+        "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "td.sidemenu": {
+        "background-color": "#222222"
+      },
+      "td.titelbalk": {
+        "background-color": "#444444"
+      }
+    }
+  },
+  "xkcd.com": {
+    "_enabled": true,
+    "_rules": {
+      "#news div": {
+        "color": "#aaaaaa"
+      },
+      "#slogan": {
+        "color": "#aaaaaa"
+      },
+      "body": {
+        "background-color": "#222222"
+      },
+      "div.box": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "ul li a": {
+        "color": "#aaaaaa"
       }
     }
   }
