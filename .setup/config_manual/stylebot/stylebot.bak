@@ -73,6 +73,23 @@
       }
     }
   },
+  "astro.cornell.edu/~dong/gp.html": {
+    "_enabled": true,
+    "_rules": {
+      "b font font": {
+        "color": "#aaaaaa"
+      },
+      "html": {
+        "background-color": "#000000"
+      },
+      "html body p": {
+        "color": "#aaaaaa"
+      },
+      "ul li a": {
+        "color": "#4477dd"
+      }
+    }
+  },
   "aws.amazon.com": {
     "_enabled": true,
     "_rules": {
