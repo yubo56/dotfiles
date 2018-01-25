@@ -2823,6 +2823,105 @@
       }
     }
   },
+  "piazza.com": {
+    "_enabled": true,
+    "_rules": {
+      "#special_mentions": {
+        "background-color": "#000000",
+        "text-shadow": "0 0px 0 black"
+      },
+      ".page_feed": {
+        "background": "#000000"
+      },
+      ".page_feed .feed_item.unanswered": {
+        "text-shadow": "0 0px 0 #000000"
+      },
+      ".page_feed .page_feed_bucket_header": {
+        "background": "#000000"
+      },
+      ".page_feed .page_feed_tool_bar": {
+        "background-image": "none",
+        "color": "#aaaaaa"
+      },
+      ".post_region_text": {
+        "color": "#aaaaaa"
+      },
+      ".top_bar .navbar-inner": {
+        "background": "#000000"
+      },
+      "a.tag.folder": {
+        "color": "#aaaaaa"
+      },
+      "body": {
+        "background-color": "#000000"
+      },
+      "div.clarifying_discussion.clearFix": {
+        "background-color": "#000000"
+      },
+      "div.dashboard_toolbar": {
+        "background-color": "#000000",
+        "background-image": "none"
+      },
+      "div.dashboard_toolbar.special_mentions_wrapper": {
+        "background-color": "#000000"
+      },
+      "div.discussion_replies.existing_reply.clearFix": {
+        "background-color": "#000000"
+      },
+      "div.post_region_actions": {
+        "background-color": "#000000"
+      },
+      "div.post_region_content": {
+        "background-color": "#000000"
+      },
+      "div.post_region_header": {
+        "background-color": "#000000"
+      },
+      "div.post_subtitle": {
+        "color": "#aaaaaa"
+      },
+      "div.post_title": {
+        "color": "#aaaaaa"
+      },
+      "div.question_history_slider_label": {
+        "color": "#aaaaaa",
+        "text-shadow": "0 0px 0 #000000"
+      },
+      "div.scrollable": {
+        "background-color": "#000000"
+      },
+      "div.snippet": {
+        "color": "#aaaaaa",
+        "text-decoration": "none",
+        "text-transform": "none"
+      },
+      "div.start_open.page_feed_bucket_header span": {
+        "color": "#aaaaaa",
+        "text-shadow": "0 0px 0 #000000"
+      },
+      "h1": {
+        "color": "#aaaaaa"
+      },
+      "li.feed_item.clearfix.has_sr": {
+        "background-color": "#000000"
+      },
+      "li.feed_item.clearfix.note": {
+        "background-color": "#000000"
+      },
+      "li.feed_item.clearfix.unanswered.private": {
+        "background-color": "#000000"
+      },
+      "span.title_text": {
+        "color": "#aaaaaa"
+      },
+      "span.user_name": {
+        "color": "#aaaaaa"
+      },
+      "ul.clearFix": {
+        "background-color": "#000000"
+      }
+    }
+  },
   "slack.com": {
     "_enabled": true,
     "_rules": {
