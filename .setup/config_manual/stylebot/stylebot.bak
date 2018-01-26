@@ -1698,6 +1698,9 @@
       ".menu-item": {
         "background-color": "#000000"
       },
+      ".sidebar-module li": {
+        "background-color": "#333333"
+      },
       "a": {
         "color": "#aaaaaa"
       },
@@ -2248,6 +2251,9 @@
       },
       "ul li": {
         "color": "#aaaaaa"
+      },
+      "ul.js-guides li a": {
+        "background-color": "#333333"
       },
       "ul.numbers-summary li a": {
         "color": "#aaaaaa"
