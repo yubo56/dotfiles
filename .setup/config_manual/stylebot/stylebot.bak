@@ -201,6 +201,9 @@
       "#content": {
         "background-color": "#000000"
       },
+      "#dashboard-content": {
+        "background-color": "#000000"
+      },
       "#footer": {
         "background-color": "#000000"
       },
@@ -1803,8 +1806,11 @@
         "color": "#aaaaaa"
       },
       "code": {
-        "background-color": "#dddddd",
-        "color": "#666666"
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "code .nt": {
+        "color": "#4477aa"
       },
       "div p": {
         "color": "#aaaaaa"
@@ -1831,6 +1837,9 @@
       },
       "div.access-form-wrapper": {
         "background-color": "#222222"
+      },
+      "div.alert": {
+        "background-color": "#333333"
       },
       "div.article-body h4": {
         "color": "#aaaaaa"
@@ -1898,11 +1907,14 @@
       "div.content p": {
         "color": "#aaaaaa"
       },
+      "div.content table": {
+        "background-color": "#333333"
+      },
       "div.content ul li": {
         "color": "#aaaaaa"
       },
       "div.content.col-md-8 pre": {
-        "background-color": "#dddddd"
+        "background-color": "#333333"
       },
       "div.copyable-terminal": {
         "background-color": "#dddddd"
@@ -2136,7 +2148,7 @@
         "color": "#aaaaaa"
       },
       "pre.highlight": {
-        "background-color": "#dddddd"
+        "background-color": "#333333"
       },
       "span.blob-code-inner": {
         "color": "#dddddd"
@@ -2228,6 +2240,10 @@
       },
       "textarea.form-control.input-contrast.comment-form-textarea.js-comment-field.js-improved-comment-field.js-task-list-field.js-quick-submit.js-suggester-field.js-quote-selection-target.js-session-resumable": {
         "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "thead tr th": {
+        "background-color": "#333333",
         "color": "#aaaaaa"
       },
       "ul li": {
@@ -2843,6 +2859,9 @@
   "piazza.com": {
     "_enabled": true,
     "_rules": {
+      "#header": {
+        "background-color": "#000000"
+      },
       "#special_mentions": {
         "background-color": "#000000",
         "text-shadow": "0 0px 0 black"
@@ -2915,6 +2934,9 @@
       "div.start_open.page_feed_bucket_header span": {
         "color": "#aaaaaa",
         "text-shadow": "0 0px 0 #000000"
+      },
+      "div.view": {
+        "color": "#aaaaaa"
       },
       "h1": {
         "color": "#aaaaaa"
