@@ -2465,6 +2465,13 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      ".gssb_e": {
+        "background": "#000000"
+      },
+      ".gssb_m": {
+        "background": "#000000",
+        "color": "#aaaaaa"
+      },
       "a.Ep": {
         "color": "#bbbbbb\n"
       },
@@ -2616,15 +2623,11 @@
       "span.ts": {
         "color": "#4477aa"
       },
-      "table": {
-        "background-color": "#000000"
-      },
       "table.cf.An": {
         "background-color": "#000000"
       },
-      "td": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
+      "table.gstt": {
+        "background-color": "#000000"
       },
       "td.Bu": {
         "background-color": "#000000"
@@ -2636,10 +2639,6 @@
       "textarea.mi": {
         "background-color": "#444444",
         "color": "#dddddd"
-      },
-      "tr": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
       },
       "tr td a": {
         "color": "#4477aa"
