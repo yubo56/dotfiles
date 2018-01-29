@@ -2921,6 +2921,16 @@
       "div.discussion_replies.existing_reply.clearFix": {
         "background-color": "#000000"
       },
+      "div.download_on_app_store_popup_container.clearfix": {
+        "background-color": "#000000"
+      },
+      "div.homescreen_box.clearfix": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.homescreen_section_header i span": {
+        "color": "#aaaaaa"
+      },
       "div.post_region_actions": {
         "background-color": "#000000"
       },
@@ -2958,6 +2968,9 @@
       "h1": {
         "color": "#aaaaaa"
       },
+      "li.feed_item.clearfix.has_ir.private.selected": {
+        "background-color": "#000000"
+      },
       "li.feed_item.clearfix.has_sr": {
         "background-color": "#000000"
       },
@@ -2966,6 +2979,9 @@
       },
       "li.feed_item.clearfix.unanswered.private": {
         "background-color": "#000000"
+      },
+      "span.fixed_50": {
+        "color": "#aaaaaa"
       },
       "span.title_text": {
         "color": "#aaaaaa"
