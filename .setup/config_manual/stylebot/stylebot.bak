@@ -3072,6 +3072,9 @@
       ".channel_overlay": {
         "color": "#aaaaaa"
       },
+      ".menu_member_header .member_details .member_current_status, .menu_member_header .member_details .member_timezone_value": {
+        "background-color": "#333333"
+      },
       ".p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before": {
         "box-shadow": "0 32px #000"
       },
@@ -3222,6 +3225,9 @@
       },
       "div.member_title.lato": {
         "color": "#aaaaaa"
+      },
+      "div.menu_member_footer": {
+        "background": "#000000"
       },
       "div.messages_banner": {
         "background-color": "#000000",
@@ -4448,9 +4454,6 @@
       },
       "label._55r1": {
         "background-color": "#000000"
-      },
-      "span span span": {
-        "color": "#aaaaaa"
       },
       "span._1ht6": {
         "color": "#aaaaaa"
