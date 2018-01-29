@@ -2263,16 +2263,37 @@
   "hangouts.google.com": {
     "_enabled": true,
     "_rules": {
+      ".Bb .Rp": {
+        "color": "#aaaaaa"
+      },
       ".Bb .ik, .Bb.ko.ee .ik": {
+        "color": "#aaaaaa"
+      },
+      ".FzSsbb, .VqBtHf": {
         "color": "#aaaaaa"
       },
       ".GmEQI .Bb.xZYdOe .R8jgRe, .GmEQI .Bb.xZYdOe": {
         "background-color": "#000000"
       },
+      ".Yo": {
+        "background": "#000000"
+      },
       ".g-Ue .g-Ue-ad .g-Qx-n5VRYe": {
         "background-color": "#000000"
       },
+      ".pghO0c": {
+        "color": "#aaaaaa"
+      },
       ".ptrgQb, .KgaIJb": {
+        "background-color": "#000000"
+      },
+      ".qCUW5d": {
+        "color": "#aaaaaa"
+      },
+      "div.HfhnEf": {
+        "background-color": "#000000"
+      },
+      "div.Xg_vF": {
         "background-color": "#000000"
       },
       "div.lPNGt": {
