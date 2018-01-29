@@ -2260,6 +2260,26 @@
       }
     }
   },
+  "hangouts.google.com": {
+    "_enabled": true,
+    "_rules": {
+      ".Bb .ik, .Bb.ko.ee .ik": {
+        "color": "#aaaaaa"
+      },
+      ".GmEQI .Bb.xZYdOe .R8jgRe, .GmEQI .Bb.xZYdOe": {
+        "background-color": "#000000"
+      },
+      ".g-Ue .g-Ue-ad .g-Qx-n5VRYe": {
+        "background-color": "#000000"
+      },
+      ".ptrgQb, .KgaIJb": {
+        "background-color": "#000000"
+      },
+      "div.lPNGt": {
+        "color": "#aaaaaa"
+      }
+    }
+  },
   "hire.lever.co": {
     "_enabled": true,
     "_rules": {
