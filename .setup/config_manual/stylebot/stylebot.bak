@@ -2465,11 +2465,20 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      ".I5": {
+        "background-color": "#000000"
+      },
       ".IG": {
         "background-color": "#000000"
       },
       ".J-Z": {
         "background": "#666666"
+      },
+      ".aJS .ao5": {
+        "color": "#aaaaaa"
+      },
+      ".az9": {
+        "color": "#aaaaaa"
       },
       ".gssb_e": {
         "background": "#000000"
@@ -2485,6 +2494,9 @@
         "color": "#4477aa"
       },
       "a.l9": {
+        "color": "#aaaaaa"
+      },
+      "b.Jd-JU": {
         "color": "#aaaaaa"
       },
       "div ul li": {
@@ -2527,6 +2539,9 @@
       "div.a3s div": {
         "color": "#aaaaaa"
       },
+      "div.aC2": {
+        "background-color": "#000000"
+      },
       "div.aC3": {
         "background-color": "#000000"
       },
@@ -2542,8 +2557,15 @@
       "div.aXt": {
         "background-color": "#000000"
       },
+      "div.ah.aiv.aJS": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
       "div.ajB.gt": {},
       "div.amG.J-M.jQjAxd": {
+        "background-color": "#000000"
+      },
+      "div.aoD.az6": {
         "background-color": "#000000"
       },
       "div.aoq": {
@@ -2567,6 +2589,9 @@
       "div.et": {
         "background-color": "#000000"
       },
+      "div.fX.aXjCH": {
+        "background-color": "#000"
+      },
       "div.gmail_default font": {
         "color": "#aaaaaa"
       },
@@ -2585,6 +2610,13 @@
       "div.one-google": {
         "background-color": "#000000"
       },
+      "div.vT": {
+        "color": "#aaaaaa"
+      },
+      "div.wO.nr": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
       "h2": {
         "color": "#aaaaaa"
       },
@@ -2595,6 +2627,10 @@
         "background-color": "#000000"
       },
       "input": {
+        "color": "#aaaaaa"
+      },
+      "input.aoT": {
+        "background-color": "#000000",
         "color": "#aaaaaa"
       },
       "input.i": {
@@ -2632,6 +2668,9 @@
       "span.ts": {
         "color": "#4477aa"
       },
+      "span.vN": {
+        "background-color": "#333333"
+      },
       "table.cf.An": {
         "background-color": "#000000"
       },
@@ -2651,6 +2690,10 @@
       "textarea.mi": {
         "background-color": "#444444",
         "color": "#dddddd"
+      },
+      "textarea.vO": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
       },
       "tr td a": {
         "color": "#4477aa"
