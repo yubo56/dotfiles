@@ -3957,7 +3957,13 @@
       "#resultStats": {
         "color": "#abadad"
       },
+      "#rhs": {
+        "color": "#aaaaaa"
+      },
       "#topabar": {
+        "background-color": "#000000"
+      },
+      "._Nve": {
         "background-color": "#000000"
       },
       "._cif ._eif": {
@@ -4046,8 +4052,20 @@
       "div._Ck.kv cite": {
         "color": "#3333aa"
       },
+      "div._F2i": {
+        "background-color": "#000000"
+      },
+      "div._Hej.icB_zGEgK8IM-UcWgXi72dBI": {
+        "background-color": "#000000"
+      },
+      "div._Hxi._pow": {
+        "color": "#aaaaaa"
+      },
       "div._Icb._kk._wI a": {
         "color": "#93f0f0"
+      },
+      "div._Inl": {
+        "color": "#aaaaaa"
       },
       "div._Jig span": {
         "color": "#aaaaaa"
@@ -4082,11 +4100,27 @@
       "div._XWk": {
         "color": "#aaaaaa"
       },
+      "div._ZFj": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
       "div._Zvd": {
         "background-color": "#000000"
       },
+      "div._fF._CJe._wje": {
+        "color": "#aaaaaa"
+      },
+      "div._fF._CJe._wje b": {
+        "color": "#aaaaaa"
+      },
       "div._kk._wI": {
         "color": "#f8ffe3"
+      },
+      "div._mgh span": {
+        "color": "#aaaaaa"
+      },
+      "div._ogf._wje.kno-fb-ctx": {
+        "color": "#aaaaaa"
       },
       "div._pgd": {
         "color": "#b8b8b8"
@@ -4094,11 +4128,21 @@
       "div._pk": {
         "color": "#aaaaaa"
       },
+      "div._qhf.match-mod-horizontal-padding": {
+        "background-color": "#333333"
+      },
       "div._rhf": {
         "color": "#aaaaaa"
       },
       "div._tN.mod :hover": {
-        "background-color": "#3b3b3b"
+        "background-color": "#000000"
+      },
+      "div._vej.icB_zGEgK8IM-CEboYq6GL3A": {
+        "color": "#aaaaaa"
+      },
+      "div._vej.ivBvNWCMvnFI-CEboYq6GL3A": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
       },
       "div._zXc": {
         "color": "#aaaaaa"
@@ -4230,6 +4274,9 @@
       "div.vk_gy.vk_sh": {
         "color": "#191a1a"
       },
+      "g-inner-card._Wmi._KBh": {
+        "background-color": "#000000"
+      },
       "h3.med._wI": {
         "color": "#aaaaaa"
       },
@@ -4292,6 +4339,9 @@
         "color": "#aaaaaa"
       },
       "span._vvg": {
+        "color": "#aaaaaa"
+      },
+      "span._vxi": {
         "color": "#aaaaaa"
       },
       "span._xdb": {
