@@ -2963,6 +2963,13 @@
       "#header": {
         "background-color": "#000000"
       },
+      "#page_feed_filter_buttons": {
+        "text-shadow": "0 0px 0 #000000"
+      },
+      "#search-box": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
       "#special_mentions": {
         "background-color": "#000000",
         "text-shadow": "0 0px 0 black"
@@ -2987,6 +2994,7 @@
         "background": "#000000"
       },
       "a.tag.folder": {
+        "background-color": "#333333",
         "color": "#aaaaaa"
       },
       "body": {
@@ -3015,6 +3023,9 @@
       "div.homescreen_section_header i span": {
         "color": "#aaaaaa"
       },
+      "div.page_feed_search_wrapper.clearfix": {
+        "background-color": "#000000"
+      },
       "div.post_region_actions": {
         "background-color": "#000000"
       },
@@ -3030,6 +3041,12 @@
       "div.post_title": {
         "color": "#aaaaaa"
       },
+      "div.post_type_box.active": {
+        "background-color": "#333333"
+      },
+      "div.posting_meta_section.post_type.clearFix": {
+        "background-color": "#000000"
+      },
       "div.question_history_slider_label": {
         "color": "#aaaaaa",
         "text-shadow": "0 0px 0 #000000"
@@ -3037,10 +3054,18 @@
       "div.scrollable": {
         "background-color": "#000000"
       },
+      "div.search_bar": {
+        "background-color": "#000000"
+      },
       "div.snippet": {
         "color": "#aaaaaa",
         "text-decoration": "none",
         "text-transform": "none"
+      },
+      "div.start_open.drafts": {
+        "background": "#000000",
+        "color": "#aaaaaa",
+        "text-shadow": "0 0px 0 #000000"
       },
       "div.start_open.page_feed_bucket_header span": {
         "color": "#aaaaaa",
@@ -3051,6 +3076,16 @@
       },
       "h1": {
         "color": "#aaaaaa"
+      },
+      "input.new_post_textarea": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "label.radio": {
+        "color": "#aaaaaa"
+      },
+      "li.feed_item.clearfix": {
+        "background-color": "#000000"
       },
       "li.feed_item.clearfix.has_ir.private.selected": {
         "background-color": "#000000"
