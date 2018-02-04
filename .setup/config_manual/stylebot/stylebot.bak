@@ -195,6 +195,98 @@
       }
     }
   },
+  "blackboard.cornell.edu": {
+    "_enabled": true,
+    "_rules": {
+      "#anonymous_element_8 span": {},
+      "#breadcrumbs": {
+        "background-color": "#000000"
+      },
+      "#contentArea, #schemePreviewBody, .container": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "#pageTitleDiv": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "#pageTitleText": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      ".path li, .simplePath li": {
+        "color": "#aaaaaa"
+      },
+      "a span": {
+        "color": "#aaaaaa"
+      },
+      "a.comboLink": {
+        "color": "#aaaaaa"
+      },
+      "body": {
+        "background-color": "#000000"
+      },
+      "div.actionBar.editmode.clearfix": {
+        "background-color": "#000000"
+      },
+      "div.actionBarMicro.clearfix": {
+        "background-color": "#333333"
+      },
+      "div.brandingImgWrap": {
+        "background-color": "#000000"
+      },
+      "div.clearfix": {
+        "color": "#aaaaaa"
+      },
+      "div.collapsible": {
+        "background-color": "#000000"
+      },
+      "div.containerPortal.clearfix": {
+        "background-color": "#000000"
+      },
+      "div.dateSelector label": {
+        "color": "#aaaaaa"
+      },
+      "div.navPaletteContent": {
+        "background-color": "#000000"
+      },
+      "div.tabWrapper-right": {
+        "background-color": "#000000"
+      },
+      "h2.clearfix": {
+        "background-color": "#333333",
+        "color": "#aaaaaa",
+        "text-shadow": "0 0px 0 #aaa"
+      },
+      "h3": {
+        "color": "#aaaaaa"
+      },
+      "li.secondaryButton a": {
+        "background-color": "#333333"
+      },
+      "p.helphelp": {
+        "color": "#aaaaaa"
+      },
+      "p.noItems": {
+        "background-color": "#000000"
+      },
+      "span.courseRole": {
+        "color": "#aaaaaa"
+      },
+      "span.itemHead.itemHead": {
+        "background-color": "#000000"
+      },
+      "td": {
+        "color": "#aaaaaa"
+      },
+      "ul.clearfix.nav": {
+        "background-color": "#000000"
+      },
+      "ul.clearfix.nav li a": {
+        "background-color": "#333333"
+      }
+    }
+  },
   "blendlabs.atlassian.net": {
     "_enabled": true,
     "_rules": {
