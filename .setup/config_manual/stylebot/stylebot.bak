@@ -3095,6 +3095,9 @@
       "div.clarifying_discussion.clearFix": {
         "background-color": "#000000"
       },
+      "div.container.splash_ctr h2": {
+        "color": "#aaaaaa"
+      },
       "div.dashboard_toolbar": {
         "background-color": "#000000",
         "background-image": "none"
@@ -3114,6 +3117,17 @@
       },
       "div.homescreen_section_header i span": {
         "color": "#aaaaaa"
+      },
+      "div.modal-body": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.modal-header": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.our_story.splash_panel.alt_panel.log_visibility": {
+        "background-color": "#000000"
       },
       "div.page_feed_search_wrapper.clearfix": {
         "background-color": "#000000"
@@ -3154,6 +3168,9 @@
         "text-decoration": "none",
         "text-transform": "none"
       },
+      "div.splash_panel.alt_panel.profs_panel.log_visibility": {
+        "background-color": "#000000"
+      },
       "div.start_open.drafts": {
         "background": "#000000",
         "color": "#aaaaaa",
@@ -3191,6 +3208,9 @@
       "li.feed_item.clearfix.unanswered.private": {
         "background-color": "#000000"
       },
+      "nav.navbar.navbar-fixed-top": {
+        "background-color": "#00000000"
+      },
       "span.fixed_50": {
         "color": "#aaaaaa"
       },
@@ -3202,6 +3222,9 @@
       },
       "ul.clearFix": {
         "background-color": "#000000"
+      },
+      "ul.product_brief_list li": {
+        "color": "#aaaaaa"
       }
     }
   },
