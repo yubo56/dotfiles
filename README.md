@@ -17,10 +17,12 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 
 ## misc notes
 - Screensaver on suspend uses 00xscreensaver on home, xscreensaver.service on Mac
-- `pm-suspend` still doesn't work on Mac
 - `karabiner.json` belongs in `~/.config/karabiner/karabiner.json`
     - Rules are applied in reverse precedence
     - Convention: map from only left modifiers, map only to right modifiers
+- On Mac, need `hid-apple-patched-git-dkms`, join all configuration options onto
+  one line
+- ibus needs to be 1.5.14-2 to support unicode input
 
 ## fonts
 - Under chrome: advanced font settings:
