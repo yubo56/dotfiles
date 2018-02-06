@@ -1695,6 +1695,9 @@
       "#markdown-toc li": {
         "color": "#aaaaaa"
       },
+      ".markdown-body .highlight pre, .markdown-body pre": {
+        "background-color": "#444444"
+      },
       ".menu-item": {
         "background-color": "#000000"
       },
@@ -1766,9 +1769,6 @@
       "a.wiki-page-link": {
         "color": "#4477aa"
       },
-      "article.markdown-body pre": {
-        "background-color": "#dddddd"
-      },
       "article.markdown-body.entry-content": {
         "background-color": "#333333",
         "color": "#aaaaaa"
@@ -1809,7 +1809,7 @@
         "color": "#aaaaaa"
       },
       "code": {
-        "background-color": "#333333",
+        "background-color": "#444444",
         "color": "#aaaaaa"
       },
       "code .nt": {
@@ -2656,6 +2656,9 @@
       },
       "div.wO.nr": {
         "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "font": {
         "color": "#aaaaaa"
       },
       "h2": {
@@ -3606,7 +3609,8 @@
         "color": "#aaaaaa"
       },
       "code": {
-        "background-color": "#dddddd"
+        "background-color": "#dddddd",
+        "color": "#000000"
       },
       "div.alternate": {
         "background-color": "#000000",
