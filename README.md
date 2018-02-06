@@ -22,7 +22,7 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
     - Convention: map from only left modifiers, map only to right modifiers
 - On Mac, need `hid-apple-patched-git-dkms`, join all configuration options onto
   one line
-- ibus needs to be 1.5.14-2 to support unicode input (requires yaml-cpp 0.5.3)
+- ibus needs to be 1.5.14-2 to support unicode input
 
 ## fonts
 - Under chrome: advanced font settings [DEPRECATED??]:
