@@ -314,6 +314,12 @@
       "a.aui-nav-link": {
         "color": "#aaaaaa"
       },
+      "a.confluence-userlink": {
+        "color": "#aaaaaa"
+      },
+      "div.MainStage_contentBody_1HS": {
+        "background": "#000000"
+      },
       "div.aui-item": {
         "background-color": "#000000"
       },
@@ -336,8 +342,14 @@
       "div.buttons-container.form-footer": {
         "background-color": "#000000"
       },
+      "div.cmaoCZ": {
+        "background-color": "#000000"
+      },
       "div.command-bar": {
         "background-color": "#000000"
+      },
+      "div.create-dialog-location-bar": {
+        "background-color": "#333333"
       },
       "div.dashboard-item-content": {
         "background-color": "#000000",
@@ -345,6 +357,12 @@
       },
       "div.description p": {
         "color": "#aaaaaa"
+      },
+      "div.dialog-button-panel": {
+        "background-color": "#333333"
+      },
+      "div.fFNTVS": {
+        "background-color": "#000000"
       },
       "div.field-group label": {
         "color": "#aaaaaa"
@@ -377,6 +395,10 @@
       "div.ghx-name": {
         "color": "#aaaaaa"
       },
+      "div.iYJWvo": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
       "div.issue-body-content": {
         "background-color": "#000000",
         "color": "#aaaaaa"
@@ -394,6 +416,10 @@
       "div.navigator-sidebar": {
         "background-color": "#000000"
       },
+      "div[style]": {
+        "background-color": "#000000 ",
+        "color": "#aaaaaa"
+      },
       "form.navigator-search": {
         "background-color": "#000000"
       },
@@ -402,6 +428,9 @@
       },
       "h2": {
         "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "h3": {
         "color": "#aaaaaa"
       },
       "header.aui-page-header": {
@@ -424,14 +453,28 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "li.template.selected": {
+        "background-color": "#000000"
+      },
       "nav": {
         "background-color": "#000000"
+      },
+      "ol.templates": {
+        "background-color": "#333333"
       },
       "p.whoslooking-onlookers-list": {
         "background": "#000000",
         "color": "#aaaaaa"
       },
+      "span.dTHJcD": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
       "span.field-value.js-editable-field.js-edit-epicLabel-trigger": {
+        "color": "#aaaaaa"
+      },
+      "span.kOItUc": {
+        "background-color": "#000000",
         "color": "#aaaaaa"
       },
       "textarea": {
