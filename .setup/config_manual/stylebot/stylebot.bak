@@ -3138,8 +3138,14 @@
       "body": {
         "background-color": "#000000"
       },
+      "div.alert-info": {
+        "background-color": "#000000"
+      },
       "div.clarifying_discussion.clearFix": {
         "background-color": "#000000"
+      },
+      "div.container p": {
+        "color": "#aaaaaa"
       },
       "div.container.splash_ctr h2": {
         "color": "#aaaaaa"
@@ -3226,6 +3232,9 @@
         "color": "#aaaaaa",
         "text-shadow": "0 0px 0 #000000"
       },
+      "div.title_wrapper h2": {
+        "color": "#aaaaaa"
+      },
       "div.view": {
         "color": "#aaaaaa"
       },
@@ -3264,6 +3273,16 @@
         "color": "#aaaaaa"
       },
       "span.user_name": {
+        "color": "#aaaaaa"
+      },
+      "td": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "th.date": {
+        "color": "#aaaaaa"
+      },
+      "th.title": {
         "color": "#aaaaaa"
       },
       "ul.clearFix": {
