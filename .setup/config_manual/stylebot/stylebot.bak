@@ -206,12 +206,40 @@
         "background-color": "#333333",
         "color": "#aaaaaa"
       },
+      "#cu-identity": {
+        "background-color": "#000000"
+      },
+      "#identity": {
+        "background-color": "#000000"
+      },
+      "#loginContainer": {
+        "background-color": "#000000"
+      },
+      "#loginHeaderBar": {
+        "background-color": "#000000"
+      },
+      "#netid": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
       "#pageTitleDiv": {
         "background-color": "#333333",
         "color": "#aaaaaa"
       },
       "#pageTitleText": {
         "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "#password": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#titleNew": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#wrap": {
+        "background-color": "#000000",
         "color": "#aaaaaa"
       },
       ".path li, .simplePath li": {
@@ -236,6 +264,7 @@
         "background-color": "#000000"
       },
       "div.clearfix": {
+        "background-color": "#000000",
         "color": "#aaaaaa"
       },
       "div.collapsible": {
@@ -261,6 +290,9 @@
       "h3": {
         "color": "#aaaaaa"
       },
+      "html": {
+        "background-color": "#000000"
+      },
       "li.secondaryButton a": {
         "background-color": "#333333"
       },
@@ -275,6 +307,9 @@
       },
       "span.itemHead.itemHead": {
         "background-color": "#000000"
+      },
+      "span[style]": {
+        "color": "#aaaaaa"
       },
       "td": {
         "color": "#aaaaaa"
@@ -1106,6 +1141,32 @@
       },
       "ul.return li": {
         "color": "#aaaaaa"
+      }
+    }
+  },
+  "cornell.edu": {
+    "_enabled": true,
+    "_rules": {
+      "#cu-identity": {
+        "background-color": "#000000"
+      },
+      "#identity": {
+        "background-color": "#000000"
+      },
+      "#netid": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#password": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#wrap": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "html": {
+        "background-color": "#000000"
       }
     }
   },
