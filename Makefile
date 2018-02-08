@@ -262,8 +262,10 @@ pull:
 		do ( cd $$i && git pull ); done
 	git reset
 	git pull
-	(cd ~/HWSets && git pull && cd ~/ClassNotes && git pull &&\
-		cd ~/research/nonlinear_breaking && git pull) || true
+	(cd ~/HWSets && git pull &&\
+		cd ~/ClassNotes && git pull &&\
+		cd ~/research/nonlinear_breaking && git pull &&\
+		cd ~/su_self_study && git pull) || true
 
 .PHONY: ntp
 ntp: pacman
