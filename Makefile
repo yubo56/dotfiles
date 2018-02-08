@@ -291,7 +291,8 @@ _stylebot:
 
 .PHONY: stylebot_copy
 stylebot_copy:
-	xclip -selection c ${REL_PATH}/stylebot.bak
+	(command -v xclip && xclip -selection c ${REL_PATH}/stylebot.bak)\
+		|| pbcopy < ${REL_PATH}/stylebot.bak
 
 .PHONY: stylebot
 stylebot: _stylebot stylebot_copy
