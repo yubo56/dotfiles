@@ -263,6 +263,9 @@
       "div.brandingImgWrap": {
         "background-color": "#000000"
       },
+      "div.btn": {
+        "background-color": "#333333"
+      },
       "div.clearfix": {
         "background-color": "#000000",
         "color": "#aaaaaa"
@@ -279,8 +282,14 @@
       "div.navPaletteContent": {
         "background-color": "#000000"
       },
+      "div.receipt.bad.editmode.alert-box.alert": {
+        "background-color": "#333333"
+      },
       "div.tabWrapper-right": {
         "background-color": "#000000"
+      },
+      "div.vtbegenerated p a": {
+        "color": "#4477aa"
       },
       "h2.clearfix": {
         "background-color": "#333333",
@@ -319,6 +328,12 @@
       },
       "ul.clearfix.nav li a": {
         "background-color": "#333333"
+      },
+      "ul.portletList li a": {
+        "color": "#4477aa"
+      },
+      "ul.portletList-img.courseListing.coursefakeclass li a": {
+        "color": "#4477aa"
       }
     }
   },
@@ -2813,6 +2828,9 @@
       },
       "div.bY": {
         "color": "#aaaaaa"
+      },
+      "div.bt0": {
+        "background": "#000000"
       },
       "div.card-mask": {
         "background-color": "#000000"

@@ -276,8 +276,8 @@ ntp: pacman
 TMPSTYLEFILE=stylebot_new.txt
 REL_PATH=.setup/config_manual/stylebot
 
-.PHONY: stylebot
-stylebot:
+.PHONY: _stylebot
+_stylebot:
 	rm -f ${REL_PATH}/TMPSTYLEFILE
 	vim ${REL_PATH}/TMPSTYLEFILE
 	python3 ${REL_PATH}/parse_stylebot.py ${REL_PATH}/TMPSTYLEFILE\
@@ -288,6 +288,9 @@ stylebot:
 .PHONY: stylebot_copy
 stylebot_copy:
 	xclip -selection c ${REL_PATH}/stylebot.bak
+
+.PHONY: stylebot
+stylebot: _stylebot stylebot_copy
 
 .PHONY: stylebot_copy_mac
 stylebot_copy_mac:
