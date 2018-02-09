@@ -3,6 +3,32 @@
     "_enabled": false,
     "_rules": {}
   },
+  "*.login.cornell.edu": {
+    "_enabled": true,
+    "_rules": {
+      "#cu-identity": {
+        "background-color": "#000000"
+      },
+      "#identity": {
+        "background-color": "#000000"
+      },
+      "#netid": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#password": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#wrap": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "html": {
+        "background-color": "#000000"
+      }
+    }
+  },
   "arxiv.org": {
     "_enabled": true,
     "_rules": {
@@ -1156,32 +1182,6 @@
       },
       "ul.return li": {
         "color": "#aaaaaa"
-      }
-    }
-  },
-  "cornell.edu": {
-    "_enabled": true,
-    "_rules": {
-      "#cu-identity": {
-        "background-color": "#000000"
-      },
-      "#identity": {
-        "background-color": "#000000"
-      },
-      "#netid": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "#password": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "#wrap": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "html": {
-        "background-color": "#000000"
       }
     }
   },
