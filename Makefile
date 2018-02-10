@@ -265,13 +265,24 @@ goldendict:
 .PHONY: pull
 pull:
 	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
-		do ( cd $$i && git pull ); done
+		do (cd $$i && git pull) || true; done
 	git reset
 	git pull
-	(cd ~/HWSets && git pull &&\
-		cd ~/ClassNotes && git pull &&\
-		cd ~/research/nonlinear_breaking && git pull &&\
-		cd ~/su_self_study && git pull) || true
+	cd ~/HWSets && git pull;\
+		cd ~/ClassNotes && git pull;\
+		cd ~/research/nonlinear_breaking && git pull;\
+		cd ~/su_self_study && git pull
+
+PUSH_CMD=git add . && git commit -m "Push" && git push
+.PHONY: push
+push:
+	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
+		do (cd $$i && ${PUSH_CMD}) || true; done
+	${PUSH_CMD}
+	cd ~/HWSets && ${PUSH_CMD};\
+		cd ~/ClassNotes && ${PUSH_CMD};\
+		cd ~/research/nonlinear_breaking && ${PUSH_CMD};\
+		cd ~/su_self_study && ${PUSH_CMD}
 
 .PHONY: ntp
 ntp: pacman
