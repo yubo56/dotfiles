@@ -222,6 +222,12 @@ fonts:
 lm_sensors: # pacman
 	sudo sensors-detect
 
+.PHONY: cabal
+cabal: # pacman
+	cabal update
+	for i in $$(cat .setup/cabal.txt); do\
+		cabal --ghc-option=-dynamic install $$i; done
+
 ##############################################################################
 ##############################################################################
 ##############################    MISC UTILS     #############################

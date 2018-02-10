@@ -6,27 +6,31 @@ import Data.Colour.Names
 import Data.Default.Class
 import Graphics.Histogram
 import qualified Graphics.Gnuplot.Frame.OptionSet as Opts
+import qualified Graphics.Gnuplot.Frame.OptionSet.Histogram as Histogram
 import Graphics.Rendering.Chart
 import Graphics.Rendering.Chart.Backend.Cairo
+import Text.Printf
 
 -------------------------------------------------------------------------------
 --------------------------------- PLOTTING ------------------------------------
 -------------------------------------------------------------------------------
 
+data Histogram = Histogram Double Double [(Double,Int)]
+
 {-
-  barChart
+  yuboBar
     [("Dat", blue), ("foo", red)]
     [("Boys", [1, 3]), ("Girls", [2, 4])]
     "title"
     "/tmp/barchart.png"
 -}
-barChart ::
+yuboBar ::
   [(String, Colour Double)] ->
   [(String, [Int])] ->
   String ->
   String ->
   IO (PickFn ())
-barChart cols dat title fn = renderableToFile def fn renderable
+yuboBar cols dat title fn = renderableToFile def fn renderable
   where
     x_axis_labels = map fst dat
     y_axis_values = map snd dat
@@ -50,14 +54,16 @@ barChart cols dat title fn = renderableToFile def fn renderable
     renderable = toRenderable layout
 
 {-
-  lineChart [(blue, "line", [0, 2], [1, 3])] "title" "/tmp/linechart.png"
+  yuboLine [(blue, "line", [0, 2], [1, 3])] "title" "/tmp/linechart.png"
 -}
-lineChart ::
+yuboLine ::
   [(Colour Double, String, [Float], [Float])] ->
   String ->
   String ->
+  String ->
+  String ->
   IO(PickFn ())
-lineChart dat plot_title fn = renderableToFile def fn renderable
+yuboLine dat xlabel ylabel title fn = renderableToFile def fn renderable
   where
     plotline (colour, title, x, y) =
       plot_lines_style .~ solidLine 3.0 (opaque colour) $
@@ -65,9 +71,17 @@ lineChart dat plot_title fn = renderableToFile def fn renderable
       plot_lines_title .~ title $
       def
 
+    size = 20
     layout =
-      layout_title .~ plot_title $
+      layout_title .~ title $
+      layout_title_style . font_size .~ size $
       layout_x_axis . laxis_override .~ axisGridHide $
+      layout_x_axis . laxis_title .~ xlabel $
+      layout_x_axis . laxis_style . axis_label_style . font_size .~ size $
+      layout_x_axis . laxis_title_style . font_size .~ size $
+      layout_y_axis . laxis_title .~ ylabel $
+      layout_y_axis . laxis_style . axis_label_style . font_size .~ size $
+      layout_y_axis . laxis_title_style . font_size .~ size $
       layout_plots .~ map (toPlot . plotline) dat $
       layout_grid_last .~ False $
       def
@@ -75,16 +89,45 @@ lineChart dat plot_title fn = renderableToFile def fn renderable
     renderable = toRenderable layout
 
 {-
-  histChart [sin x | x <- [0..9999]] "title" "xlabel" "ylabel" "/tmp/foo.png"
+  yuboHist [sin x | x <- [0..9999]] "title" "xlabel" "ylabel" "/tmp/foo.png"
 -}
-histChart :: [Double] -> String -> String -> String -> String -> IO ()
-histChart dat xlabel ylabel title fn = do
+_nSturges :: [Double] -> Int
+_nSturges xs = ceiling $ logBase 2 n + 1
+  where n = fromIntegral $ length xs
+_nSqrt :: [Double] -> Int
+_nSqrt = ceiling . sqrt . fromIntegral . length
+
+_yuboHist ::
+  ([Double] -> Int) ->
+  [Double] ->
+  String ->
+  String ->
+  String ->
+  String ->
+  IO ()
+_yuboHist f dat xlabel ylabel title fn = do
   plotAdv fn opts hist
   return ()
     where
-      hist = histogram binSturges dat
+      mindat = minimum dat
+      maxdat = maximum dat
+      binsize = (maxdat - mindat) / max (fromIntegral (f dat)) 1
+      roundedsize = fromIntegral (round (binsize * 1000)) / 1000
+      nbins = ceiling $ (maxdat - mindat) / roundedsize
+
+      hist = histogramBinSize roundedsize dat
       opts =
         Opts.title title $
         Opts.yLabel xlabel $
         Opts.xLabel ylabel $
+        Opts.xTicks2d (zip
+          ([printf "%.2f" mindat] ++
+            replicate (nbins - 1) "" ++
+            [printf "%.2f" maxdat])
+          [0..]) $
         defOpts hist
+
+yuboHist :: [Double] -> String -> String -> String -> String -> IO ()
+yuboHist = _yuboHist _nSturges
+yuboHistSqrt :: [Double] -> String -> String -> String -> String -> IO ()
+yuboHistSqrt = _yuboHist _nSqrt
