@@ -97,7 +97,7 @@ _nSturges xs = ceiling $ logBase 2 n + 1
 _nSqrt :: [Double] -> Int
 _nSqrt = ceiling . sqrt . fromIntegral . length
 
-_yuboHist ::
+yuboHist ::
   ([Double] -> Int) ->
   [Double] ->
   String ->
@@ -105,10 +105,13 @@ _yuboHist ::
   String ->
   String ->
   IO ()
-_yuboHist f dat xlabel ylabel title fn = do
+yuboHist f dat xlabel ylabel title fn = do
+  print tickLocs
   plotAdv fn opts hist
   return ()
     where
+      numTicks = 5
+
       mindat = minimum dat
       maxdat = maximum dat
       binsize = (maxdat - mindat) / max (fromIntegral (f dat)) 1
@@ -116,18 +119,21 @@ _yuboHist f dat xlabel ylabel title fn = do
       nbins = ceiling $ (maxdat - mindat) / roundedsize
 
       hist = histogramBinSize roundedsize dat
+      baseTickLabels = zip (replicate (nbins + 1) "") [0..]
+      tickLocs = [round (y * fromIntegral nbins / numTicks) | y <- [0..numTicks]]
+      tickLabels = map
+        (\(s, idx) -> if idx `elem` tickLocs; then
+          (printf "%.2f" ((fromIntegral idx * roundedsize) + mindat), idx) else
+          (s, idx))
+        baseTickLabels
       opts =
         Opts.title title $
         Opts.yLabel xlabel $
         Opts.xLabel ylabel $
-        Opts.xTicks2d (zip
-          ([printf "%.2f" mindat] ++
-            replicate (nbins - 1) "" ++
-            [printf "%.2f" maxdat])
-          [0..]) $
+        Opts.xTicks2d tickLabels $
         defOpts hist
 
-yuboHist :: [Double] -> String -> String -> String -> String -> IO ()
-yuboHist = _yuboHist _nSturges
+yuboHistSturges :: [Double] -> String -> String -> String -> String -> IO ()
+yuboHistSturges = yuboHist _nSturges
 yuboHistSqrt :: [Double] -> String -> String -> String -> String -> IO ()
-yuboHistSqrt = _yuboHist _nSqrt
+yuboHistSqrt = yuboHist _nSqrt
