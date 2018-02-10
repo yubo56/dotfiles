@@ -262,26 +262,26 @@ goldendict:
 	rm -f ~/.goldendict/config
 	ln -s ${PWD}/.setup/misc/gdict_config ~/.goldendict/config
 
+PULL_CMD=(git pull || true)
 .PHONY: pull
 pull:
 	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
-		do (cd $$i && git pull) || true; done
-	git reset
-	git pull
-	cd ~/HWSets && git pull;\
-		cd ~/ClassNotes && git pull;\
-		cd ~/research/nonlinear_breaking && git pull;\
-		cd ~/su_self_study && git pull
+		do (cd $$i && ${PULL_CMD}); done
+	git reset && ${PULL_CMD}
+	cd ~/HWSets && ${PULL_CMD} &&\
+		cd ~/ClassNotes && ${PULL_CMD} &&\
+		cd ~/research/nonlinear_breaking && ${PULL_CMD} &&\
+		cd ~/su_self_study && ${PULL_CMD}
 
-PUSH_CMD=git add . && git commit -m "Push" && git push
+PUSH_CMD=((git add . && git commit -m "Push" && git push) || true)
 .PHONY: push
 push:
 	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
-		do (cd $$i && ${PUSH_CMD}) || true; done
+		do (cd $$i && ${PUSH_CMD}); done
 	${PUSH_CMD}
-	cd ~/HWSets && ${PUSH_CMD};\
-		cd ~/ClassNotes && ${PUSH_CMD};\
-		cd ~/research/nonlinear_breaking && ${PUSH_CMD};\
+	cd ~/HWSets && ${PUSH_CMD} &&\
+		cd ~/ClassNotes && ${PUSH_CMD} &&\
+		cd ~/research/nonlinear_breaking && ${PUSH_CMD} &&\
 		cd ~/su_self_study && ${PUSH_CMD}
 
 .PHONY: ntp
