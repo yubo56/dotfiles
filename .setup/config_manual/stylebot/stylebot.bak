@@ -3861,6 +3861,13 @@
       "#h-linked": {
         "color": "#aaaaaa"
       },
+      "a.-link.js-gps-track": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "a.-logo.js-gps-track": {
+        "background-color": "#333333"
+      },
       "a.question-hyperlink": {
         "color": "#aaaaaa"
       },
@@ -3884,6 +3891,12 @@
       },
       "h2": {
         "color": "#aaaaaa"
+      },
+      "header.top-bar.js-top-bar._fixed": {
+        "background-color": "#333333"
+      },
+      "header.top-bar.js-top-bar._fixed._scrolling": {
+        "background-color": "#333333"
       },
       "pre.default.prettyprint.prettyprinted": {
         "background-color": "#dddddd"
