@@ -4437,6 +4437,12 @@
       "#topabar": {
         "background-color": "#000000"
       },
+      ".LJV2HGB-Eb-a": {
+        "background-color": "#000000"
+      },
+      ".LJV2HGB-Eb-o, .LJV2HGB-Eb-p, .LJV2HGB-Eb-k": {
+        "background-color": "#000000"
+      },
       ".LJV2HGB-Mb-b": {
         "background-color": "#222222",
         "color": "#aaaaaa"
@@ -4447,6 +4453,9 @@
       },
       ".LJV2HGB-R-q": {
         "color": "#aaaaaa"
+      },
+      ".LJV2HGB-Rb-a": {
+        "background-color": "#000000"
       },
       ".LJV2HGB-Z-d": {
         "color": "#aaaaaa"
@@ -4462,6 +4471,9 @@
         "background-color": "#000000"
       },
       ".LJV2HGB-cb-x": {
+        "background-color": "#000000"
+      },
+      ".LJV2HGB-d-D .LJV2HGB-d-X, .LJV2HGB-d-S.LJV2HGB-d-R, .LJV2HGB-d-S:hover, .LJV2HGB-d-S:hover .LJV2HGB-d-S, .LJV2HGB-d-S.LJV2HGB-d-R .LJV2HGB-d-S, .LJV2HGB-d-D .LJV2HGB-d-S:hover": {
         "background-color": "#000000"
       },
       ".LJV2HGB-d-Lb": {
@@ -4535,6 +4547,9 @@
       },
       ".gb_If": {
         "background-color": "#000000"
+      },
+      ".gbqfqw": {
+        "background-color": "#222222"
       },
       ".gstl_50.sbib_a": {
         "background-color": "#000000"
@@ -4626,6 +4641,13 @@
       },
       "div.LJV2HGB-Ob-c .gwt-Label": {
         "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.LJV2HGB-d-Ab": {
+        "color": "#aaaaaa"
+      },
+      "div.LJV2HGB-d-W.LJV2HGB-d-cc.LJV2HGB-d-LbLJV2HGB-d-S": {
+        "background-color": "#000000",
         "color": "#aaaaaa"
       },
       "div._AOf": {
@@ -4924,7 +4946,7 @@
         "background-color": "#000000"
       },
       "input": {
-        "background-color": "#000000",
+        "background-color": "#222222",
         "color": "#aaaaaa\n"
       },
       "input.gsfi": {
