@@ -29,32 +29,6 @@
       }
     }
   },
-  "shibidp.cit.cornell.edu": {
-    "_enabled": true,
-    "_rules": {
-      "#cu-identity": {
-        "background-color": "#000000"
-      },
-      "#identity": {
-        "background-color": "#000000"
-      },
-      "#netid": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "#password": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "#wrap": {
-        "background-color": "#000000",
-        "color": "#aaaaaa"
-      },
-      "html": {
-        "background-color": "#000000"
-      }
-    }
-  },
   "arxiv.org": {
     "_enabled": true,
     "_rules": {
@@ -2538,6 +2512,62 @@
       }
     }
   },
+  "haskell.org": {
+    "_enabled": true,
+    "_rules": {
+      "#body": {
+        "color": "#aaaaaa"
+      },
+      "#content": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#footer": {
+        "background-color": "#000000"
+      },
+      "#table-of-contents": {
+        "background-color": "#000000"
+      },
+      "a.dull": {
+        "color": "#aaaaaa"
+      },
+      "a.dull i": {
+        "color": "#aaaaaa"
+      },
+      "a.link": {
+        "background-color": "#333333"
+      },
+      "a.selflink": {
+        "background-color": "#333333"
+      },
+      "a:hover": {
+        "background-color": "#333333"
+      },
+      "div.ans": {
+        "background-color": "#333333"
+      },
+      "div.doc pre": {
+        "background-color": "#333333"
+      },
+      "html body": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "p.src": {
+        "background-color": "#333333"
+      },
+      "pre": {
+        "border-bottom": "0px"
+      },
+      "table.info": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "td.src.clearfix": {
+        "background-color": "#333333"
+      }
+    }
+  },
   "hire.lever.co": {
     "_enabled": true,
     "_rules": {
@@ -3395,6 +3425,32 @@
       },
       "ul.product_brief_list li": {
         "color": "#aaaaaa"
+      }
+    }
+  },
+  "shibidp.cit.cornell.edu": {
+    "_enabled": true,
+    "_rules": {
+      "#cu-identity": {
+        "background-color": "#000000"
+      },
+      "#identity": {
+        "background-color": "#000000"
+      },
+      "#netid": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#password": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "#wrap": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "html": {
+        "background-color": "#000000"
       }
     }
   },
@@ -4381,6 +4437,73 @@
       "#topabar": {
         "background-color": "#000000"
       },
+      ".LJV2HGB-Mb-b": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      ".LJV2HGB-R-b": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      ".LJV2HGB-R-q": {
+        "color": "#aaaaaa"
+      },
+      ".LJV2HGB-Z-d": {
+        "color": "#aaaaaa"
+      },
+      ".LJV2HGB-c-b": {
+        "background-image": "-webkit-linear-gradient(top,#444444,#444444)",
+        "color": "#aaaaaa"
+      },
+      ".LJV2HGB-c-r": {
+        "background-color": "#222222"
+      },
+      ".LJV2HGB-cb-d": {
+        "background-color": "#000000"
+      },
+      ".LJV2HGB-cb-x": {
+        "background-color": "#000000"
+      },
+      ".LJV2HGB-d-Lb": {
+        "background-color": "#000000"
+      },
+      ".LJV2HGB-d-ac:after, .LJV2HGB-d-Jb:after, .LJV2HGB-d-Rb:after, .LJV2HGB-d-Sb:after, .LJV2HGB-d-nc .LJV2HGB-d-E:after": {
+        "background-image": "-webkit-gradient(linear,left top,right top,from(#000000),to(#000000))"
+      },
+      ".LJV2HGB-eb-j.LJV2HGB-eb-h": {
+        "background-image": "-webkit-linear-gradient(top,#444444,#444444)",
+        "color": "#aaaaaa"
+      },
+      ".LJV2HGB-n-j": {
+        "background-color": "#222222"
+      },
+      ".LJV2HGB-r-b": {
+        "background-color": "#222222"
+      },
+      ".LJV2HGB-sb-c": {
+        "height": "0",
+        "width": "0"
+      },
+      ".LJV2HGB-sb-e": {
+        "color": "#aaaaaa"
+      },
+      ".LJV2HGB-t-c": {
+        "background-color": "#000000"
+      },
+      ".LJV2HGB-t-g": {
+        "color": "#aaaaaa"
+      },
+      ".LJV2HGB-w-a": {
+        "background-color": "#000000"
+      },
+      ".LJV2HGB-w-h": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      ".LJV2HGB-w-j.LJV2HGB-w-w": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
       "._Nve": {
         "background-color": "#000000"
       },
@@ -4409,6 +4532,42 @@
       },
       ".ads-ad h3 a": {
         "color": "#f27c3d"
+      },
+      ".gb_If": {
+        "background-color": "#000000"
+      },
+      ".gstl_50.sbib_a": {
+        "background-color": "#000000"
+      },
+      ".gws-flights-dialog__airport-subheader": {
+        "color": "#aaaaaa"
+      },
+      ".gws-flights-dialog__destination-details": {
+        "color": "#aaaaaa"
+      },
+      ".gws-flights-dialog__destination-list, .gws-flights-dialog__recent-searches-list": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      ".gws-flights-dialog__destination-price": {
+        "color": "#aaaaaa"
+      },
+      ".gws-flights__form": {
+        "background-color": "#222222"
+      },
+      ".jIIwapdBllK__error-msg": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      ".jIIwapdBllK__input-container": {
+        "background-color": "#000000"
+      },
+      ".jIIwapdBllK__suggestions": {
+        "background-color": "#000000"
+      },
+      ".popupContent input[type=text], .LJV2HGB-f-b input[type=text], .LJV2HGB-f-j input[type=text]": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
       },
       "a._Dk": {
         "color": "#aaaaaa"
@@ -4460,6 +4619,14 @@
       },
       "cite._Rm.bc": {
         "color": "#4477aa"
+      },
+      "div.LJV2HGB-Ob-c .gwt-HTML": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
+      "div.LJV2HGB-Ob-c .gwt-Label": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
       },
       "div._AOf": {
         "color": "#aaaaaa"
@@ -4620,6 +4787,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "div.gb_Cd.gb_9d.gb_Jd.gb_Id.gb_be": {
+        "background-color": "#000000"
+      },
       "div.gb_df.gb_bg": {
         "background-color": "#000000"
       },
@@ -4628,6 +4798,33 @@
       },
       "div.gstl_0": {
         "background-color": "#000000"
+      },
+      "div.gws-flights-results__destination-data": {
+        "background-color": "#000000"
+      },
+      "div.gws-flights-results__destination-row.gws-flights-results__secondary-info.gws-flights-results__destination-dates span": {
+        "color": "#aaaaaa"
+      },
+      "div.gws-flights-savedflights__current-price": {
+        "color": "#aaaaaa"
+      },
+      "div.gws-flights-savedflights__tracked-flights-subtitle": {
+        "color": "#aaaaaa"
+      },
+      "div.gws-flights__footer-picker.gws-flights__outline-focus": {
+        "background-color": "#222222"
+      },
+      "div.gws-flights__footer-row": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.gws-flights__homepage-body": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.gws-flights__tracked-flights-card.gws-flights__outline-focus.gws-flights-savedflights__tracked-flights-card": {
+        "background-color": "#000000",
+        "color": "#aaaaaa"
       },
       "div.id-pf-add-trans-toggle-btn": {
         "background-color": "#000000"
@@ -4673,6 +4870,12 @@
       "div.std-ts": {
         "color": "#4477aa"
       },
+      "div.tD5kazVERD1__first-flight-row": {
+        "color": "#aaaaaa"
+      },
+      "div.tD5kazVERD1__flight-row": {
+        "color": "#aaaaaa"
+      },
       "div.tb_h": {
         "color": "#aaaaaa"
       },
@@ -4692,6 +4895,12 @@
       "div.vk_gy.vk_sh": {
         "color": "#191a1a"
       },
+      "floating-action-button.gws-flights-form__search-button.flt-disabled": {
+        "background-color": "#222222"
+      },
+      "floating-action-button.gws-flights-form__search-button.flt-disabled:before": {
+        "opacity": "0"
+      },
       "g-inner-card._Wmi._KBh": {
         "background-color": "#000000"
       },
@@ -4710,6 +4919,13 @@
       },
       "html": {
         "background": "#000000"
+      },
+      "html body": {
+        "background-color": "#000000"
+      },
+      "input": {
+        "background-color": "#000000",
+        "color": "#aaaaaa\n"
       },
       "input.gsfi": {
         "background-color": "#000000",
@@ -4767,6 +4983,9 @@
       },
       "span.f": {
         "color": "#7dbaff"
+      },
+      "span.gws-flights__footer-picker-value": {
+        "color": "#aaaaaa"
       },
       "span.lr_dct_ph span": {
         "color": "#aaaaaa"
