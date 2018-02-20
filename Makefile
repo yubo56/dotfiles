@@ -108,7 +108,7 @@ yaourt: package-query
 	git clone https://aur.archlinux.org/yaourt.git ${YAOURT_TMP_DIR}
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
-	yaourt -S pepper-flash downgrade goldendict
+	yaourt -S pepper-flash downgrade goldendict git-lfs
 	echo "--ppapi-flash-path=/usr/lib/PepperFlash/libpepflashplayer.so" > ~/.config/chrome-dev-flags.conf
 
 .PHONY: infinality

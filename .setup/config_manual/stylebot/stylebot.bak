@@ -2293,6 +2293,9 @@
       "dl.form-group dt label": {
         "color": "#aaaaaa"
       },
+      "footer.site-footer": {
+        "background-color": "#000000"
+      },
       "h1": {
         "color": "#aaaaaa"
       },
@@ -2363,6 +2366,9 @@
       },
       "pre.highlight": {
         "background-color": "#333333"
+      },
+      "section.home-hero": {
+        "background-color": "#000000"
       },
       "span.blob-code-inner": {
         "color": "#dddddd"
@@ -3276,6 +3282,10 @@
       "div.alert-info": {
         "background-color": "#000000"
       },
+      "div.announcement.well.short": {
+        "background-color": "#333333",
+        "color": "#aaaaaa"
+      },
       "div.clarifying_discussion.clearFix": {
         "background-color": "#000000"
       },
@@ -3297,6 +3307,9 @@
       },
       "div.download_on_app_store_popup_container.clearfix": {
         "background-color": "#000000"
+      },
+      "div.header.span6 h2": {
+        "color": "#aaaaaa"
       },
       "div.homescreen_box.clearfix": {
         "background-color": "#000000",
