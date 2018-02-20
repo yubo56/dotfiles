@@ -50,3 +50,5 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 ```
 - combining pdf pages
     - `pdftk a.pdf b.pdf cat output c.pdf`
+- ffmpeg image -> video
+    - `ffmpeg -framerate 8 -pattern_type glob -i '*uz*.png' test.mp4`
