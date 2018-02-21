@@ -1897,6 +1897,12 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "#footer": {
+        "background-color": "#000000"
+      },
+      "#header": {
+        "background": "#000000"
+      },
       "#js-pjax-container": {
         "background-color": "#000000"
       },
@@ -1906,14 +1912,26 @@
       "#markdown-toc li": {
         "color": "#aaaaaa"
       },
+      ".btn": {
+        "background": "#444444",
+        "color": "#aaaaaa"
+      },
       ".markdown-body .highlight pre, .markdown-body pre": {
         "background-color": "#444444"
       },
       ".menu-item": {
         "background-color": "#000000"
       },
+      ".minibutton": {
+        "background": "#444444",
+        "color": "#aaaaaa",
+        "text-shadow": "0 0px"
+      },
       ".sidebar-module li": {
         "background-color": "#333333"
+      },
+      ".text-gray-dark": {
+        "color": "#aaaaaa"
       },
       "a": {
         "color": "#aaaaaa"
@@ -2015,6 +2033,12 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "button.dropdown-item.dropdown-signout": {
+        "color": "#aaaaaa"
+      },
+      "button.js-dropdown-button.dropdown-button": {
+        "color": "#aaaaaa"
+      },
       "button.review-thread-reply-button.width-full.text-gray.text-left.form-control.js-toggle-inline-comment-form": {
         "background-color": "#000000",
         "color": "#aaaaaa"
@@ -2029,11 +2053,21 @@
       "div p": {
         "color": "#aaaaaa"
       },
+      "div.Box": {
+        "background-color": "#000000"
+      },
+      "div.Box-body": {
+        "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
       "div.Box-header.Box-header--blue": {
         "background-color": "#000000"
       },
       "div.Box-row": {
         "background-color": "#000000"
+      },
+      "div.Box-row strong": {
+        "color": "#aaaaaa"
       },
       "div.CodeMirror": {
         "background-color": "#333333",
@@ -2053,13 +2087,21 @@
         "background-color": "#222222"
       },
       "div.alert": {
-        "background-color": "#333333"
+        "background": "#333333",
+        "text-shadow": "0 0px"
+      },
+      "div.alert.tip": {
+        "background": "#333333"
       },
       "div.article-body h4": {
         "color": "#aaaaaa"
       },
       "div.auth-form-body.mt-3": {
         "background-color": "#000000",
+        "color": "#aaaaaa"
+      },
+      "div.blankslate": {
+        "background-color": "#222222",
         "color": "#aaaaaa"
       },
       "div.blankslate.blankslate-large": {
@@ -2157,6 +2199,9 @@
       "div.filter-bar": {
         "background-color": "#222222"
       },
+      "div.flex-auto": {
+        "color": "#aaaaaa"
+      },
       "div.form-actions": {
         "background-color": "#000000"
       },
@@ -2167,7 +2212,7 @@
         "background-color": "#000000"
       },
       "div.gist-welcome.gist-banner.text-center": {
-        "background-image": "linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0))"
+        "background": "#000000"
       },
       "div.header-search-scope": {
         "background-color": "#000000",
@@ -2253,6 +2298,9 @@
       "div.rounded-1.text-gray.bg-gray-light.py-4.px-4.px-md-3.px-lg-4": {
         "background-color": "#000000"
       },
+      "div.section-title.flex-shrink-0.text-gray": {
+        "color": "#aaaaaa"
+      },
       "div.settings-next p": {
         "color": "#aaaaaa"
       },
@@ -2308,7 +2356,16 @@
       "h3.discussion-sidebar-heading": {
         "background-color": "#000000"
       },
+      "h3.menu-heading": {
+        "background-color": "#333333"
+      },
+      "h3.profile-timeline-month-heading.bg-white.d-inline-block.h6.pr-2.py-1": {
+        "background-color": "#000000"
+      },
       "h4": {
+        "color": "#aaaaaa"
+      },
+      "h4.text-normal": {
         "color": "#aaaaaa"
       },
       "header.orghead": {
@@ -2326,6 +2383,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "label": {
+        "color": "#aaaaaa"
+      },
       "label.d-block": {
         "color": "#aaaaaa"
       },
@@ -2336,6 +2396,12 @@
         "color": "#aaaaaa"
       },
       "li ul li": {
+        "color": "#aaaaaa"
+      },
+      "li.Box-row": {
+        "background-color": "#000000"
+      },
+      "li.Box-row strong": {
         "color": "#aaaaaa"
       },
       "li.list-group-item": {
@@ -2354,6 +2420,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "p.left": {
+        "text-shadow": "0 0px"
+      },
       "p.merge-pr-more-commits": {
         "color": "#aaaaaa"
       },
@@ -2362,6 +2431,9 @@
         "color": "#aaaaaa"
       },
       "p.text-center": {
+        "color": "#aaaaaa"
+      },
+      "p.text-small": {
         "color": "#aaaaaa"
       },
       "pre.highlight": {
@@ -2380,6 +2452,9 @@
         "color": "#aaaaaa"
       },
       "span.js-issue-title": {
+        "color": "#aaaaaa"
+      },
+      "span.link-gray-dark-underline": {
         "color": "#aaaaaa"
       },
       "span.num.text-emphasized": {
@@ -2469,8 +2544,17 @@
       "ul li": {
         "color": "#aaaaaa"
       },
+      "ul li p": {
+        "text-shadow": "0 0px"
+      },
+      "ul.dropdown-menu.dropdown-menu-sw": {
+        "background-color": "#333333"
+      },
       "ul.js-guides li a": {
         "background-color": "#333333"
+      },
+      "ul.links li a": {
+        "text-shadow": "0 0px"
       },
       "ul.numbers-summary li a": {
         "color": "#aaaaaa"
