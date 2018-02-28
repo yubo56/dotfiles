@@ -52,3 +52,6 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
     - `pdftk a.pdf b.pdf cat output c.pdf`
 - ffmpeg image -> video
     - `ffmpeg -framerate 8 -pattern_type glob -i '*uz*.png' test.mp4`
+    - `ffmpeg -framerate 8 -i '*uz*.png' test.mp4`
+- track git-lfs
+    - `git lfs track "*.psd"`

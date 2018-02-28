@@ -12,10 +12,17 @@ import Graphics.Rendering.Chart.Backend.Cairo
 import Text.Printf
 
 -------------------------------------------------------------------------------
+---------------------------------- UTILS --------------------------------------
+-------------------------------------------------------------------------------
+
+addArr :: Num a => [a] -> [a] -> [a]
+addArr = zipWith (+)
+
+-------------------------------------------------------------------------------
 --------------------------------- PLOTTING ------------------------------------
 -------------------------------------------------------------------------------
 
-data Histogram = Histogram Double Double [(Double,Int)]
+size = 20
 
 {-
   yuboBar
@@ -54,7 +61,7 @@ yuboBar cols dat title fn = renderableToFile def fn renderable
     renderable = toRenderable layout
 
 {-
-  yuboLine [(blue, "line", [0, 2], [1, 3])] "title" "/tmp/linechart.png"
+  yuboLine [(blue, "line", [0, 2], [1, 3])] "x" "y" "t" "/tmp/a.png"
 -}
 yuboLine ::
   [(Colour Double, String, [Float], [Float])] ->
@@ -65,13 +72,45 @@ yuboLine ::
   IO(PickFn ())
 yuboLine dat xlabel ylabel title fn = renderableToFile def fn renderable
   where
-    plotline (colour, title, x, y) =
+    plotline (colour, lineTitle, x, y) =
       plot_lines_style .~ solidLine 3.0 (opaque colour) $
       plot_lines_values .~ [zip x y] $
-      plot_lines_title .~ title $
+      plot_lines_title .~ lineTitle $
       def
 
-    size = 20
+    layout =
+      layout_title .~ title $
+      layout_title_style . font_size .~ size $
+      layout_x_axis . laxis_override .~ axisGridHide $
+      layout_x_axis . laxis_title .~ xlabel $
+      layout_x_axis . laxis_style . axis_label_style . font_size .~ size $
+      layout_x_axis . laxis_title_style . font_size .~ size $
+      layout_y_axis . laxis_title .~ ylabel $
+      layout_y_axis . laxis_style . axis_label_style . font_size .~ size $
+      layout_y_axis . laxis_title_style . font_size .~ size $
+      layout_plots .~ map (toPlot . plotline) dat $
+      layout_grid_last .~ False $
+      def
+
+    renderable = toRenderable layout
+{-
+  yuboScat [(blue, "line", [(1, 2), (3, 4)])] "x" "y" "t" "/tmp/a.png"
+-}
+yuboScat ::
+  [(Colour Double, String, [(Float, Float)])] ->
+  String ->
+  String ->
+  String ->
+  String ->
+  IO(PickFn ())
+yuboScat dat xlabel ylabel title fn = renderableToFile def fn renderable
+  where
+    plotline (colour, lineTitle, pts) =
+      plot_points_style .~ filledCircles 0.5 (opaque colour) $
+      plot_points_values .~ pts $
+      plot_points_title .~ lineTitle $
+      def
+
     layout =
       layout_title .~ title $
       layout_title_style . font_size .~ size $
@@ -88,9 +127,12 @@ yuboLine dat xlabel ylabel title fn = renderableToFile def fn renderable
 
     renderable = toRenderable layout
 
+
 {-
   yuboHist [sin x | x <- [0..9999]] "title" "xlabel" "ylabel" "/tmp/foo.png"
 -}
+data Histogram = Histogram Double Double [(Double,Int)]
+
 _nSturges :: [Double] -> Int
 _nSturges xs = ceiling $ logBase 2 n + 1
   where n = fromIntegral $ length xs
