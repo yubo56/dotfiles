@@ -108,7 +108,7 @@ yaourt: package-query
 	git clone https://aur.archlinux.org/yaourt.git ${YAOURT_TMP_DIR}
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
-	yaourt -S pepper-flash downgrade goldendict git-lfs
+	yaourt -S pepper-flash downgrade goldendict
 	echo "--ppapi-flash-path=/usr/lib/PepperFlash/libpepflashplayer.so" > ~/.config/chrome-dev-flags.conf
 
 .PHONY: infinality
@@ -224,9 +224,13 @@ lm_sensors: # pacman
 
 .PHONY: cabal
 cabal: # pacman
+	# reinstall all pacman packages since they're dynamically linked
+	# few exceptions by regex handled at top of cabal.txt
 	cabal update
-	for i in $$(cat .setup/cabal.txt); do\
-		cabal --ghc-option=-dynamic install $$i; done
+	cabal install --ghc-options=-dynamic --reinstall --force-reinstalls \
+		$$(pacman -Q | 'grep' -o -e "haskell-[^ ]*" | sed 's/haskell-//g' |\
+			sed 's/src-exts.*$$//g')\
+		$$(cat .setup/cabal.txt)
 
 ##############################################################################
 ##############################################################################

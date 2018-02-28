@@ -1,3 +1,10 @@
+cabal-doctest
+haskell-src-exts
+haskell-src-exts-util
+temporary
+split
+hlint
+
 alex
 happy
 histogram
