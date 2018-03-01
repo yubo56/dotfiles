@@ -97,7 +97,7 @@ yuboLine dat xlabel ylabel title fn = renderableToFile def fn renderable
   yuboScat [(blue, "line", [(1, 2), (3, 4)])] "x" "y" "t" "/tmp/a.png"
 -}
 yuboScat ::
-  [(Colour Double, String, [(Float, Float)])] ->
+  [(Colour Double, String, Double, [(Float, Float)])] ->
   String ->
   String ->
   String ->
@@ -105,8 +105,8 @@ yuboScat ::
   IO(PickFn ())
 yuboScat dat xlabel ylabel title fn = renderableToFile def fn renderable
   where
-    plotline (colour, lineTitle, pts) =
-      plot_points_style .~ filledCircles 0.5 (opaque colour) $
+    plotline (colour, lineTitle, ptSize, pts) =
+      plot_points_style .~ filledCircles ptSize (opaque colour) $
       plot_points_values .~ pts $
       plot_points_title .~ lineTitle $
       def
