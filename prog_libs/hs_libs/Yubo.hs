@@ -37,10 +37,10 @@ yuboBar ::
   String ->
   String ->
   IO (PickFn ())
-yuboBar cols dat title fn = renderableToFile def fn renderable
+yuboBar cols dats title fn = renderableToFile def fn renderable
   where
-    x_axis_labels = map fst dat
-    y_axis_values = map snd dat
+    x_axis_labels = map fst dats
+    y_axis_values = map snd dats
     titles = map fst cols
     colours = map snd cols
 
@@ -70,7 +70,7 @@ yuboLine ::
   String ->
   String ->
   IO(PickFn ())
-yuboLine dat xlabel ylabel title fn = renderableToFile def fn renderable
+yuboLine dats xlabel ylabel title fn = renderableToFile def fn renderable
   where
     plotline (colour, lineTitle, x, y) =
       plot_lines_style .~ solidLine 3.0 (opaque colour) $
@@ -88,22 +88,22 @@ yuboLine dat xlabel ylabel title fn = renderableToFile def fn renderable
       layout_y_axis . laxis_title .~ ylabel $
       layout_y_axis . laxis_style . axis_label_style . font_size .~ size $
       layout_y_axis . laxis_title_style . font_size .~ size $
-      layout_plots .~ map (toPlot . plotline) dat $
+      layout_plots .~ map (toPlot . plotline) dats $
       layout_grid_last .~ False $
       def
 
     renderable = toRenderable layout
 {-
-  yuboScat [(blue, "line", [(1, 2), (3, 4)])] "x" "y" "t" "/tmp/a.png"
+  yuboScatLims [(blue, "line", [(1, 2), (3, 4)])] ("x", (0, 1)) ("y", (0, 1)) "t" "/tmp/a.png"
 -}
-yuboScat ::
+yuboScatLims ::
   [(Colour Double, String, Double, [(Float, Float)])] ->
-  String ->
-  String ->
+  (String, (Float, Float)) ->
+  (String, (Float, Float)) ->
   String ->
   String ->
   IO(PickFn ())
-yuboScat dat xlabel ylabel title fn = renderableToFile def fn renderable
+yuboScatLims dats (xlabel, xlims) (ylabel, ylims) title fn = renderableToFile def fn renderable
   where
     plotline (colour, lineTitle, ptSize, pts) =
       plot_points_style .~ filledCircles ptSize (opaque colour) $
@@ -118,15 +118,30 @@ yuboScat dat xlabel ylabel title fn = renderableToFile def fn renderable
       layout_x_axis . laxis_title .~ xlabel $
       layout_x_axis . laxis_style . axis_label_style . font_size .~ size $
       layout_x_axis . laxis_title_style . font_size .~ size $
+      layout_x_axis . laxis_generate .~ scaledAxis def xlims $
       layout_y_axis . laxis_title .~ ylabel $
       layout_y_axis . laxis_style . axis_label_style . font_size .~ size $
       layout_y_axis . laxis_title_style . font_size .~ size $
-      layout_plots .~ map (toPlot . plotline) dat $
+      layout_y_axis . laxis_generate .~ scaledAxis def ylims $
+      layout_plots .~ map (toPlot . plotline) dats $
       layout_grid_last .~ False $
       def
 
     renderable = toRenderable layout
 
+yuboScat ::
+  [(Colour Double, String, Double, [(Float, Float)])] ->
+  String ->
+  String ->
+  String ->
+  String ->
+  IO(PickFn ())
+yuboScat dats xlabel ylabel = yuboScatLims dats (xlabel, xlims) (ylabel, ylims)
+  where
+    xs = [map fst xy | (_, _, _, xy) <- dats]
+    ys = [map snd xy | (_, _, _, xy) <- dats]
+    xlims = (minimum (map minimum xs), maximum (map maximum xs))
+    ylims = (minimum (map minimum ys), maximum (map maximum ys))
 
 {-
   yuboHist [sin x | x <- [0..9999]] "title" "xlabel" "ylabel" "/tmp/foo.png"
@@ -147,20 +162,20 @@ yuboHist ::
   String ->
   String ->
   IO ()
-yuboHist f dat xlabel ylabel title fn = do
+yuboHist f dats xlabel ylabel title fn = do
   print tickLocs
   plotAdv fn opts hist
   return ()
     where
       numTicks = 5
 
-      mindat = minimum dat
-      maxdat = maximum dat
-      binsize = (maxdat - mindat) / max (fromIntegral (f dat)) 1
+      mindat = minimum dats
+      maxdat = maximum dats
+      binsize = (maxdat - mindat) / max (fromIntegral (f dats)) 1
       roundedsize = fromIntegral (round (binsize * 1000)) / 1000
       nbins = ceiling $ (maxdat - mindat) / roundedsize
 
-      hist = histogramBinSize roundedsize dat
+      hist = histogramBinSize roundedsize dats
       baseTickLabels = zip (replicate (nbins + 1) "") [0..]
       tickLocs = [round (y * fromIntegral nbins / numTicks) | y <- [0..numTicks]]
       tickLabels = map
