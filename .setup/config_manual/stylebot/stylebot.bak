@@ -4645,6 +4645,9 @@
       ".gb_If": {
         "background-color": "#000000"
       },
+      ".gb_Jf": {
+        "background": "#000000"
+      },
       ".gbqfqw": {
         "background-color": "#222222"
       },
