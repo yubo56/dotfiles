@@ -30,6 +30,12 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
     - Default: 20, Sans, Serif, Sans, Monospace
     - Hangul: 20, Baekmuk Batang, Baekmuk Batang, Baekmuk Batang, Default
     - Simplified Han: 20, UKai CN, UKai CN, UKai CN, Default
+- DarkReader:
+```
+arxiv.org/.*pdf
+blackboard.cornell.edu/.*pdf
+nature.com/.*pdf
+```
 
 ## Setup on Mac
 - `yaourt -S hid-apple-patched-git`, use config file from `.setup/config_manual`
