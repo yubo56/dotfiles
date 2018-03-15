@@ -30,9 +30,9 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
     - Default: 20, Sans, Serif, Sans, Monospace
     - Hangul: 20, Baekmuk Batang, Baekmuk Batang, Baekmuk Batang, Default
     - Simplified Han: 20, UKai CN, UKai CN, UKai CN, Default
-- DarkReader:
+- DarkReader: (anything ends in either `.pdf` or `/pdf`)
 ```
-[a-z]*/.*pdf
+[a-z]*/.*[\.,/]pdf$
 ```
 
 ## Setup on Mac
