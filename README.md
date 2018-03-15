@@ -32,9 +32,9 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
     - Simplified Han: 20, UKai CN, UKai CN, UKai CN, Default
 - DarkReader:
 ```
-arxiv.org/.*pdf
-blackboard.cornell.edu/.*pdf
-nature.com/.*pdf
+www.*.com/.*pdf
+www.*.org/.*pdf
+www.*.edu/.*pdf
 ```
 
 ## Setup on Mac
