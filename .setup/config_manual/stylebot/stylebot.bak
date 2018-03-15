@@ -4773,6 +4773,9 @@
       "cite._Rm.bc": {
         "color": "#4477aa"
       },
+      "cite.iUh30": {
+        "color": "#4477aa"
+      },
       "div.LJV2HGB-Ob-c .gwt-HTML": {
         "background-color": "#333333",
         "color": "#aaaaaa"
@@ -5106,6 +5109,9 @@
       },
       "select._dif._Ohf.iNptXfY9sVoA-y69YkR-bRoA": {
         "background-color": "#4a4c4d"
+      },
+      "span.Y0NH2b.CLPzrc": {
+        "color": "#aaaaaa"
       },
       "span._G2b span": {
         "color": "#ffffff"
