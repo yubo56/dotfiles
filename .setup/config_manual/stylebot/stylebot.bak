@@ -761,8 +761,14 @@
       "div.gb_Dd.gb_ae": {
         "background-color": "#000000"
       },
+      "div.gb_Ed.gb_be": {
+        "background-color": "#000000"
+      },
       "div.gb_Jb": {
         "color": "#bbbbbb"
+      },
+      "div.gb_Je.gb_Ie": {
+        "background-color": "#000000"
       },
       "div.gb_R": {
         "background-color": "#000000\n",
@@ -817,6 +823,9 @@
         "background-color": "#333333",
         "color": "#aaaaaa"
       },
+      "div.rSoRzd": {
+        "color": "#aaaaaa"
+      },
       "div.static-form-dialog": {
         "background-color": "#000000"
       },
@@ -864,6 +873,9 @@
       "form.gb_Ne.gb_jf.gb_4e": {
         "background-color": "#222222"
       },
+      "form.gb_Oe.gb_kf": {
+        "background-color": "#333333"
+      },
       "form.gb_Se": {
         "background": "#333333"
       },
@@ -883,6 +895,10 @@
       },
       "input.gb_5e": {
         "background-color": "#222222",
+        "color": "#aaaaaa"
+      },
+      "input.gb_6e": {
+        "background-color": "#333333",
         "color": "#aaaaaa"
       },
       "input.gb_Te": {
@@ -4686,6 +4702,9 @@
       ".gb_Jf": {
         "background": "#000000"
       },
+      ".gb_Mf": {
+        "background-color": "#000000"
+      },
       ".gbqfqw": {
         "background-color": "#222222"
       },
@@ -4786,6 +4805,9 @@
       },
       "div.LJV2HGB-d-Ab": {
         "color": "#aaaaaa"
+      },
+      "div.LJV2HGB-d-W.LJV2HGB-d-Y.LJV2HGB-Xb-a": {
+        "background-color": "#222222"
       },
       "div.LJV2HGB-d-W.LJV2HGB-d-cc.LJV2HGB-d-LbLJV2HGB-d-S": {
         "background-color": "#000000",
@@ -4954,6 +4976,9 @@
         "background-color": "#000000"
       },
       "div.gb_df.gb_bg": {
+        "background-color": "#000000"
+      },
+      "div.gb_nb.gb_Lg.gb_R.gb_Kg.gb_T": {
         "background-color": "#000000"
       },
       "div.goog-inline-block": {
