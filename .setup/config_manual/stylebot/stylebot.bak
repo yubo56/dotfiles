@@ -111,6 +111,9 @@
       "html body p": {
         "color": "#aaaaaa"
       },
+      "html body ul": {
+        "color": "#aaaaaa"
+      },
       "ul li a": {
         "color": "#4477dd"
       }
@@ -387,6 +390,40 @@
       "#ghx-pool": {
         "background-color": "#000000"
       },
+      "#navigation-placeholder-skeleton .global-sidebar": {
+        "background": "#000000"
+      },
+      ".activity-item-description .user-content": {
+        "color": "#aaaaaa"
+      },
+      ".activity-item-description blockquote": {
+        "background": "#000000",
+        "color": "#aaaaaa"
+      },
+      ".activity-item-description pre": {
+        "color": "#aaaaaa"
+      },
+      ".adg3 .tabwrap>ul.tabs>li a, .adg3 .tabwrap>ul.tabs>li a:focus, .adg3 .tabwrap>ul.tabs>li a:hover, .adg3 .tabwrap>ul.tabs>li a:link, .adg3 .tabwrap>ul.tabs>li a:visited": {
+        "background": "#222222",
+        "color": "#aaaaaa\n"
+      },
+      ".adg3 .tabwrap>ul.tabs>li.active>strong": {
+        "background": "#222222",
+        "color": "#aaaaaa"
+      },
+      ".cSCDWK": {
+        "background": "#000000"
+      },
+      ".container-sidebar": {
+        "background": "#000000"
+      },
+      ".editable-field": {
+        "background": "#000",
+        "transition": "none"
+      },
+      ".hPPsOH:before, .hPPsOH:after": {
+        "background": "#000000"
+      },
       "a.aui-nav-link": {
         "color": "#aaaaaa"
       },
@@ -518,12 +555,18 @@
       "html": {
         "background-color": "#000000"
       },
+      "html body": {
+        "background": "#000000"
+      },
       "input.text": {
         "background-color": "#444444",
         "color": "#aaaaaa"
       },
       "li": {
         "border-bottom": "#000000\n"
+      },
+      "li dl dt": {
+        "color": "#aaaaaa"
       },
       "li.ghx-column": {
         "background-color": "#000000",
@@ -549,12 +592,27 @@
       "span.field-value.js-editable-field.js-edit-epicLabel-trigger": {
         "color": "#aaaaaa"
       },
+      "span.icVecj": {
+        "color": "#aaaaaa"
+      },
+      "span.idLChA svg": {
+        "color": "#aaaaaa"
+      },
       "span.kOItUc": {
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "span.overlay-icon.aui-icon.aui-icon-small.aui-iconfont-edit": {
+        "background-color": "#000000"
+      },
+      "strong.name": {
+        "color": "#aaaaaa"
+      },
       "textarea": {
         "background-color": "#444444",
+        "color": "#aaaaaa"
+      },
+      "time": {
         "color": "#aaaaaa"
       },
       "tr": {
@@ -5017,6 +5075,9 @@
       "div.id-pf-add-trans-toggle-btn": {
         "background-color": "#000000"
       },
+      "div.kYtVhf b": {
+        "color": "#aaaaaa"
+      },
       "div.kno-ecr-pt.kno-fb-ctx": {
         "color": "#aaaaaa"
       },
@@ -5121,6 +5182,9 @@
         "width": "500px"
       },
       "input.gsfi.lst-d-f": {
+        "color": "#aaaaaa"
+      },
+      "li.Wwqmhc": {
         "color": "#aaaaaa"
       },
       "li._AXc": {
@@ -5249,6 +5313,9 @@
       },
       "div._1t_p.clearfix": {
         "background-color": "#000000"
+      },
+      "div._1tqi": {
+        "color": "#aaaaaa"
       },
       "div._1ut7": {
         "background-color": "#000000"
