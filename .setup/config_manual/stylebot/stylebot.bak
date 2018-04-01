@@ -4886,6 +4886,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "div.PNlCoe div span": {
+        "color": "#aaaaaa"
+      },
       "div._AOf": {
         "color": "#aaaaaa"
       },
@@ -5112,8 +5115,14 @@
       "div.lr_dct_sf_h i span": {
         "color": "#aaaaaa"
       },
+      "div.lr_dct_sf_sen.vk_txt div": {
+        "color": "#aaaaaa"
+      },
       "div.lsbb.kpbb": {
         "background-color": "#000000"
+      },
+      "div.m5DaLc.DnFXu": {
+        "color": "#aaaaaa"
       },
       "div.sbib_b": {
         "background-color": "#000000"
