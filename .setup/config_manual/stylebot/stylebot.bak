@@ -3125,6 +3125,9 @@
         "background-color": "#444444",
         "color": "#dddddd"
       },
+      "label": {
+        "color": "#aaaaaa"
+      },
       "label.aD": {
         "color": "#aaaaaa"
       },
@@ -3153,6 +3156,9 @@
       "span.go": {
         "color": "#aaaaaa"
       },
+      "span.rc": {
+        "color": "#aaaaaa"
+      },
       "span.ts": {
         "color": "#4477aa"
       },
@@ -3164,6 +3170,9 @@
       },
       "table.gstt": {
         "background-color": "#000000"
+      },
+      "td": {
+        "color": "#aaa"
       },
       "td.Bu": {
         "background-color": "#000000"
@@ -3283,6 +3292,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "div.gb_Ed.gb_be.gb_Ld": {
+        "background-color": "#000000"
+      },
       "div.gb_R.gb_se": {
         "background-color": "#000000"
       },
@@ -3299,6 +3311,9 @@
         "background-color": "#000000"
       },
       "div.gb_mc": {
+        "background-color": "#000000"
+      },
+      "div.gb_rc": {
         "background-color": "#000000"
       },
       "div.gb_ye": {
