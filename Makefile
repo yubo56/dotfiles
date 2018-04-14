@@ -110,7 +110,7 @@ yaourt: package-query
 	rm -rf ${PQ_TMP_DIR}
 	yaourt -S downgrade goldendict dropbox dropbox-cli
 	sudo systemctl enable dropbox@${USERNAME}
-	rm -rf ~/.dropbox-dist && install -dm0 ~/.dropbox-dist
+	rm -rf ~/.dropbox-dist && install -dm0 ~/.dropbox-dist && sudo chown root ~/.dropbox-dist
 
 .PHONY: infinality
 infinality: # pacman
