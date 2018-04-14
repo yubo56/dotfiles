@@ -108,7 +108,7 @@ yaourt: package-query
 	git clone https://aur.archlinux.org/yaourt.git ${YAOURT_TMP_DIR}
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
-	yaourt -S downgrade goldendict dropbox
+	yaourt -S downgrade goldendict dropbox dropbox-cli
 	sudo systemctl enable dropbox@${USERNAME}
 	rm -rf ~/.dropbox-dist && install -dm0 ~/.dropbox-dist
 
