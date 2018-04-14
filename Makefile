@@ -108,8 +108,9 @@ yaourt: package-query
 	git clone https://aur.archlinux.org/yaourt.git ${YAOURT_TMP_DIR}
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
-	yaourt -S pepper-flash downgrade goldendict
-	echo "--ppapi-flash-path=/usr/lib/PepperFlash/libpepflashplayer.so" > ~/.config/chrome-dev-flags.conf
+	yaourt -S downgrade goldendict dropbox
+	sudo systemctl enable dropbox@${USERNAME}
+	rm -rf ~/.dropbox-dist && install -dm0 ~/.dropbox-dist
 
 .PHONY: infinality
 infinality: # pacman
