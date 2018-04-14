@@ -390,6 +390,9 @@
       "#ghx-pool": {
         "background-color": "#000000"
       },
+      "#issue-content": {
+        "background-color": "#000000"
+      },
       "#navigation-placeholder-skeleton .global-sidebar": {
         "background": "#000000"
       },
@@ -411,6 +414,12 @@
         "background": "#222222",
         "color": "#aaaaaa"
       },
+      ".bEeuGg": {
+        "background": "#000000"
+      },
+      ".bKeEhE": {
+        "background": "#000000"
+      },
       ".cSCDWK": {
         "background": "#000000"
       },
@@ -421,7 +430,22 @@
         "background": "#000",
         "transition": "none"
       },
+      ".fLfNQq": {
+        "background": "#000000"
+      },
+      ".fceuRk:hover": {
+        "background": "#000000"
+      },
+      ".gNjuyo": {
+        "background-color": "#000000"
+      },
       ".hPPsOH:before, .hPPsOH:after": {
+        "background": "#000000"
+      },
+      ".page-type-split .navigator-group": {
+        "background-color": "#000000"
+      },
+      ".zGAyD": {
         "background": "#000000"
       },
       "a.aui-nav-link": {
@@ -473,6 +497,9 @@
       },
       "div.dialog-button-panel": {
         "background-color": "#333333"
+      },
+      "div.dvuWLj div": {
+        "color": "#aaaaaa"
       },
       "div.fFNTVS": {
         "background-color": "#000000"
@@ -526,6 +553,9 @@
         "background-color": "#000000"
       },
       "div.list-panel": {},
+      "div.llxWHL div p": {
+        "color": "#aaaaaa"
+      },
       "div.navigator-sidebar": {
         "background-color": "#000000"
       },
@@ -546,6 +576,9 @@
       "h3": {
         "color": "#aaaaaa"
       },
+      "h3.dashboard-item-title": {
+        "background-color": "#000000"
+      },
       "header.aui-page-header": {
         "background-color": "#000000"
       },
@@ -556,6 +589,9 @@
         "background-color": "#000000"
       },
       "html body": {
+        "background": "#000000"
+      },
+      "input.ffQQbf": {
         "background": "#000000"
       },
       "input.text": {
@@ -596,6 +632,9 @@
         "color": "#aaaaaa"
       },
       "span.idLChA svg": {
+        "color": "#aaaaaa"
+      },
+      "span.issue-link-summary": {
         "color": "#aaaaaa"
       },
       "span.kOItUc": {
@@ -4264,6 +4303,9 @@
       "a": {
         "color": "#aaaaaa"
       },
+      "a._1itt._k01._1itu._2pi2": {
+        "background-color": "#000000"
+      },
       "a._1jf6": {
         "background-color": "#000000"
       },
@@ -4352,6 +4394,9 @@
         "background-color": "#000000",
         "color": "#aaaaaa"
       },
+      "div._2ph_.__bc._3qn7._61-0._2fyi._3qnf": {
+        "background-color": "#000000"
+      },
       "div._2t-a": {
         "background-color": "#444444"
       },
@@ -4405,6 +4450,9 @@
         "background-color": "#000000"
       },
       "div._4ms4": {
+        "background-color": "#000000"
+      },
+      "div._4rtl": {
         "background-color": "#000000"
       },
       "div._50dz div": {
