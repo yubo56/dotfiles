@@ -273,6 +273,7 @@ pull:
 	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
 		do (cd $$i && ${PULL_CMD}); done
 	git reset && ${PULL_CMD}
+	(cd vim && git submodule update --init)
 	cd ~/HWSets && ${PULL_CMD} &&\
 		cd ~/ClassNotes && ${PULL_CMD} &&\
 		cd ~/research/nonlinear_breaking && ${PULL_CMD} &&\
