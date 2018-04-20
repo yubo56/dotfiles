@@ -76,7 +76,7 @@ install_keybase:
 	keybase login yssu
 
 .PHONY: decode_keys
-decode_keys: install_keybase
+decode_keys: # install_keybase
 	cd private && for i in $$(find . -iname *.kb); do\
 		keybase decrypt -i $$i -o "$${i%.*}"; \
 		chmod 600 "$${i%.*}"; done
@@ -190,6 +190,7 @@ git_ssh: # pacman stow
 
 .PHONY: wifi
 wifi: # pacman
+	keybase decrypt -i .setup/wpa_supplicant.conf.kb -o .setup/wpa_supplicant.conf; \
 	sudo chmod 600 .setup/wpa_supplicant.conf
 	sudo rm -f /etc/wpa_supplicant/wpa_supplicant.conf
 	sudo ln -s ${PWD}/.setup/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf
