@@ -108,8 +108,9 @@ yaourt: package-query
 	git clone https://aur.archlinux.org/yaourt.git ${YAOURT_TMP_DIR}
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
-	yaourt -S pepper-flash downgrade goldendict
-	echo "--ppapi-flash-path=/usr/lib/PepperFlash/libpepflashplayer.so" > ~/.config/chrome-dev-flags.conf
+	yaourt -S downgrade goldendict dropbox dropbox-cli
+	sudo systemctl enable dropbox@${USERNAME}
+	rm -rf ~/.dropbox-dist && install -dm0 ~/.dropbox-dist && sudo chown root ~/.dropbox-dist
 
 .PHONY: infinality
 infinality: # pacman
@@ -272,6 +273,7 @@ pull:
 	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
 		do (cd $$i && ${PULL_CMD}); done
 	git reset && ${PULL_CMD}
+	(cd vim && git submodule update --init)
 	cd ~/HWSets && ${PULL_CMD} &&\
 		cd ~/ClassNotes && ${PULL_CMD} &&\
 		cd ~/research/nonlinear_breaking && ${PULL_CMD} &&\

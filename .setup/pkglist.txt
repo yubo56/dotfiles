@@ -28,6 +28,7 @@ lm_sensors
 moreutils
 mplayer
 openssh
+pepper-flash
 perl-xml-simple
 python
 python-matplotlib
