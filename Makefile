@@ -267,7 +267,7 @@ goldendict:
 	rm -f ~/.goldendict/config
 	ln -s ${PWD}/.setup/misc/gdict_config ~/.goldendict/config
 
-PULL_CMD=(git pull || true)
+PULL_CMD=((git checkout master && git pull) || true)
 .PHONY: pull
 pull:
 	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
