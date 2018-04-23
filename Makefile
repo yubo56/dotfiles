@@ -71,7 +71,7 @@ mod_user: # pacman (need sudo, zsh)
 
 .PHONY: install_keybase
 install_keybase:
-	pacman -Q keybase || sudo pacman -S keybase
+	pacman -Q keybase-bin || yaourt -S keybase-bin
 	@echo 'get paper key from gmail'
 	keybase login yssu
 
