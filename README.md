@@ -61,4 +61,6 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
     - `git lfs track "*.psd"`
 - `exec screen -R -s ~yubosu/anaconda3/bin/zsh` in `~/.bash_profile`
     - profile to avoid running on ssh, shell to specify alt shell
+- `~/.ssh/authorized_keys`: put public key,
+    - `chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys`
 - `/^1?$|^(11+)\1+$/` matches non-prime numbers of 1s
