@@ -8,7 +8,7 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 - `pacstrap -i /mnt base base-devel`
 - `arch-chroot /mnt`
 - `pacman -S git`
-- `git clone https://yubo56@github.com/yubo56/dotFiles.git ~dotfiles`
+- `git clone https://yubo56@github.com/yubo56/dotFiles.git ~/dotfiles`
     - use personal access token from Gmail Tasks
 - `make root`
 - Reboot, login to new user
@@ -20,8 +20,6 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 - `karabiner.json` belongs in `~/.config/karabiner/karabiner.json`
     - Rules are applied in reverse precedence
     - Convention: map from only left modifiers, map only to right modifiers
-- On Mac, need `hid-apple-patched-git-dkms`, join all configuration options onto
-  one line
 - ibus needs to be 1.5.14-2 to support unicode input
 
 ## fonts
@@ -36,7 +34,7 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 ```
 
 ## Setup on Mac
-- `yaourt -S hid-apple-patched-git`, use config file from `.setup/config_manual`
+- `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
 
 # Misc commands to save
 - resizing image while removing virtual canvas
