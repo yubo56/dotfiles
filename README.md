@@ -23,14 +23,12 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 - ibus needs to be 1.5.14-2 to support unicode input
 
 ## fonts
-- Under chrome: advanced font settings [DEPRECATED??]:
-    - [Script]: [font size], [standard], [serif], [sans], [monospace]
-    - Default: 20, Sans, Serif, Sans, Monospace
-    - Hangul: 20, Baekmuk Batang, Baekmuk Batang, Baekmuk Batang, Default
-    - Simplified Han: 20, UKai CN, UKai CN, UKai CN, Default
-- DarkReader: (anything ends in either `.pdf` or `/pdf`)
+- DarkReader: Dynamic Theme Editor (anything ends in either `.pdf` or `/pdf`)
 ```
 [a-z]*/.*[\.,/]pdf$
+
+INVERT
+embed
 ```
 
 ## Setup on Mac
@@ -55,9 +53,7 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 - ffmpeg image -> video
     - `ffmpeg -framerate 8 -pattern_type glob -i '*uz*.png' test.mp4`
     - `ffmpeg -framerate 8 -i '*uz*.png' test.mp4`
-- track git-lfs
-    - `git lfs track "*.psd"`
-- `exec screen -R -s ~yubosu/anaconda3/bin/zsh` in `~/.bash_profile`
+- `exec screen -R -s /usr/bin/zsh` in `~/.bash_profile`
     - profile to avoid running on ssh, shell to specify alt shell
 - `~/.ssh/authorized_keys`: put public key,
     - `chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys`
