@@ -8,12 +8,10 @@ chromium
 dmenu
 dos2unix
 feh
-ghc
 git
 gnupg
 gnuplot
 gvim
-haskell-hlint
 htop
 ibus
 ibus-hangul
