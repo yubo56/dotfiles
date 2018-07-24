@@ -33,6 +33,7 @@ embed
 
 ## Setup on Mac
 - `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
+- If keep getting brcmf kernel panics, throttle XferMethod in `/etc/pacman.conf`
 
 # Misc commands to save
 - resizing image while removing virtual canvas
