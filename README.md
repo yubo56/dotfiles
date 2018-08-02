@@ -59,3 +59,11 @@ embed
 - `~/.ssh/authorized_keys`: put public key,
     - `chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys`
 - `/^1?$|^(11+)\1+$/` matches non-prime numbers of 1s
+- IBus errors:
+    - `Config value [engine/hangul:on-keys] does not exist.` and for
+  off-keys
+        - `dconf write /desktop/ibus/engine/hangul/on-keys \'\'`
+        - `dconf write /desktop/ibus/engine/hangul/off-keys \'\'`
+    - IBus menus won't show, frozen
+        - recompile w/ `ibusproperty.c:ibus_property_update()` line
+          `set_visible` commented out
