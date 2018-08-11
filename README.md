@@ -14,7 +14,10 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 - `git clone https://yubo56@github.com/yubo56/dotFiles.git ~/dotfiles`
     - use personal access token from Gmail Tasks
 - `make root`
+
 - Reboot, login to new user
+- `sudo dhcpcd` or connect to wifi
+- clean `/etc/pacman.d/mirrorlist`
 - `make linux`
 - Re-encode keys, after new keybase user is added
 
