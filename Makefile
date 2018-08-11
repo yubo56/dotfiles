@@ -65,7 +65,7 @@ hostname:
 .PHONY:timezone
 timezone:
 	rm /etc/localtime
-	ln -s /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
+	ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
 
 .PHONY: install_wpa_supplicant
 install_wpa_supplicant:

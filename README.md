@@ -3,17 +3,23 @@
 These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone the repo and make install *all* the things.
 
 ## Order of things
-- Set up partitions (`fdisk` or through native OS)
+- UEFI + set up partitions (`fdisk` or through native OS)
+    - Note: May need to write GPT + create EFI partition
+    - `bootctl install`, then create `loader.conf`
 - Mount `/mnt` and `/mnt/boot`
 - `pacstrap -i /mnt base base-devel`
+- `genfstab -U /mnt >> /mnt/etc/fstab`
 - `arch-chroot /mnt`
 - `pacman -S git`
 - `git clone https://yubo56@github.com/yubo56/dotFiles.git ~/dotfiles`
     - use personal access token from Gmail Tasks
 - `make root`
+
 - Reboot, login to new user
-- Re-encode keys, after new keybase user is added
+- `sudo dhcpcd` or connect to wifi
+- clean `/etc/pacman.d/mirrorlist`
 - `make linux`
+- Re-encode keys, after new keybase user is added
 
 ## misc notes
 - Screensaver on suspend uses 00xscreensaver on home, xscreensaver.service on Mac
