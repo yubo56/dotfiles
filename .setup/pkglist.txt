@@ -21,7 +21,6 @@ ipython
 iw
 jre8-openjdk
 jq
-keybase
 lm_sensors
 moreutils
 mplayer
@@ -54,7 +53,7 @@ valgrind
 xclip
 xdotool
 xorg-server
-xorg-server-utils
+xorg-apps
 xorg-xinit
 xscreensaver
 wpa_supplicant

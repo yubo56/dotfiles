@@ -12,9 +12,27 @@ VIM_TMP_DIR=/tmp/vim
 PWD=$$(pwd)
 
 .PHONY: linux
-linux: etc wifi connect_wifi mirrorlist pacman git_ssh decode_keys \
-	yaourt vim dwm stow pacupdate screensaver mod_user change_git_repo \
-	lm_sensors ntp
+linux: \
+	change_shell\
+	submodules_to_https\
+	update_plugins\
+	mirrorlist\
+	pacman\
+	yaourt\
+	install_keybase\
+	decode_keys\
+	re_encode_keys\
+	stow\
+	git_ssh\
+	vim\
+	dwm\
+	screensaver\
+	change_git_repo\
+	submodules_to_ssh\
+	lm_sensors\
+	ntp\
+	etc\
+# wifi connect_wifi
 
 .PHONY: root
 root: timezone create_user sudoers hostname install_wpa_supplicant
@@ -159,6 +177,7 @@ pacupdate: #pacman
 # Tries stow -R if normal stow fails
 .PHONY: stow
 stow: # pacman
+	mkdir -p ~/.config
 	@printf '*** Stowing Files... ***\n'
 	stow `'ls' -d */` || stow -R `'ls' -d */`
 	rm -f ~/.config/redshift.conf
@@ -170,15 +189,10 @@ stow: # pacman
 # mirrorlist sort
 .PHONY: mirrorlist
 mirrorlist: # pacman
-	@printf 'Checking whether mirrorlist is already processed...\n'
-	@grep 'United States' /etc/pacman.d/mirrorlist > /dev/null 2>&1
+	sudo pacman -S pacman-contrib --noconfirm
 	@sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.full
-	@tr '\n' ' ' < /etc/pacman.d/mirrorlist |\
-		sed 's/.*United\ States\ //g; s/##.*//g' |\
-		tr '#' '\n' |\
-		sudo tee /etc/pacman.d/mirrorlist.backup > /dev/null
 	@printf '*** Generating mirrorlist... ***\n'
-	@sudo rankmirrors /etc/pacman.d/mirrorlist.backup | sudo tee /etc/pacman.d/mirrorlist > /dev/null
+	@sudo rankmirrors /etc/pacman.d/mirrorlist.full | sudo tee /etc/pacman.d/mirrorlist > /dev/null
 	@printf '*** Done generating mirrorlist! ***\n\n'
 
 # set up git to use ssh key + ssh clone URL
@@ -240,16 +254,21 @@ cabal: # pacman
 ##############################    MISC UTILS     #############################
 ##############################################################################
 ##############################################################################
+change_shell:
+	chsh -s $(which zsh) $(whoami)
+
 update_plugins:
 	git submodule update --init --recursive
 
 submodules_to_https:
-	sed -i.bak 's/git@github.com:/https:\/\/yubo56@github.com\//g' .gitmodules
+	sed -i.bak -E 's/git@(.*):/https:\/\/yubo56@\1\//g' .gitmodules
 	rm .gitmodules.bak
 	git submodule sync
 
 submodules_to_ssh:
 	sed -i.bak 's/https:\/\/.*github.com\//git@github.com:/g' .gitmodules
+	rm .gitmodules.bak
+	sed -i.bak 's/https:\/\/.*bitbucket.org\//git@bitbucket.org:/g' .gitmodules
 	rm .gitmodules.bak
 	git submodule sync
 
