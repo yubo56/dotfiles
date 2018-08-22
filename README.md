@@ -71,5 +71,7 @@ embed
         - `dconf write /desktop/ibus/engine/hangul/on-keys \'\'`
         - `dconf write /desktop/ibus/engine/hangul/off-keys \'\'`
     - IBus menus won't show, frozen
+        - `git clone`, ensure have `gnome-common` installed, checkout 1.5.18
+        - `./autogen.sh`
         - recompile w/ `ibusproperty.c:ibus_property_update()` line
           `set_visible` commented out
