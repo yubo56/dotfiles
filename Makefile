@@ -32,6 +32,7 @@ linux: \
 	lm_sensors\
 	ntp\
 	etc\
+	ctags
 # wifi connect_wifi
 
 .PHONY: root
@@ -315,6 +316,19 @@ push:
 .PHONY: ntp
 ntp: pacman
 	sudo timedatectl set-ntp true
+
+CTAGS_DIR=/tmp/ctags
+.PHONY: ctags
+ctags:
+	rm -rf ${CTAGS_DIR}
+	git clone https://github.com/majutsushi/ctags.git ${CTAGS_DIR}
+	cd ${CTAGS_DIR} &&\
+		ls &&\
+		autoheader &&\
+		autoconf &&\
+		./configure &&\
+		make &&\
+		sudo make install
 
 ##############################################################################
 ##############################################################################
