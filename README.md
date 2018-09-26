@@ -34,7 +34,6 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 afreecatv.com
 twitch.tv
 mail.google.com/mail/u/[0-9]/#inbox
-mail.google.com/mail/u/[0-9]$
 ```
 
 ## Setup on Mac
