@@ -29,12 +29,11 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 - ibus needs to be 1.5.14-2 to support unicode input
 
 ## fonts
-- DarkReader: Dynamic Theme Editor (anything ends in either `.pdf` or `/pdf`)
+- DarkReader: Dynamic Theme Editor exceptions:
 ```
-[a-z]*/.*[\.,/]pdf$
-
-INVERT
-embed
+afreecatv.com
+twitch.tv
+mail.google.com/mail/u/[0-9]/#inbox
 ```
 
 ## Setup on Mac
