@@ -51,6 +51,7 @@ unzip
 valgrind
 xclip
 xdotool
+xf86-video-fbdev
 xorg-server
 xorg-apps
 xorg-xinit

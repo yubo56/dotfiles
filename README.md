@@ -21,32 +21,28 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 - `make linux`
 - Re-encode keys, after new keybase user is added
 
+## Setup on Mac
+- `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
+- To get IGD:
+    - `apple_set_os`, add bootloader entry
+    - kernel param `mem_encrypt=off`
+    - may need to compile with kernel params
+```
+CONFIG_EXTRA_FIRMWARE="radeon/verde_ce.bin radeon/verde_mc.bin radeon/verde_me.bin radeon/verde_pfp.bin radeon/verde_rlc.bin radeon/verde_smc.bin radeon/TAHITI_uvd.bin"
+CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
+```
+
 ## misc notes
 - Screensaver on suspend uses 00xscreensaver on home, xscreensaver.service on Mac
 - `karabiner.json` belongs in `~/.config/karabiner/karabiner.json`
     - Rules are applied in reverse precedence
     - Convention: map from only left modifiers, map only to right modifiers
 - ibus needs to be 1.5.14-2 to support unicode input
-
-## fonts
+- `sudo sysctl kernel/unprivileged_userns_clone=1` for Brave namespaces
 - DarkReader: Dynamic Theme Editor exceptions:
 ```
-afreecatv.com
 twitch.tv
-mail.google.com/mail/u/[0-9]/#inbox
-```
-
-## Setup on Mac
-- `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
-- To get IGD:
-    - `apple_set_os`
-    - add bootloader entry
-    - kernel param `mem_encrypt=off`
-    - consider `mbpfan-git`, using 40/55/100 temps
-    - may need to compile with kernel params
-```
-CONFIG_EXTRA_FIRMWARE="radeon/verde_ce.bin radeon/verde_mc.bin radeon/verde_me.bin radeon/verde_pfp.bin radeon/verde_rlc.bin radeon/verde_smc.bin radeon/TAHITI_uvd.bin"
-CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
+afreecatv.com
 ```
 
 # Misc commands to save
