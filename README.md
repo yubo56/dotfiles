@@ -44,6 +44,11 @@ CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
 twitch.tv
 afreecatv.com
 ```
+- Bluetooth headset: `bluez bluez-utils pulseaudio-bluetooth pulseaudio-alsa`
+    - Pulseaudio asound.conf, `/etc/pulse/defaultpa`:
+        `load-module module-switch-on-connect`
+    - `bluetoothctl`:
+        `power on; agent on; scan on; pair <...>; trust <...>; connect <...>`
 
 # Misc commands to save
 - resizing image while removing virtual canvas
