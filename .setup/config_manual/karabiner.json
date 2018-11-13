@@ -72,7 +72,7 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "left_shift",
-                                            "left_option"
+                                            "left_command"
                                         ],
                                         "optional": [
                                             "any"
@@ -295,6 +295,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
+                                            "^com\\.brave\\.Browser\\.beta",
                                             "^com\\.google\\.Chrome$"
                                         ],
                                         "type": "frontmost_application_if"
@@ -316,7 +317,7 @@
                                     {
                                         "key_code": "h",
                                         "modifiers": [
-                                            "left_option",
+                                            "left_command",
                                             "shift"
                                         ]
                                     }
@@ -327,6 +328,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
+                                            "^com\\.brave\\.Browser\\.beta",
                                             "^com\\.google\\.Chrome$"
                                         ],
                                         "type": "frontmost_application_if"
@@ -357,6 +359,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
+                                            "^com\\.brave\\.Browser\\.beta",
                                             "^com\\.google\\.Chrome$"
                                         ],
                                         "type": "frontmost_application_if"
@@ -393,6 +396,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
+                                            "^com\\.brave\\.Browser\\.beta",
                                             "^com\\.google\\.Chrome$"
                                         ],
                                         "type": "frontmost_application_if"
@@ -423,6 +427,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
+                                            "^com\\.brave\\.Browser\\.beta",
                                             "^com\\.google\\.Chrome$"
                                         ],
                                         "type": "frontmost_application_if"
