@@ -635,8 +635,8 @@
                     "identifiers": {
                         "is_keyboard": true,
                         "is_pointing_device": false,
-                        "product_id": 23,
-                        "vendor_id": 9494
+                        "product_id": 4228,
+                        "vendor_id": 3897
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": false,
@@ -663,14 +663,31 @@
                     "disable_built_in_keyboard_if_exists": false,
                     "fn_function_keys": [],
                     "identifiers": {
-                        "is_keyboard": false,
-                        "is_pointing_device": true,
-                        "product_id": 5,
-                        "vendor_id": 7119
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 41066,
+                        "vendor_id": 1241
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": false,
-                    "simple_modifications": []
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": {
+                                "key_code": "left_option"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_option"
+                            },
+                            "to": {
+                                "key_code": "left_command"
+                            }
+                        }
+                    ]
                 }
             ],
             "fn_function_keys": [
@@ -791,4 +808,3 @@
         }
     ]
 }
-
