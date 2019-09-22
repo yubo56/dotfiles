@@ -39,16 +39,13 @@ CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
     - Convention: map from only left modifiers, map only to right modifiers
 - ibus needs to be 1.5.14-2 to support unicode input
 - `sudo sysctl kernel/unprivileged_userns_clone=1` for Brave namespaces
-- DarkReader: Dynamic Theme Editor exceptions:
-```
-twitch.tv
-afreecatv.com
-```
 - Bluetooth headset: `bluez bluez-utils pulseaudio-bluetooth pulseaudio-alsa`
     - Pulseaudio asound.conf, `/etc/pulse/defaultpa`:
         `load-module module-switch-on-connect`
     - `bluetoothctl`:
         `power on; agent on; scan on; pair <...>; trust <...>; connect <...>`
+- transparency: `sudo pacman -S xcompmgr transset-df`
+    - `devilspie` used to be used to match windows on open, broken now
 
 # Misc commands to save
 - resizing image while removing virtual canvas
@@ -75,8 +72,7 @@ afreecatv.com
     - `chmod 700 ~/.ssh && chmod 600 ~/.ssh/authorized_keys`
 - `/^1?$|^(11+)\1+$/` matches non-prime numbers of 1s
 - IBus errors:
-    - `Config value [engine/hangul:on-keys] does not exist.` and for
-  off-keys
+    - `Config value [engine/hangul:on-keys] does not exist.` and for off-keys
         - `dconf write /desktop/ibus/engine/hangul/on-keys \'\'`
         - `dconf write /desktop/ibus/engine/hangul/off-keys \'\'`
     - IBus menus won't show, frozen

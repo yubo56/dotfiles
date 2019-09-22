@@ -42,6 +42,7 @@ stow
 terminus-font
 texlive-most
 tmux
+transset-df
 ttf-arphic-ukai
 ttf-baekmuk
 ttf-bitstream-vera
@@ -50,6 +51,7 @@ unrar
 unzip
 valgrind
 xclip
+xcompmgr
 xdotool
 xf86-video-fbdev
 xorg-server
