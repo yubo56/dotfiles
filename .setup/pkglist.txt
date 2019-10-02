@@ -2,6 +2,8 @@ acpi
 alsa-utils
 asp
 bc
+bluez
+bluez-utils
 cabal-install
 chromium
 dmenu
@@ -26,6 +28,8 @@ mplayer
 openssh
 pepper-flash
 perl-xml-simple
+pulseaudio-bluetooth
+pulseaudio-alsa
 python
 python-matplotlib
 python-numpy

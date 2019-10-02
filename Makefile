@@ -183,9 +183,9 @@ stow: # pacman
 	stow `'ls' -d */` || stow -R `'ls' -d */`
 	rm -f ~/.config/redshift.conf
 	rm -rf ~/.config/zathura
-	ln -s ~/dotfiles/.setup/misc/redshift.conf ~/.config/redshift.conf
-	ln -s ~/dotfiles/.setup/misc/zathura ~/.config/zathura
-	ln -s ~/dotfiles/.setup/misc/chromium-flags.conf ~/.config/chromium-flags.conf
+	ln -sf ~/dotfiles/.setup/misc/redshift.conf ~/.config/redshift.conf
+	ln -sf ~/dotfiles/.setup/misc/zathura ~/.config/zathura
+	ln -sf ~/dotfiles/.setup/misc/chromium-flags.conf ~/.config/chromium-flags.conf
 	@printf '*** Stowed Files! ***\n\n'
 
 # mirrorlist sort
