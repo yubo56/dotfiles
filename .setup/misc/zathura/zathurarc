@@ -2,7 +2,24 @@ set scroll-step 20
 set scroll-hstep 10
 set zoom-step 3
 
+# fit-width by default
+set adjust-open width
+
+# keybindings
 unmap q
 map q toggle_statusbar
+unmap [fullscreen] q
+map [fullscreen] q toggle_statusbar
+
 unmap <Space>
 map <Space> navigate next
+unmap [fullscreen] <Space>
+map [fullscreen] <Space> navigate next
+
+map [fullscreen] <Left> navigate previous
+map [fullscreen] <Right> navigate next
+
+# theme
+set recolor true
+set recolor-lightcolor "#000000"
+set recolor-darkcolor "#E0E0E0"
