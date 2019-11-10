@@ -46,6 +46,9 @@ CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
         `power on; agent on; scan on; pair <...>; trust <...>; connect <...>`
 - transparency: `sudo pacman -S xcompmgr transset-df`
     - `devilspie` used to be used to match windows on open, broken now
+- droidcam `/etc/modprobe.d/droidcam.conf` resolution, `/opt/urserver/urserver`
+  to start Unified Remote
+    - `yaourt -S droidcam adb unified-remote-server`
 
 # Misc commands to save
 - resizing image while removing virtual canvas
