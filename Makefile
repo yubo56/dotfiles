@@ -79,7 +79,7 @@ install_wpa_supplicant:
 
 .PHONY: change_git_repo
 change_git_repo:
-	git remote set-url origin git@github.com:yubo56/dotFiles.git
+	git remote set-url origin git@github.com:yubo56/dotfiles.git
 
 .PHONY: mod_user
 mod_user: # pacman (need sudo, zsh)
@@ -274,7 +274,7 @@ submodules_to_ssh:
 	git submodule sync
 
 change_git_repo_https:
-	git remote set-url origin https://yubo56@github.com/yubo56/dotFiles.git
+	git remote set-url origin https://yubo56@github.com/yubo56/dotfiles.git
 
 .PHONY: re_encode_keys
 re_encode_keys:
