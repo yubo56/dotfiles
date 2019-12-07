@@ -24,6 +24,7 @@ jq
 lm_sensors
 moreutils
 mplayer
+ntfs-3g
 openssh
 pepper-flash
 perl-xml-simple
