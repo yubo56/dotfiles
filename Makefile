@@ -11,6 +11,7 @@ YAOURT_TMP_DIR=/tmp/yaourt
 VIM_TMP_DIR=/tmp/vim
 PWD=$$(pwd)
 
+
 .PHONY: linux
 linux: \
 	change_shell\
@@ -24,9 +25,7 @@ linux: \
 	re_encode_keys\
 	stow\
 	git_ssh\
-	vim\
 	dwm\
-	screensaver\
 	change_git_repo\
 	submodules_to_ssh\
 	lm_sensors\
@@ -36,7 +35,7 @@ linux: \
 # wifi connect_wifi
 
 .PHONY: root
-root: timezone create_user sudoers hostname install_wpa_supplicant
+root: timezone create_user sudoers hostname #install_wpa_supplicant
 
 ##############################################################################
 ##############################################################################
@@ -65,8 +64,7 @@ hostname:
 
 .PHONY:timezone
 timezone:
-	rm /etc/localtime
-	ln -s /usr/share/zoneinfo/America/New_York /etc/localtime
+	timedatectl set-timezone America/New_York
 
 .PHONY: install_wpa_supplicant
 install_wpa_supplicant:
@@ -91,7 +89,7 @@ mod_user: # pacman (need sudo, zsh)
 .PHONY: install_keybase
 install_keybase:
 	pacman -Q keybase-bin || yaourt -S keybase-bin
-	@echo 'get paper key from gmail'
+	run_keybase
 	keybase login yssu
 
 .PHONY: decode_keys
@@ -127,7 +125,8 @@ yaourt: package-query
 	git clone https://aur.archlinux.org/yaourt.git ${YAOURT_TMP_DIR}
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
-	yaourt -S downgrade goldendict dropbox dropbox-cli
+	gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
+	yaourt -S --no-confirm downgrade goldendict dropbox dropbox-cli
 	sudo systemctl enable dropbox@${USERNAME}
 	rm -rf ~/.dropbox-dist && install -dm0 ~/.dropbox-dist && sudo chown root ~/.dropbox-dist
 
@@ -257,7 +256,7 @@ cabal: # pacman
 ##############################################################################
 ##############################################################################
 change_shell:
-	chsh -s $(which zsh) $(whoami)
+	chsh -s $$(which zsh) $$(whoami)
 
 update_plugins:
 	git submodule update --init --recursive
