@@ -5,13 +5,25 @@ These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone
 ## Order of things
 - UEFI + set up partitions (`fdisk` or through native OS)
     - Note: May need to write GPT + create EFI partition
-    - `bootctl install`, then create `loader.conf`
-- Mount `/mnt` and `/mnt/boot`
-- `pacstrap -i /mnt base base-devel`
-- `genfstab -U /mnt >> /mnt/etc/fstab`
+- Mount `/mnt`
+- `pacstrap -i /mnt base base-devel linux linux-firmware`
+- Mount `/mnt/boot`
+- `genfstab -U /mnt > /mnt/etc/fstab`
+- `bootctl --esp-path=/mnt/boot install`, then create entries + `loader.conf`
+    - Sample entry
+```
+title Arch Linux Macbook
+linux /vmlinuz-linux-macbook
+initrd /initramfs-linux-macbook-fallback.img
+options rw root=UUID=<...>
+```
+- `/mnt/etc/locale.conf` edits, `echo KEYMAP=dvorak > /mnt/etc/vconsole.conf`
 - `arch-chroot /mnt`
-- `pacman -S git`
+- `locale-gen`
+- `pacman -S git dhcpcd zsh gvim`
+    - gvim since I'll want +X11 support later anyway, though it's much larger
 - `git clone https://yubo56@github.com/yubo56/dotFiles.git ~/dotfiles`
+    - can comment out `install_wpa_supplicant` if have lan connection
     - use personal access token from Gmail Tasks
 - `make root`
 
@@ -68,7 +80,6 @@ CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
     - `pdftk a.pdf b.pdf cat output c.pdf`
 - ffmpeg image -> video
     - `ffmpeg -framerate 8 -pattern_type glob -i '*uz*.png' test.mp4`
-    - `ffmpeg -framerate 8 -i '*uz*.png' test.mp4`
 - `exec screen -R -s /usr/bin/zsh` in `~/.bash_profile`
     - profile to avoid running on ssh, shell to specify alt shell
 - `~/.ssh/authorized_keys`: put public key,
