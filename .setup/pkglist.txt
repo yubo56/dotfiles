@@ -7,6 +7,7 @@ bluez-utils
 cabal-install
 dmenu
 dos2unix
+efibootmgr
 feh
 git
 gnupg

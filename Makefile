@@ -31,7 +31,8 @@ linux: \
 	lm_sensors\
 	ntp\
 	etc\
-	ctags
+	ctags\
+	enable_dhcpcd
 # wifi connect_wifi
 
 .PHONY: root
@@ -210,7 +211,6 @@ wifi: # pacman
 	sudo rm -f /etc/wpa_supplicant/wpa_supplicant.conf
 	sudo ln -s ${PWD}/.setup/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf
 	sudo systemctl enable wpa_supplicant.service
-	sudo systemctl enable dhcpcd.service
 	cd /etc/wpa_supplicant && \
 		sudo rm -f wpa_supplicant-${WIFI_INTERFACE}.conf && \
 		sudo ln -s wpa_supplicant.conf wpa_supplicant-${WIFI_INTERFACE}.conf\
@@ -221,6 +221,10 @@ connect_wifi:
 	sudo wpa_supplicant -i${WIFI_INTERFACE} -c/etc/wpa_supplicant/wpa_supplicant.conf\
 		-B
 	sudo dhcpcd ${WIFI_INTERFACE}
+
+.PHONY: enable_dhcpcd
+enable_dhcpcd:
+	sudo systemctl enable dhcpcd.service
 
 .PHONY: screensaver
 screensaver: # pacman
