@@ -31,7 +31,6 @@ options rw root=UUID=<...>
 - `sudo dhcpcd` or connect to wifi
 - clean `/etc/pacman.d/mirrorlist`
 - `make linux`
-- Re-encode keys, after new keybase user is added
 
 ## Setup on Mac
 - `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
@@ -61,6 +60,17 @@ CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
 - droidcam `/etc/modprobe.d/droidcam.conf` resolution, `/opt/urserver/urserver`
   to start Unified Remote
     - `yaourt -S droidcam adb unified-remote-server`
+- For audio, need `~/.asoundrc`, check which sound card via alsamixer, then
+```
+pcm.!default {
+    type hw
+    card 1
+}
+ctl.!default {
+    type hw
+    card 1
+}
+```
 
 # Misc commands to save
 - resizing image while removing virtual canvas
