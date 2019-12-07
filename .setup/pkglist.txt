@@ -5,7 +5,6 @@ bc
 bluez
 bluez-utils
 cabal-install
-chromium
 dmenu
 dos2unix
 feh
