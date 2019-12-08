@@ -23,6 +23,7 @@ iw
 jre8-openjdk
 jq
 lm_sensors
+man
 moreutils
 mplayer
 ntfs-3g
