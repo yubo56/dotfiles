@@ -71,6 +71,8 @@ ctl.!default {
     card 1
 }
 ```
+- if dmenu is randomly crashing, `strace dmenu_run`, but probably need to git
+  clone and re-install (4.9-1 seems to have this problem)
 
 # Misc commands to save
 - resizing image while removing virtual canvas
