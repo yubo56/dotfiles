@@ -106,3 +106,5 @@ ctl.!default {
         - `./autogen.sh`
         - recompile w/ `ibusproperty.c:ibus_property_update()` line
           `set_visible` commented out
+- To split/join files, `split -b 200M a.tar.gz "a.tar.gz.part"`, can just cat
+  them all together to join
