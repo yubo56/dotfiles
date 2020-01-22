@@ -127,7 +127,7 @@ yaourt: package-query
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
 	gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-	yaourt -S --no-confirm downgrade goldendict dropbox dropbox-cli
+	yaourt -S --noconfirm downgrade goldendict dropbox dropbox-cli
 	sudo systemctl enable dropbox@${USERNAME}
 	rm -rf ~/.dropbox-dist && install -dm0 ~/.dropbox-dist && sudo chown root ~/.dropbox-dist
 
