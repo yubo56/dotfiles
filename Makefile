@@ -32,8 +32,8 @@ linux: \
 	ntp\
 	etc\
 	ctags\
-	enable_dhcpcd
-# wifi connect_wifi
+	enable_dhcpcd\
+	wifi # connect_wifi
 
 .PHONY: root
 root: timezone create_user sudoers hostname #install_wpa_supplicant
@@ -65,6 +65,8 @@ hostname:
 
 .PHONY:timezone
 timezone:
+	timedatectl set-local-rtc yes
+	timedatectl set-ntp true
 	timedatectl set-timezone America/New_York
 
 .PHONY: install_wpa_supplicant
