@@ -1,10 +1,12 @@
 # Yubo Dotfiles
 
-These are all my dotfiles and now a lot more. Want to be able to pacstrap, clone the repo and make install *all* the things.
+These are all my dotfiles and now a lot more. Want to be able to pacstrap,
+clone the repo and make install all the things.
 
 ## Order of things
 - UEFI + set up partitions (`fdisk` or through native OS)
     - Note: May need to write GPT + create EFI partition
+    - `mkfs.ext4 /dev/sdaX`
 - Mount `/mnt`
 - `pacstrap -i /mnt base base-devel linux linux-firmware`
 - Mount `/mnt/boot`

@@ -10,7 +10,8 @@ PQ_TMP_DIR=/tmp/pq
 YAOURT_TMP_DIR=/tmp/yaourt
 VIM_TMP_DIR=/tmp/vim
 PWD=$$(pwd)
-
+PACMAN=pacman --noconfirm
+YAOURT=yaourt --noconfirm
 
 .PHONY: linux
 linux: \
@@ -71,7 +72,7 @@ timezone:
 
 .PHONY: install_wpa_supplicant
 install_wpa_supplicant:
-	pacman -Q wpa_supplicant || pacman -S wpa_supplicant
+	pacman -Q wpa_supplicant || ${PACMAN} -S wpa_supplicant
 
 ##############################################################################
 ##############################################################################
@@ -91,7 +92,7 @@ mod_user: # pacman (need sudo, zsh)
 
 .PHONY: install_keybase
 install_keybase:
-	pacman -Q keybase-bin || yaourt -S keybase-bin
+	pacman -Q keybase-bin || ${YAOURT} -S keybase-bin
 	run_keybase
 	keybase login yssu
 
@@ -110,7 +111,7 @@ etc:
 .PHONY: pacman
 pacman:
 	@printf '*** Installing pacman packages... ***\n'
-	sudo pacman -S --needed --noconfirm - < ~/dotfiles/.setup/pkglist.txt
+	sudo ${PACMAN} -S --needed - < ~/dotfiles/.setup/pkglist.txt
 	@printf '*** Installed pacman packages! ***\n\n'
 
 .PHONY: package-query
@@ -129,10 +130,9 @@ yaourt: package-query
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
 	gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-	yaourt -S --noconfirm downgrade goldendict dropbox dropbox-cli
-	sudo systemctl enable dropbox@${USERNAME}
-	rm -rf ~/.dropbox-dist && install -dm0 ~/.dropbox-dist && sudo chown root ~/.dropbox-dist
+	${YAOURT} -S downgrade goldendict brave-beta-bin
 
+# DEPRECATED infinality is dead :(
 .PHONY: infinality
 infinality: # pacman
 	@echo Adding infinality server
@@ -140,7 +140,7 @@ infinality: # pacman
 		| sudo tee -a /etc/pacman.conf
 	@sudo pacman-key -r 962DDE58 && sudo pacman-key -f 962DDE58 &&\
 		sudo pacman-key --lsign-key 962DDE58
-	sudo pacman -Syy && sudo pacman -S infinality-bundle
+	sudo pacman -Syy && sudo ${PACMAN} -S infinality-bundle
 
 # set up vim with with-x=yes (deprecated if just install gvim instead)
 .PHONY: vim
@@ -153,7 +153,7 @@ vim: # pacman
 	cd ${VIM_TMP_DIR} &&\
 		sed -i 's/with-x=no/with-x=yes/g' PKGBUILD &&\
 		PKGEXT=${PKGEXT} makepkg -s &&\
-		sudo pacman -U --noconfirm $$(makepkg --packagelist | grep '^vim.*x86_64' | sed 's/$$/${PKGEXT}/g') > /dev/null
+		sudo ${PACMAN} -U $$(makepkg --packagelist | grep '^vim.*x86_64' | sed 's/$$/${PKGEXT}/g') > /dev/null
 	@rm -rf ${VIM_TMP_DIR}
 	@printf '*** Vim installed! ***\n\n'
 	mkdir -p ~/.undodir
@@ -180,6 +180,7 @@ pacupdate: #pacman
 # Tries stow -R if normal stow fails
 .PHONY: stow
 stow: # pacman
+	rm -rf ~/.gnupg # during install process, this folder is created, rm it w/e
 	mkdir -p ~/.config
 	@printf '*** Stowing Files... ***\n'
 	stow `'ls' -d */` || stow -R `'ls' -d */`
@@ -193,7 +194,7 @@ stow: # pacman
 # mirrorlist sort
 .PHONY: mirrorlist
 mirrorlist: # pacman
-	sudo pacman -S pacman-contrib --noconfirm
+	sudo ${PACMAN} -S pacman-contrib
 	@sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.full
 	@printf '*** Generating mirrorlist... ***\n'
 	@sudo rankmirrors /etc/pacman.d/mirrorlist.full | sudo tee /etc/pacman.d/mirrorlist > /dev/null
@@ -249,7 +250,7 @@ lm_sensors: # pacman
 cabal: # pacman
 	# reinstall all pacman packages since they're dynamically linked
 	# few exceptions by regex handled at top of cabal.txt
-	sudo pacman -S ghc ghc-libs haskell-hslint
+	sudo ${PACMAN} -S ghc ghc-libs haskell-hslint
 	cabal update
 	cabal install --ghc-options=-dynamic --reinstall --force-reinstalls \
 		$$(pacman -Q | 'grep' -o -e "haskell-[^ ]*" | sed 's/haskell-//g' |\
@@ -291,7 +292,7 @@ re_encode_keys:
 
 .PHONY: goldendict
 goldendict:
-	pacman -Q goldendict || yaourt -S goldendict
+	pacman -Q goldendict || ${YAOURT} -S goldendict
 	rm -f ~/.goldendict/config
 	ln -s ${PWD}/.setup/misc/gdict_config ~/.goldendict/config
 
