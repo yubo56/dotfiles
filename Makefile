@@ -34,6 +34,7 @@ linux: \
 	etc\
 	ctags\
 	enable_dhcpcd\
+	undodir\
 	wifi # connect_wifi
 
 .PHONY: root
@@ -335,6 +336,11 @@ ctags:
 		./configure &&\
 		make &&\
 		sudo make install
+
+# make persistent undodir
+.PHONY: undodir
+undodir:
+	mkdir ~/.undodir
 
 ##############################################################################
 ##############################################################################
