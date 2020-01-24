@@ -75,13 +75,13 @@ yssu ALL=(ALL) ALL
 
 ## Uncomment to allow members of group wheel to execute any command
 # %wheel ALL=(ALL) ALL
-%sudo	ALL=(ALL) NOPASSWD: /usr/bin/pacman
-%sudo	ALL=(ALL) NOPASSWD: /usr/bin/efibootmgr
-%sudo	ALL=(ALL) NOPASSWD: /usr/bin/openconnect
-%sudo   ALL=(ALL) NOPASSWD: /usr/bin/reboot
-%sudo	ALL=(ALL) NOPASSWD: /usr/bin/shutdown
-%sudo	ALL=(ALL) NOPASSWD: /usr/bin/tee
-%sudo	ALL=(ALL) NOPASSWD: /usr/bin/wpa_supplicant
+yssu ALL=(ALL) NOPASSWD: /usr/bin/pacman
+yssu ALL=(ALL) NOPASSWD: /usr/bin/efibootmgr
+yssu ALL=(ALL) NOPASSWD: /usr/bin/openconnect
+yssu ALL=(ALL) NOPASSWD: /usr/bin/reboot
+yssu ALL=(ALL) NOPASSWD: /usr/bin/shutdown
+yssu ALL=(ALL) NOPASSWD: /usr/bin/tee
+yssu ALL=(ALL) NOPASSWD: /usr/bin/wpa_supplicant
 
 ## Same thing without a password
 # %wheel ALL=(ALL) NOPASSWD: ALL
