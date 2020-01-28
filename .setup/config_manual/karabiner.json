@@ -11,7 +11,8 @@
                     "basic.simultaneous_threshold_milliseconds": 50,
                     "basic.to_delayed_action_delay_milliseconds": 500,
                     "basic.to_if_alone_timeout_milliseconds": 1000,
-                    "basic.to_if_held_down_threshold_milliseconds": 500
+                    "basic.to_if_held_down_threshold_milliseconds": 500,
+                    "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
                     {
@@ -295,8 +296,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.brave\\.Browser\\.beta",
-                                            "^com\\.google\\.Chrome$"
+                                            "^com\\.brave\\.Browser"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -328,8 +328,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.brave\\.Browser\\.beta",
-                                            "^com\\.google\\.Chrome$"
+                                            "^com\\.brave\\.Browser"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -359,8 +358,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.brave\\.Browser\\.beta",
-                                            "^com\\.google\\.Chrome$"
+                                            "^com\\.brave\\.Browser"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -396,8 +394,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.brave\\.Browser\\.beta",
-                                            "^com\\.google\\.Chrome$"
+                                            "^com\\.brave\\.Browser"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -427,8 +424,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.brave\\.Browser\\.beta",
-                                            "^com\\.google\\.Chrome$"
+                                            "^com\\.brave\\.Browser"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -516,6 +512,34 @@
                                         "key_code": "equal_sign",
                                         "modifiers": [
                                             "left_command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Option + shift + q sends CMD + q",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "x",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_option",
+                                            "shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "x",
+                                        "modifiers": [
+                                            "right_command"
                                         ]
                                     }
                                 ],
@@ -789,8 +813,27 @@
                 }
             ],
             "name": "",
+            "parameters": {
+                "delay_milliseconds_before_open_device": 1000
+            },
             "selected": true,
             "simple_modifications": [
+                {
+                    "from": {
+                        "key_code": "fn"
+                    },
+                    "to": {
+                        "key_code": "left_control"
+                    }
+                },
+                {
+                    "from": {
+                        "key_code": "left_control"
+                    },
+                    "to": {
+                        "key_code": "fn"
+                    }
+                },
                 {
                     "from": {
                         "key_code": "caps_lock"
@@ -803,7 +846,8 @@
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
                 "country_code": 0,
-                "keyboard_type": "ansi"
+                "keyboard_type": "ansi",
+                "mouse_key_xy_scale": 100
             }
         }
     ]
