@@ -34,7 +34,7 @@ options rw root=UUID=<...>
 - clean `/etc/pacman.d/mirrorlist`
 - `make linux`
 
-## Setup on Mac
+## Setup on Mac (linux)
 - `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
 - To get IGD:
     - `apple_set_os`, add bootloader entry
@@ -48,6 +48,7 @@ CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
 ## misc notes
 - Screensaver on suspend uses 00xscreensaver on home, xscreensaver.service on Mac
 - `karabiner.json` belongs in `~/.config/karabiner/karabiner.json`
+    - Other than karabiner.json, just remap capslock -> control in system prefs
     - Rules are applied in reverse precedence
     - Convention: map from only left modifiers, map only to right modifiers
 - ibus needs to be 1.5.14-2 to support unicode input
