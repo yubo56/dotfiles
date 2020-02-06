@@ -62,7 +62,9 @@ xdotool
 xf86-video-fbdev
 xorg-server
 xorg-apps
+xorg-xfontsel
 xorg-xinit
+xorg-xmessage
 xscreensaver
 wpa_supplicant
 zathura

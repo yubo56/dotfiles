@@ -20,6 +20,6 @@ map [fullscreen] <Left> navigate previous
 map [fullscreen] <Right> navigate next
 
 # theme
-set recolor true
-set recolor-lightcolor "#000000"
-set recolor-darkcolor "#E0E0E0"
+# set recolor true
+# set recolor-lightcolor "#000000"
+# set recolor-darkcolor "#E0E0E0"
