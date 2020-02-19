@@ -74,6 +74,23 @@ ctl.!default {
     card 1
 }
 ```
+    - When bluetooth is connected, need to use pulseaudio, default is in
+      `/etc/asound.conf`, e.g.
+```
+pcm.!default {
+  type pulse
+  fallback "sysdefault"
+  hint {
+    show on
+    description "Default ALSA Output (currently PulseAudio Sound Server)"
+  }
+}
+
+ctl.!default {
+  type pulse
+  fallback "sysdefault"
+}
+```
 - if dmenu is randomly crashing, `strace dmenu_run`, but probably need to git
   clone and re-install (4.9-1 seems to have this problem)
 
