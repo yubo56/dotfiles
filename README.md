@@ -128,3 +128,4 @@ ctl.!default {
           `set_visible` commented out
 - To split/join files, `split -b 200M a.tar.gz "a.tar.gz.part"`, can just cat
   them all together to join
+- On mac, set hostname: `sudo scutil --set HostName <...>`
