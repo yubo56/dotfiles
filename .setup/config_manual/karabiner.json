@@ -546,6 +546,49 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Caps + 9/0 sends Page Up/Down",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "9",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_up"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "0",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "page_down"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
@@ -727,18 +770,18 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "left_control"
+                                "key_code": "fn"
                             },
                             "to": {
-                                "key_code": "fn"
+                                "key_code": "left_control"
                             }
                         },
                         {
                             "from": {
-                                "key_code": "fn"
+                                "key_code": "left_control"
                             },
                             "to": {
-                                "key_code": "left_control"
+                                "key_code": "fn"
                             }
                         }
                     ]
