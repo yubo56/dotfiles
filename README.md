@@ -44,6 +44,7 @@ options rw root=UUID=<...>
     - Convention: map from only left modifiers, map only to right modifiers
 - "System Preferences > Keyboard > Shortcuts > App Shortcuts", add bizzare
   modifier for 'Minimize/Minimise' to disable accidental minimize
+    - Can also use Automator to start screen saver, add shortcut under Services
 
 ## Setup on Mac (linux)
 - `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
