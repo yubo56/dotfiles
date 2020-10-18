@@ -66,6 +66,7 @@ xorg-xfontsel
 xorg-xinit
 xorg-xmessage
 xscreensaver
+wget
 wpa_supplicant
 zathura
 zathura-djvu
