@@ -34,6 +34,18 @@ options rw root=UUID=<...>
 - clean `/etc/pacman.d/mirrorlist`
 - `make linux`
 
+## Setup on Mac (MacOS)
+- On mac, set hostname: `sudo scutil --set HostName <...>`
+- `karabiner.json` belongs in `~/.config/karabiner/karabiner.json`
+    - Simple mods (should be in k.json): ust remap capslock -> control in system
+      prefs, swap left_option and left_command for every individual keyboard,
+      swap Fn and left_ctrl for MacOS (should be in Karabiner.json)
+    - Rules are applied in reverse precedence
+    - Convention: map from only left modifiers, map only to right modifiers
+- "System Preferences > Keyboard > Shortcuts > App Shortcuts", add bizzare
+  modifier for 'Minimize/Minimise' to disable accidental minimize
+    - Can also use Automator to start screen saver, add shortcut under Services
+
 ## Setup on Mac (linux)
 - `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
 - To get IGD:
@@ -47,10 +59,6 @@ CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
 
 ## misc notes
 - Screensaver on suspend uses 00xscreensaver on home, xscreensaver.service on Mac
-- `karabiner.json` belongs in `~/.config/karabiner/karabiner.json`
-    - Other than karabiner.json, just remap capslock -> control in system prefs
-    - Rules are applied in reverse precedence
-    - Convention: map from only left modifiers, map only to right modifiers
 - ibus needs to be 1.5.14-2 to support unicode input
 - `sudo sysctl kernel/unprivileged_userns_clone=1` for Brave namespaces
 - Bluetooth headset: `bluez bluez-utils pulseaudio-bluetooth pulseaudio-alsa`
@@ -128,4 +136,3 @@ ctl.!default {
           `set_visible` commented out
 - To split/join files, `split -b 200M a.tar.gz "a.tar.gz.part"`, can just cat
   them all together to join
-- On mac, set hostname: `sudo scutil --set HostName <...>`
