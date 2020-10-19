@@ -131,7 +131,7 @@ yaourt: package-query
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
 	gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-	${YAOURT} -S downgrade goldendict brave-beta-bin
+	${YAOURT} -S downgrade goldendict brave-beta-bin zoom
 
 # DEPRECATED infinality is dead :(
 .PHONY: infinality

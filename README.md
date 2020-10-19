@@ -101,6 +101,11 @@ ctl.!default {
 ```
 - if dmenu is randomly crashing, `strace dmenu_run`, but probably need to git
   clone and re-install (4.9-1 seems to have this problem)
+- To get headphones + mic working:
+    - can I figure out autobluetooth?
+    - `pacmd set-card-profile <card> headset_head_unit` or `a2dp_sink` (latter
+      is the high-quality audio, no source)
+    - `pactl set-default-source <card>`
 
 # Misc commands to save
 - resizing image while removing virtual canvas
@@ -136,3 +141,4 @@ ctl.!default {
           `set_visible` commented out
 - To split/join files, `split -b 200M a.tar.gz "a.tar.gz.part"`, can just cat
   them all together to join
+- Last brave version w/ xmodmap support is 1.15.54-1 (Sept 17, 2020)
