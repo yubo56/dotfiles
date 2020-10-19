@@ -141,4 +141,5 @@ ctl.!default {
           `set_visible` commented out
 - To split/join files, `split -b 200M a.tar.gz "a.tar.gz.part"`, can just cat
   them all together to join
-- Last brave version w/ xmodmap support is 1.15.54-1 (Sept 17, 2020)
+- Last brave version w/ xmodmap support is 1.15.54-1 (Sept 17, 2020), seems to
+  correspond to Chromium v85 (86 is broken)
