@@ -1,6 +1,7 @@
 acpi
 alsa-utils
 asp
+automake
 bc
 bluez
 bluez-utils
@@ -12,6 +13,7 @@ feh
 git
 gnupg
 gnuplot
+gsl
 gvim
 htop
 ibus
