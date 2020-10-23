@@ -342,6 +342,11 @@ ctags:
 undodir:
 	mkdir ~/.undodir
 
+SUSER_PATH=/home/${USERNAME}/dotfiles/.setup/systemd_user
+systemd_user:
+	mkdir -p ~/.config/systemd/user
+	for i in $$('ls' ${SUSER_PATH}); do ln -s ${SUSER_PATH}/$$i ~/.config/systemd/user/$$i; systemctl --user enable $$i; done
+
 ##############################################################################
 ##############################################################################
 ##############################     STYLEBOT      #############################
