@@ -184,7 +184,7 @@ stow: # pacman
 	rm -rf ~/.gnupg # during install process, this folder is created, rm it w/e
 	mkdir -p ~/.config
 	@printf '*** Stowing Files... ***\n'
-	stow `'ls' -d */` || stow -R `'ls' -d */`
+	stow `'ls' -d */` || stow -R `'ls' -d */ --ignore=.xscreensaver`
 	rm -f ~/.config/redshift.conf
 	rm -rf ~/.config/zathura
 	ln -sf ~/dotfiles/.setup/misc/redshift.conf ~/.config/redshift.conf
