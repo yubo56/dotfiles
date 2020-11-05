@@ -144,3 +144,6 @@ ctl.!default {
 - To split/join files, `split -b 200M a.tar.gz "a.tar.gz.part"`, can just cat
   them all together to join
 - `/etc/security/faillock.conf` - `deny = 0` to stop blocking on failed login
+- Invert colors: `convert in.png -negate out.png`
+    - transparency: `convert in.png -transparent black out.png` (png, not jpg)
+        - can use `-fuzz 5%` or so to get rid of spottiness
