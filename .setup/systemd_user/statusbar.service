@@ -1,7 +1,7 @@
 [Unit]
 Description=Updates statusbar
 StartLimitIntervalSec=100
-StartLimitBurst=105
+StartLimitBurst=1005
 
 [Service]
 Type=oneshot
