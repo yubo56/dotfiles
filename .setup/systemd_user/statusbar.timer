@@ -4,7 +4,7 @@ Description=Update status bar every second
 [Timer]
 OnActiveSec=0
 AccuracySec=1us
-OnCalendar=*-*-* *:*:0/0.5
+OnCalendar=*-*-* *:*:0/0.1
 Unit=statusbar.service
 
 [Install]
