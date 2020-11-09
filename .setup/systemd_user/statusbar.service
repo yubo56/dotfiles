@@ -2,6 +2,7 @@
 Description=Updates statusbar
 StartLimitIntervalSec=100
 StartLimitBurst=1005
+Nice=-1
 
 [Service]
 Type=oneshot
