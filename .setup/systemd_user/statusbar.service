@@ -1,0 +1,13 @@
+[Unit]
+Description=Updates statusbar
+StartLimitIntervalSec=100
+StartLimitBurst=1005
+Nice=-1
+
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+ExecStart=/home/yssu/bin/update_status
+
+[Install]
+WantedBy=multi-user.target

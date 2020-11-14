@@ -131,7 +131,7 @@ yaourt: package-query
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
 	gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-	${YAOURT} -S downgrade goldendict brave-beta-bin
+	${YAOURT} -S downgrade goldendict brave-beta-bin zoom slack-desktop
 
 # DEPRECATED infinality is dead :(
 .PHONY: infinality
@@ -184,7 +184,7 @@ stow: # pacman
 	rm -rf ~/.gnupg # during install process, this folder is created, rm it w/e
 	mkdir -p ~/.config
 	@printf '*** Stowing Files... ***\n'
-	stow `'ls' -d */` || stow -R `'ls' -d */`
+	stow `'ls' -d */` || stow -R `'ls' -d */ --ignore=.xscreensaver`
 	rm -f ~/.config/redshift.conf
 	rm -rf ~/.config/zathura
 	ln -sf ~/dotfiles/.setup/misc/redshift.conf ~/.config/redshift.conf
@@ -337,6 +337,11 @@ ctags:
 .PHONY: undodir
 undodir:
 	mkdir ~/.undodir
+
+SUSER_PATH=/home/${USERNAME}/dotfiles/.setup/systemd_user
+systemd_user:
+	mkdir -p ~/.config/systemd/user
+	for i in $$('ls' ${SUSER_PATH}); do ln -s ${SUSER_PATH}/$$i ~/.config/systemd/user/$$i; systemctl --user enable $$i; done
 
 ##############################################################################
 ##############################################################################

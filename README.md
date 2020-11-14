@@ -59,7 +59,6 @@ CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
 
 ## misc notes
 - Screensaver on suspend uses 00xscreensaver on home, xscreensaver.service on Mac
-- ibus needs to be 1.5.14-2 to support unicode input
 - `sudo sysctl kernel/unprivileged_userns_clone=1` for Brave namespaces
 - Bluetooth headset: `bluez bluez-utils pulseaudio-bluetooth pulseaudio-alsa`
     - Pulseaudio asound.conf, `/etc/pulse/defaultpa`:
@@ -101,6 +100,11 @@ ctl.!default {
 ```
 - if dmenu is randomly crashing, `strace dmenu_run`, but probably need to git
   clone and re-install (4.9-1 seems to have this problem)
+- To get headphones + mic working:
+    - can I figure out autobluetooth?
+    - `pacmd set-card-profile <card> headset_head_unit` or `a2dp_sink` (latter
+      is the high-quality audio, no source)
+    - `pactl set-default-source <card>`
 
 # Misc commands to save
 - resizing image while removing virtual canvas
@@ -130,9 +134,16 @@ ctl.!default {
         - `dconf write /desktop/ibus/engine/hangul/on-keys \'\'`
         - `dconf write /desktop/ibus/engine/hangul/off-keys \'\'`
     - IBus menus won't show, frozen
-        - `git clone`, ensure have `gnome-common` installed, checkout 1.5.18
+        - `git clone`, ensure have `gnome-common unicode-emoji
+          cldr-emoji-annotation vala iso-codes` installed (10/27/20)
         - `./autogen.sh`
         - recompile w/ `ibusproperty.c:ibus_property_update()` line
-          `set_visible` commented out
+          `set_visible` commented out (or the gassert priv_update->type?)
+        - needed to change engine/Makefile to prefix = `/usr/share`, not
+          `/usr/local/share`
 - To split/join files, `split -b 200M a.tar.gz "a.tar.gz.part"`, can just cat
   them all together to join
+- `/etc/security/faillock.conf` - `deny = 0` to stop blocking on failed login
+- Invert colors: `convert in.png -negate out.png`
+    - transparency: `convert in.png -transparent black out.png` (png, not jpg)
+        - can use `-fuzz 5%` or so to get rid of spottiness
