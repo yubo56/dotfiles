@@ -22,6 +22,7 @@ options rw root=UUID=<...>
 - `/mnt/etc/locale.conf` edits, `echo KEYMAP=dvorak > /mnt/etc/vconsole.conf`
 - `arch-chroot /mnt`
 - `locale-gen`
+    - NB: do not forget this step, need locales to xdg-open correctly
 - `pacman -S git dhcpcd zsh gvim`
     - gvim since I'll want +X11 support later anyway, though it's much larger
 - `git clone https://yubo56@github.com/yubo56/dotFiles.git ~/dotfiles`
@@ -147,3 +148,4 @@ ctl.!default {
 - Invert colors: `convert in.png -negate out.png`
     - transparency: `convert in.png -transparent black out.png` (png, not jpg)
         - can use `-fuzz 5%` or so to get rid of spottiness
+- `mplayer -font "AR PL UKai CN"` seems to work for chinese subs
