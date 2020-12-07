@@ -30,6 +30,7 @@ moreutils
 mplayer
 ntfs-3g
 openssh
+pdftk
 pepper-flash
 perl-xml-simple
 pulseaudio-alsa

@@ -247,16 +247,16 @@ fonts:
 lm_sensors: # pacman
 	sudo sensors-detect
 
-.PHONY: cabal
-cabal: # pacman
-	# reinstall all pacman packages since they're dynamically linked
-	# few exceptions by regex handled at top of cabal.txt
-	sudo ${PACMAN} -S ghc ghc-libs haskell-hslint
-	cabal update
-	cabal install --ghc-options=-dynamic --reinstall --force-reinstalls \
-		$$(pacman -Q | 'grep' -o -e "haskell-[^ ]*" | sed 's/haskell-//g' |\
-			sed 's/src-exts.*$$//g')\
-		$$(cat .setup/cabal.txt)
+# .PHONY: cabal
+# cabal: # pacman
+# 	# reinstall all pacman packages since they're dynamically linked
+# 	# few exceptions by regex handled at top of cabal.txt
+# 	sudo ${PACMAN} -S ghc ghc-libs haskell-hslint
+# 	cabal update
+# 	cabal install --ghc-options=-dynamic --reinstall --force-reinstalls \
+# 		$$(pacman -Q | 'grep' -o -e "haskell-[^ ]*" | sed 's/haskell-//g' |\
+# 			sed 's/src-exts.*$$//g')\
+# 		$$(cat .setup/cabal.txt)
 
 ##############################################################################
 ##############################################################################
