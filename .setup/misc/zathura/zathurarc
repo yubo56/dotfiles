@@ -26,3 +26,6 @@ map [fullscreen] <Right> navigate next
 
 # copy to selection clipboard
 set selection-clipboard clipboard
+
+# first page on left?
+set first-page-column 1
