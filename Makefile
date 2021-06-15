@@ -239,9 +239,9 @@ screensaver: # pacman
 .PHONY: fonts
 fonts:
 	sudo sed -i.bak 's/KaitiM\ GB/UKai CN/g' \
-		/etc/fonts/conf.avail/65-nonlatin.conf
+		/etc/fonts/conf.d/65-nonlatin.conf
 	sudo sed -i.bak 's/Baekmuk Dotum/Baekmuk Batang/g' \
-		/etc/fonts/conf.avail/*
+		/etc/fonts/conf.d/*
 
 .PHONY: lm_sensors
 lm_sensors: # pacman
