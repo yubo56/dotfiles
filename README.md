@@ -150,6 +150,7 @@ ctl.!default {
         - can use `-fuzz 5%` or so to get rid of spottiness
 - `mplayer -font "AR PL UKai CN"` seems to work for chinese subs
 - `shuf -e $('ls')` to shuffle files in current directory
+- Getting locked out: `/etc/security/faillock.conf`, and use `faillock` to reset
 - Sorting Amex offers
     - `g!/^Spend/d`
     - `%s/^Spend \$\([^ ]\+\) .*get \$\([^ ]\+\) .*/\2\/\1/g`
