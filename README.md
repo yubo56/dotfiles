@@ -101,6 +101,8 @@ ctl.!default {
 ```
 - if dmenu is randomly crashing, `strace dmenu_run`, but probably need to git
   clone and re-install (4.9-1 seems to have this problem)
+- Anaconda install: `conda install -c lightsource2-tag zsh`,
+    `conda install -c conda-forge gcc_linux-64`
 - To get headphones + mic working:
     - can I figure out autobluetooth?
     - `pacmd set-card-profile <card> headset_head_unit` or `a2dp_sink` (latter
