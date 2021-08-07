@@ -152,4 +152,4 @@ ctl.!default {
 - `shuf -e $('ls')` to shuffle files in current directory
 - Getting locked out: `/etc/security/faillock.conf`, and use `faillock` to reset
 - Sorting Amex offers
-    - `g!/^Spend/d | %s/^Spend \$\([^ ]\+\) .*get \$\([^ ]\+\) .*/\2\/\1/g | %s/,//g | let @q=":read !bc -l <<< \<C-R>=getline('.')\<CR>\<CR>ddkPJj"`
+    - `g!/^Spend/d | %s/^Spend \$\([^ ]\+\) .*get \$\([^ ]\+\) .*/\2\/\1/g | %s/,//g | %s/+//g | let @q=":read !bc -l <<< \<C-R>=getline('.')\<CR>\<CR>ddkPJj"`
