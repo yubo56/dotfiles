@@ -151,6 +151,8 @@ ctl.!default {
     - transparency: `convert in.png -transparent black out.png` (png, not jpg)
         - can use `-fuzz 5%` or so to get rid of spottiness
 - `mplayer -font "AR PL UKai CN"` seems to work for chinese subs
+    - `find . -type f | shuf | xargs mplayer -loop 0` to shuffle on repeat
+      everything in dir
 - `shuf -e $('ls')` to shuffle files in current directory
 - Getting locked out: `/etc/security/faillock.conf`, and use `faillock` to reset
 - Sorting Amex offers
