@@ -127,6 +127,7 @@ ctl.!default {
     - `pdftk a.pdf b.pdf cat output c.pdf`
 - ffmpeg image -> video
     - `ffmpeg -framerate 8 -pattern_type glob -i '*uz*.png' test.mp4`
+    - `ffmpeg -ss 00:00:00 -t 0:02:00 -i in.mp4 -acodec copy -vcodec copy out.mp4`
 - `exec screen -R -s /usr/bin/zsh` in `~/.bash_profile`
     - profile to avoid running on ssh, shell to specify alt shell
 - `~/.ssh/authorized_keys`: put public key,
