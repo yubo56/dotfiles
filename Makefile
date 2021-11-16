@@ -3,7 +3,7 @@
 # 		all dependencies commented out so can perpetually use :)
 
 PKGEXT=.pkg.tar # vim, dwm
-WIFI_INTERFACE=wlp4s0# wifi
+WIFI_INTERFACE=${WIFI}# wifi
 USERNAME=yssu
 
 PQ_TMP_DIR=/tmp/pq
