@@ -4,7 +4,7 @@
 
 [Service]
     Type=simple
-    ExecStart=/usr/bin/pacman -Syyu --noconfirm
+    ExecStart=/usr/bin/yaourt -Syyu --noconfirm
     TimeoutStopSec=300
     KillMode=process
     KillSignal=SIGINT
