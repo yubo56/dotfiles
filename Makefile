@@ -182,6 +182,7 @@ pacupdate: #pacman
 .PHONY: stow
 stow: # pacman
 	rm -rf ~/.gnupg # during install process, this folder is created, rm it w/e
+	rm -f ~/.xscreensaver
 	mkdir -p ~/.config
 	@printf '*** Stowing Files... ***\n'
 	stow `'ls' -d */` || stow -R `'ls' -d */ --ignore=.xscreensaver`
