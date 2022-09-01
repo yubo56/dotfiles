@@ -28,6 +28,7 @@ options rw root=UUID=<...>
 - `git clone https://yubo56@github.com/yubo56/dotFiles.git ~/dotfiles`
     - can comment out `install_wpa_supplicant` if have lan connection
     - use personal access token from Gmail Tasks
+    - *may need to grab keybase-encrypted id_rsa*
 - `make root`
 
 - Reboot, login to new user
@@ -46,6 +47,12 @@ options rw root=UUID=<...>
 - "System Preferences > Keyboard > Shortcuts > App Shortcuts", add bizzare
   modifier for 'Minimize/Minimise' to disable accidental minimize
     - Can also use Automator to start screen saver, add shortcut under Services
+
+- Notes from latest setup (Aug 31, 2022):
+    - install dev tools, keybase, karabiner
+    - git clone dotfiles, get `id_rsa` to bootstrap all private repos
+    - install brew
+    - brew install stow, tmux, coreutils, reattach-to-user-namespace
 
 ## Setup on Mac (linux)
 - `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
