@@ -47,6 +47,9 @@ options rw root=UUID=<...>
 - "System Preferences > Keyboard > Shortcuts > App Shortcuts", add bizzare
   modifier for 'Minimize/Minimise' to disable accidental minimize
     - Can also use Automator to start screen saver, add shortcut under Services
+        - "Quick Action" --> "Start Screen Saver" (search) --> "Workflow
+          receives: no input" --> <name>
+        - Settings: Keyboard --> Shortcuts --> Services --> <name>
 
 - Notes from latest setup (Aug 31, 2022):
     - install dev tools, keybase, karabiner
