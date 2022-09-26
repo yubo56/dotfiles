@@ -55,7 +55,9 @@ options rw root=UUID=<...>
     - install dev tools, keybase, karabiner
     - git clone dotfiles, get `id_rsa` to bootstrap all private repos
     - install brew
-    - brew install stow, tmux, coreutils, reattach-to-user-namespace
+    - brew install stow, tmux, coreutils, moreutils, reattach-to-user-namespace
+        - linearmouse for disable mouse accel
+    - may need to cp `python3` and `pip3` in brew bin to un-namespaced
 
 ## Setup on Mac (linux)
 - `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
