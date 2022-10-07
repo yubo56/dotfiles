@@ -170,3 +170,7 @@ ctl.!default {
 - Getting locked out: `/etc/security/faillock.conf`, and use `faillock` to reset
 - Sorting Amex offers
     - `g!/^Spend/d | %s/^Spend \$\([^ ]\+\) .*get \$\([^ ]\+\) .*/\2\/\1/g | %s/,//g | %s/+//g | let @q=":read !bc -l <<< \<C-R>=getline('.')\<CR>\<CR>ddkPJj"`
+- Firefox tweaks:
+    - `about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true`
+    - copy to `<Firefox profile folder>/chrome/userChrome.css`
+    - also, set something.uidensity = 1
