@@ -259,6 +259,11 @@ lm_sensors: # pacman
 # 			sed 's/src-exts.*$$//g')\
 # 		$$(cat .setup/cabal.txt)
 
+# tmux plugin manager
+.PHONY: tmux-pm
+tmux-pm:
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 ##############################################################################
 ##############################################################################
 ##############################    MISC UTILS     #############################
