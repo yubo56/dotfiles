@@ -131,7 +131,7 @@ yaourt: package-query
 	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
 	gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-	${YAOURT} -S downgrade goldendict brave-beta-bin zoom slack-desktop
+	${YAOURT} -S downgrade brave-beta-bin zoom slack-desktop
 
 # DEPRECATED infinality is dead :(
 .PHONY: infinality
@@ -296,12 +296,6 @@ re_encode_keys:
 		chmod 644 "$${i%.*}" &&\
 		keybase encrypt yssu -i "$${i%.*}" -o $$i &&\
 		chmod 600 "$${i%.*}"; done
-
-.PHONY: goldendict
-goldendict:
-	pacman -Q goldendict || ${YAOURT} -S goldendict
-	rm -f ~/.goldendict/config
-	ln -s ${PWD}/.setup/misc/gdict_config ~/.goldendict/config
 
 PULL_CMD=((git checkout master && git pull) || true)
 .PHONY: pull
