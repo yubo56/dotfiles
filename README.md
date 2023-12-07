@@ -62,6 +62,7 @@ options rw root=UUID=<...>
         - linearmouse for disable mouse accel
     - may need to cp `python3` and `pip3` in brew bin to un-namespaced
     - `brew install vim`
+    - if Intel silicon, will need to change $PATH
 
 ## Setup on Mac (linux)
 - `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
