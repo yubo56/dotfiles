@@ -174,3 +174,10 @@ ctl.!default {
     - `about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true`
     - copy to `<Firefox profile folder>/chrome/userChrome.css`
     - also, set something.uidensity = 1
+
+- macos keyboard settings
+```
+    defaults write -g ApplePressAndHoldEnabled -bool false
+    defaults write -g InitialKeyRepeat -int 10
+    defaults write -g KeyRepeat -int 1
+```
