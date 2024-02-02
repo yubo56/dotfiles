@@ -186,3 +186,4 @@ ctl.!default {
     defaults write -g InitialKeyRepeat -int 10
     defaults write -g KeyRepeat -int 1
 ```
+- ipython startup scripts: `~/.ipython/profile_default/startup`
