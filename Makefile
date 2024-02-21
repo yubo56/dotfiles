@@ -324,9 +324,8 @@ CTAGS_DIR=/tmp/ctags
 .PHONY: ctags
 ctags:
 	rm -rf ${CTAGS_DIR}
-	git clone https://github.com/majutsushi/ctags.git ${CTAGS_DIR}
+	git clone https://github.com/universal-ctags/ctags.git ${CTAGS_DIR}
 	cd ${CTAGS_DIR} &&\
-		ls &&\
 		autoheader &&\
 		autoconf &&\
 		./configure &&\
