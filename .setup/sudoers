@@ -81,6 +81,7 @@ yssu ALL=(ALL) NOPASSWD: /usr/bin/openconnect
 yssu ALL=(ALL) NOPASSWD: /usr/bin/reboot
 yssu ALL=(ALL) NOPASSWD: /usr/bin/shutdown
 yssu ALL=(ALL) NOPASSWD: /usr/bin/tee
+yssu ALL=(ALL) NOPASSWD: /usr/bin/mount
 yssu ALL=(ALL) NOPASSWD: /usr/bin/wpa_supplicant
 
 ## Same thing without a password
