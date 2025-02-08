@@ -28,6 +28,7 @@ options rw root=UUID=<...>
 - `git clone https://yubo56@github.com/yubo56/dotFiles.git ~/dotfiles`
     - can comment out `install_wpa_supplicant` if have lan connection
     - use personal access token from Gmail Tasks
+    - *may need to grab keybase-encrypted id_rsa*
 - `make root`
 
 - Reboot, login to new user
@@ -46,6 +47,22 @@ options rw root=UUID=<...>
 - "System Preferences > Keyboard > Shortcuts > App Shortcuts", add bizzare
   modifier for 'Minimize/Minimise' to disable accidental minimize
     - Can also use Automator to start screen saver, add shortcut under Services
+        - "Quick Action" --> "Start Screen Saver" (search) --> "Workflow
+          receives: no input" --> <name>
+        - Settings: Keyboard --> Shortcuts --> Services --> <name>
+
+- Notes from latest setup (Aug 31, 2022):
+    - install dev tools, keybase, karabiner
+    - git clone dotfiles, get `id_rsa` to bootstrap all private repos
+        - git submodule init, `make submodule_to_htps`, git submodule update
+          private, `make decode_keys`, `make submodule_to_git`, then `git
+          submodule update --recursive`
+    - install brew
+    - brew install stow, tmux, coreutils, moreutils
+        - linearmouse for disable mouse accel
+    - may need to cp `python3` and `pip3` in brew bin to un-namespaced
+    - `brew install vim`
+    - if Intel silicon, will need to change $PATH
 
 ## Setup on Mac (linux)
 - `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
@@ -158,3 +175,21 @@ ctl.!default {
 - Getting locked out: `/etc/security/faillock.conf`, and use `faillock` to reset
 - Sorting Amex offers
     - `g!/^Spend/d | %s/^Spend \$\([^ ]\+\) .*get \$\([^ ]\+\) .*/\2\/\1/g | %s/,//g | %s/+//g | let @q=":read !bc -l <<< \<C-R>=getline('.')\<CR>\<CR>ddkPJj"`
+- Firefox tweaks:
+    - `about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true`
+    - copy to `<Firefox profile folder>/chrome/userChrome.css`
+    - also, set something.uidensity = 1
+
+- macos keyboard settings
+```
+    defaults write -g ApplePressAndHoldEnabled -bool false
+    defaults write -g InitialKeyRepeat -int 10
+    defaults write -g KeyRepeat -int 1
+```
+- ipython startup scripts: `~/.ipython/profile_default/startup`
+
+- to bulk downgrade arch (double `u` allows downgrades)
+```
+    echo 'Server=https://archive.archlinux.org/repos/2018/04/05/$repo/os/$arch' > /etc/pacman.d/mirrorlist
+    pacman -Syyuu
+```

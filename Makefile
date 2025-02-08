@@ -7,11 +7,11 @@ WIFI_INTERFACE=${WIFI}# wifi
 USERNAME=yssu
 
 PQ_TMP_DIR=/tmp/pq
-YAOURT_TMP_DIR=/tmp/yaourt
+YAY_TMP_DIR=/tmp/yay
 VIM_TMP_DIR=/tmp/vim
 PWD=$$(pwd)
 PACMAN=pacman --noconfirm
-YAOURT=yaourt --noconfirm
+YAY=yay --noconfirm
 
 .PHONY: linux
 linux: \
@@ -20,7 +20,7 @@ linux: \
 	update_plugins\
 	mirrorlist\
 	pacman\
-	yaourt\
+	yay\
 	install_keybase\
 	decode_keys\
 	re_encode_keys\
@@ -93,7 +93,7 @@ mod_user: # pacman (need sudo, zsh)
 
 .PHONY: install_keybase
 install_keybase:
-	pacman -Q keybase-bin || ${YAOURT} -S keybase-bin
+	pacman -Q keybase-bin || ${YAY} -S keybase-bin
 	run_keybase
 	keybase login yssu
 
@@ -123,15 +123,15 @@ package-query:
 	cd ${PQ_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
 
-.PHONY: yaourt
-yaourt: package-query
+.PHONY: yay
+yay: package-query
 	rm -rf ${PQ_TMP_DIR}
-	mkdir -p ${YAOURT_TMP_DIR}
-	git clone https://aur.archlinux.org/yaourt.git ${YAOURT_TMP_DIR}
-	cd ${YAOURT_TMP_DIR} && makepkg -si --noconfirm
+	mkdir -p ${YAY_TMP_DIR}
+	git clone https://aur.archlinux.org/yay.git ${YAY_TMP_DIR}
+	cd ${YAY_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
 	gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-	${YAOURT} -S downgrade goldendict brave-beta-bin zoom slack-desktop
+	${YAY} -S downgrade brave-beta-bin zoom slack-desktop
 
 # DEPRECATED infinality is dead :(
 .PHONY: infinality
@@ -259,6 +259,11 @@ lm_sensors: # pacman
 # 			sed 's/src-exts.*$$//g')\
 # 		$$(cat .setup/cabal.txt)
 
+# tmux plugin manager
+.PHONY: tmux-pm
+tmux-pm:
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 ##############################################################################
 ##############################################################################
 ##############################    MISC UTILS     #############################
@@ -292,12 +297,6 @@ re_encode_keys:
 		keybase encrypt yssu -i "$${i%.*}" -o $$i &&\
 		chmod 600 "$${i%.*}"; done
 
-.PHONY: goldendict
-goldendict:
-	pacman -Q goldendict || ${YAOURT} -S goldendict
-	rm -f ~/.goldendict/config
-	ln -s ${PWD}/.setup/misc/gdict_config ~/.goldendict/config
-
 PULL_CMD=((git checkout master && git pull) || true)
 .PHONY: pull
 pull:
@@ -325,9 +324,8 @@ CTAGS_DIR=/tmp/ctags
 .PHONY: ctags
 ctags:
 	rm -rf ${CTAGS_DIR}
-	git clone https://github.com/majutsushi/ctags.git ${CTAGS_DIR}
+	git clone https://github.com/universal-ctags/ctags.git ${CTAGS_DIR}
 	cd ${CTAGS_DIR} &&\
-		ls &&\
 		autoheader &&\
 		autoconf &&\
 		./configure &&\
