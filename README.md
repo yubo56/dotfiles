@@ -191,3 +191,9 @@ ctl.!default {
     defaults write -g KeyRepeat -int 1
 ```
 - ipython startup scripts: `~/.ipython/profile_default/startup`
+
+- to bulk downgrade arch (double `u` allows downgrades)
+```
+    echo 'Server=https://archive.archlinux.org/repos/2018/04/05/$repo/os/$arch' > /etc/pacman.d/mirrorlist
+    pacman -Syyuu
+```

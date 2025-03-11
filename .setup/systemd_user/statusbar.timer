@@ -3,6 +3,7 @@ Description=Update status bar every second
 
 [Timer]
 OnActiveSec=0
+Persistent=true
 AccuracySec=1us
 OnCalendar=*-*-* *:*:0/0.1
 Unit=statusbar.service
