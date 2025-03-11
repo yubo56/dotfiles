@@ -64,6 +64,10 @@ options rw root=UUID=<...>
     - `brew install vim`
     - if Intel silicon, will need to change $PATH
 
+- Secure Keyboard Entry seems to automatically get enabled in Terminal.app.
+  Workaround is to use iTerm2, but open a Terminal in the background (which
+  absorbs the SKE)
+
 ## Setup on Mac (linux)
 - `yaourt -S hid-apple-patched-git-dkms`, use config file from `.setup/config_manual`
 - To get IGD:
