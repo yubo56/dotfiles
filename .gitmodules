@@ -10,4 +10,4 @@
 	url = git@github.com:yubo56/dotfiles-sys.git
 [submodule "private"]
 	path = private
-	url = git@bitbucket.org:yubo56/dotfiles-private.git
+	url = git@github.com:yubo56/dotfiles-private.git
