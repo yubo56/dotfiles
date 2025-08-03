@@ -35,6 +35,8 @@ linux: \
 	ctags\
 	enable_dhcpcd\
 	undodir\
+	systemd_user\
+	remind_downgrade\
 	wifi # connect_wifi
 
 .PHONY: root
@@ -131,33 +133,7 @@ yay: package-query
 	cd ${YAY_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
 	gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-	${YAY} -S downgrade brave-beta-bin zoom slack-desktop
-
-# DEPRECATED infinality is dead :(
-.PHONY: infinality
-infinality: # pacman
-	@echo Adding infinality server
-	@echo -e '[infinality-bundle]\nServer = http://bohoomil.com/repo/$$arch'\
-		| sudo tee -a /etc/pacman.conf
-	@sudo pacman-key -r 962DDE58 && sudo pacman-key -f 962DDE58 &&\
-		sudo pacman-key --lsign-key 962DDE58
-	sudo pacman -Syy && sudo ${PACMAN} -S infinality-bundle
-
-# set up vim with with-x=yes (deprecated if just install gvim instead)
-.PHONY: vim
-vim: # pacman
-	@printf '*** Cloning vim... ***\n'
-	@rm -rf ${VIM_TMP_DIR}
-	@sudo rm -rf ${VIM_TMP_DIR}
-	@cd /tmp && asp export extra/vim > /dev/null
-	@printf '*** Building vim... ***\n'
-	cd ${VIM_TMP_DIR} &&\
-		sed -i 's/with-x=no/with-x=yes/g' PKGBUILD &&\
-		PKGEXT=${PKGEXT} makepkg -s &&\
-		sudo ${PACMAN} -U $$(makepkg --packagelist | grep '^vim.*x86_64' | sed 's/$$/${PKGEXT}/g') > /dev/null
-	@rm -rf ${VIM_TMP_DIR}
-	@printf '*** Vim installed! ***\n\n'
-	mkdir -p ~/.undodir
+	${YAY} -S downgrade brave-beta-bin zoom slack-desktop transset-df
 
 # dwm window manager
 # hard code cleanup to make sure nothing important gets cleaned up
@@ -248,17 +224,6 @@ fonts:
 lm_sensors: # pacman
 	sudo sensors-detect
 
-# .PHONY: cabal
-# cabal: # pacman
-# 	# reinstall all pacman packages since they're dynamically linked
-# 	# few exceptions by regex handled at top of cabal.txt
-# 	sudo ${PACMAN} -S ghc ghc-libs haskell-hslint
-# 	cabal update
-# 	cabal install --ghc-options=-dynamic --reinstall --force-reinstalls \
-# 		$$(pacman -Q | 'grep' -o -e "haskell-[^ ]*" | sed 's/haskell-//g' |\
-# 			sed 's/src-exts.*$$//g')\
-# 		$$(cat .setup/cabal.txt)
-
 # tmux plugin manager
 .PHONY: tmux-pm
 tmux-pm:
@@ -326,8 +291,7 @@ ctags:
 	rm -rf ${CTAGS_DIR}
 	git clone https://github.com/universal-ctags/ctags.git ${CTAGS_DIR}
 	cd ${CTAGS_DIR} &&\
-		autoheader &&\
-		autoconf &&\
+		./autogen.sh &&\
 		./configure &&\
 		make &&\
 		sudo make install
@@ -342,32 +306,13 @@ systemd_user:
 	mkdir -p ~/.config/systemd/user
 	for i in $$('ls' ${SUSER_PATH}); do ln -s ${SUSER_PATH}/$$i ~/.config/systemd/user/$$i; systemctl --user enable $$i; done
 
-##############################################################################
-##############################################################################
-##############################     STYLEBOT      #############################
-##############################################################################
-##############################################################################
+# TODO maybe already cloned in vim repo
+vim_pathogen:
+	mkdir -p ~/.vim/autoload
+	curl -LSso ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-TMPSTYLEFILE=stylebot_new.txt
-REL_PATH=.setup/config_manual/stylebot
-
-.PHONY: _stylebot
-_stylebot:
-	rm -f ${REL_PATH}/TMPSTYLEFILE
-	vim ${REL_PATH}/TMPSTYLEFILE
-	python3 ${REL_PATH}/parse_stylebot.py ${REL_PATH}/TMPSTYLEFILE\
-		${REL_PATH}/TMPSTYLEFILE
-	vimdiff ${REL_PATH}/TMPSTYLEFILE ${REL_PATH}/stylebot.bak
-	rm ${REL_PATH}/TMPSTYLEFILE
-
-.PHONY: stylebot_copy
-stylebot_copy:
-	(command -v xclip && xclip -selection c ${REL_PATH}/stylebot.bak)\
-		|| pbcopy < ${REL_PATH}/stylebot.bak
-
-.PHONY: stylebot
-stylebot: _stylebot stylebot_copy
-
-.PHONY: stylebot_copy_mac
-stylebot_copy_mac:
-	pbcopy < ${REL_PATH}/stylebot.bak
+remind_downgrade:
+	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+	@echo "downgrade tmux (3.3_a-7) and ncurses (6.4_20230520-2)"
+	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+	sudo downgrade tmux nccurses

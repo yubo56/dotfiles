@@ -1,6 +1,6 @@
 acpi
+adobe-source-code-pro-fonts
 alsa-utils
-asp
 automake
 bc
 bluez
@@ -10,6 +10,7 @@ dmenu
 dos2unix
 efibootmgr
 feh
+firefox
 git
 gnupg
 gnuplot
@@ -31,7 +32,6 @@ mplayer
 ntfs-3g
 openssh
 pdftk
-pepper-flash
 perl-xml-simple
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -50,9 +50,8 @@ rtorrent
 rxvt-unicode
 stow
 terminus-font
-texlive-most
+texlive-latexrecommended
 tmux
-transset-df
 ttf-arphic-ukai
 ttf-baekmuk
 ttf-bitstream-vera

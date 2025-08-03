@@ -23,7 +23,7 @@ options rw root=UUID=<...>
 - `arch-chroot /mnt`
 - `locale-gen`
     - NB: do not forget this step, need locales to xdg-open correctly
-- `pacman -S git dhcpcd zsh gvim`
+- `pacman -S git dhcpcd zsh gvim less openssh`
     - gvim since I'll want +X11 support later anyway, though it's much larger
 - `git clone https://yubo56@github.com/yubo56/dotFiles.git ~/dotfiles`
     - can comment out `install_wpa_supplicant` if have lan connection
@@ -35,6 +35,7 @@ options rw root=UUID=<...>
 - `sudo dhcpcd` or connect to wifi
 - clean `/etc/pacman.d/mirrorlist`
 - `make linux`
+- Set up `~/.asoundrc` to enable `amixer`
 
 ## Setup on Mac (MacOS)
 - On mac, set hostname: `sudo scutil --set HostName <...>`
