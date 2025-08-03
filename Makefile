@@ -191,7 +191,7 @@ wifi: # pacman
 	sudo chmod 600 .setup/wpa_supplicant.conf
 	sudo rm -f /etc/wpa_supplicant/wpa_supplicant.conf
 	sudo ln -s ${PWD}/.setup/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf
-	sudo systemctl enable wpa_supplicant.service
+	sudo systemctl enable wpa_supplicant@${WIFI_INTERFACE}.service
 	cd /etc/wpa_supplicant && \
 		sudo rm -f wpa_supplicant-${WIFI_INTERFACE}.conf && \
 		sudo ln -s wpa_supplicant.conf wpa_supplicant-${WIFI_INTERFACE}.conf\
