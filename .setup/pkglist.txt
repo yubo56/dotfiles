@@ -12,6 +12,7 @@ efibootmgr
 feh
 firefox
 git
+git-lfs
 gnupg
 gnuplot
 gsl
