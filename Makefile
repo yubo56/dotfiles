@@ -40,7 +40,7 @@ linux: \
 	wifi # connect_wifi
 
 .PHONY: root
-root: timezone create_user sudoers hostname #install_wpa_supplicant
+root: timezone create_user sudoers hostname install_wpa_supplicant
 
 ##############################################################################
 ##############################################################################
