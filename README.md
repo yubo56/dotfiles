@@ -35,7 +35,16 @@ options rw root=UUID=<...>
 - `sudo dhcpcd` or connect to wifi
 - clean `/etc/pacman.d/mirrorlist`
 - `make linux`
-- Set up `~/.asoundrc` to enable `amixer`
+
+### Things to fix manually (slowly)
+- Firefox tweaks:
+    - `about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true`
+    - copy to `<Firefox profile folder>/chrome/userChrome.css`
+        - on Linux, `mkdir -p ~/.mozilla/chrome && cp userChrome.css ~/.mozilla/chrome`
+    - also, set something.uidensity = 1
+- VPN:
+    - Often need `openconnect`, can use `globalprotect-openconnect` for Palo
+      Alto Systems GlobalProtect (Princeton)
 
 ## Setup on Mac (MacOS)
 - On mac, set hostname: `sudo scutil --set HostName <...>`
@@ -88,22 +97,10 @@ CONFIG_EXTRA_FIRMWARE_DIR="/lib/firmware"
         `load-module module-switch-on-connect`
     - `bluetoothctl`:
         `power on; agent on; scan on; pair <...>; trust <...>; connect <...>`
-- transparency: `sudo pacman -S xcompmgr transset-df`
-    - `devilspie` used to be used to match windows on open, broken now
 - droidcam `/etc/modprobe.d/droidcam.conf` resolution, `/opt/urserver/urserver`
   to start Unified Remote
     - `yaourt -S droidcam adb unified-remote-server`
-- For audio, need `~/.asoundrc`, check which sound card via alsamixer, then
-```
-pcm.!default {
-    type hw
-    card 1
-}
-ctl.!default {
-    type hw
-    card 1
-}
-```
+- For audio, may need to confirm `~/.asoundrc` against alsamixer, then
     - When bluetooth is connected, need to use pulseaudio, default is in
       `/etc/asound.conf`, e.g.
 ```
@@ -123,8 +120,6 @@ ctl.!default {
 ```
 - if dmenu is randomly crashing, `strace dmenu_run`, but probably need to git
   clone and re-install (4.9-1 seems to have this problem)
-- Anaconda install: `conda install -c lightsource2-tag zsh`,
-    `conda install -c conda-forge gcc_linux-64`
 - To get headphones + mic working:
     - can I figure out autobluetooth?
     - `pacmd set-card-profile <card> headset_head_unit` or `a2dp_sink` (latter
@@ -180,11 +175,6 @@ ctl.!default {
 - Getting locked out: `/etc/security/faillock.conf`, and use `faillock` to reset
 - Sorting Amex offers
     - `g!/^Spend/d | %s/^Spend \$\([^ ]\+\) .*get \$\([^ ]\+\) .*/\2\/\1/g | %s/,//g | %s/+//g | let @q=":read !bc -l <<< \<C-R>=getline('.')\<CR>\<CR>ddkPJj"`
-- Firefox tweaks:
-    - `about:config > toolkit.legacyUserProfileCustomizations.stylesheets > true`
-    - copy to `<Firefox profile folder>/chrome/userChrome.css`
-    - also, set something.uidensity = 1
-
 - macos keyboard settings
 ```
     defaults write -g ApplePressAndHoldEnabled -bool false
