@@ -37,6 +37,7 @@ linux: \
 	undodir\
 	systemd_user\
 	remind_downgrade\
+	dropbox\
 	wifi # connect_wifi
 
 .PHONY: root
@@ -134,6 +135,13 @@ yay: package-query
 	rm -rf ${PQ_TMP_DIR}
 	gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
 	${YAY} -S downgrade brave-beta-bin zoom slack-desktop transset-df
+
+dropbox:
+	${YAY} dropbox dropbox-cli
+	# prevent auto updates
+	rm -rf ~/.dropbox-dist
+	install -dm0 ~/.dropbox-dist
+	systemctl --user enable dropbox.service
 
 # dwm window manager
 # hard code cleanup to make sure nothing important gets cleaned up

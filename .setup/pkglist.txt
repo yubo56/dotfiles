@@ -1,3 +1,4 @@
+7zip
 acpi
 adobe-source-code-pro-fonts
 alsa-utils
@@ -52,6 +53,10 @@ rxvt-unicode
 stow
 terminus-font
 texlive-latexrecommended
+texlive-latexextra
+texlive-plaingeneric
+texlive-fontsrecommended
+texlive-fontsextra
 tmux
 ttf-arphic-ukai
 ttf-baekmuk
