@@ -7,7 +7,6 @@ bc
 bluez
 bluez-utils
 cups
-debugedit
 dmenu
 dos2unix
 efibootmgr
