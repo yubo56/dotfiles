@@ -7,6 +7,7 @@ bc
 bluez
 bluez-utils
 cups
+debugedit
 dmenu
 dos2unix
 efibootmgr
@@ -22,7 +23,6 @@ htop
 ibus
 ibus-rime
 imagemagick
-ipython
 iw
 jq
 jre8-openjdk
@@ -37,12 +37,6 @@ perl-xml-simple
 pulseaudio-alsa
 pulseaudio-bluetooth
 python
-python-matplotlib
-python-numpy
-python-pip
-python-pylint
-python-scipy
-python-sympy
 redshift
 rfkill
 rlwrap
