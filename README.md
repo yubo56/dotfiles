@@ -173,8 +173,6 @@ ctl.!default {
       everything in dir
 - `shuf -e $('ls')` to shuffle files in current directory
 - Getting locked out: `/etc/security/faillock.conf`, and use `faillock` to reset
-- Sorting Amex offers
-    - `g!/^Spend/d | %s/^Spend \$\([^ ]\+\) .*get \$\([^ ]\+\) .*/\2\/\1/g | %s/,//g | %s/+//g | let @q=":read !bc -l <<< \<C-R>=getline('.')\<CR>\<CR>ddkPJj"`
 - macos keyboard settings
 ```
     defaults write -g ApplePressAndHoldEnabled -bool false
@@ -188,3 +186,5 @@ ctl.!default {
     echo 'Server=https://archive.archlinux.org/repos/2018/04/05/$repo/os/$arch' > /etc/pacman.d/mirrorlist
     pacman -Syyuu
 ```
+- wifi randomly disconnecting for `reason=4`: `iwconfig $WIFI power off` to
+  disable power management

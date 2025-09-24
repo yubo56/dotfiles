@@ -59,6 +59,7 @@ unzip
 usbutils
 valgrind
 wget
+wireless_tools
 wpa_supplicant
 xclip
 xcompmgr
