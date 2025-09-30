@@ -188,3 +188,6 @@ ctl.!default {
 ```
 - wifi randomly disconnecting for `reason=4`: `iwconfig $WIFI power off` to
   disable power management
+- `/sys/devices/system/cpu/cpufreq/boost` controls turbo mode on processors
+    - `turbostat` can show governor & stats, and `cpupower` can help set these
+      on boot

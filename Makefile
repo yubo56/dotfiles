@@ -270,6 +270,10 @@ re_encode_keys:
 		keybase encrypt yssu -i "$${i%.*}" -o $$i &&\
 		chmod 600 "$${i%.*}"; done
 
+.PHONY: re_encode_wpasupplicant
+re_encode_wpasupplicant:
+	keybase encrypt yssu -i .setup/wpa_supplicant.conf -o .setup/wpa_supplicant.conf.kb
+
 PULL_CMD=((git checkout master && git pull) || true)
 .PHONY: pull
 pull:
