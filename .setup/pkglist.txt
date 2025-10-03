@@ -32,6 +32,7 @@ moreutils
 mplayer
 ntfs-3g
 openssh
+pdfgrep
 pdftk
 perl-xml-simple
 pulseaudio-alsa

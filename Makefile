@@ -38,7 +38,8 @@ linux: \
 	systemd_user\
 	remind_downgrade\
 	dropbox\
-	wifi # connect_wifi
+	enable_bluetooth\
+	wifi
 
 .PHONY: root
 root: timezone create_user sudoers hostname install_wpa_supplicant
@@ -205,12 +206,6 @@ wifi: # pacman
 		sudo ln -s wpa_supplicant.conf wpa_supplicant-${WIFI_INTERFACE}.conf\
 		2> /dev/null
 
-.PHONY: connect_wifi
-connect_wifi:
-	sudo wpa_supplicant -i${WIFI_INTERFACE} -c/etc/wpa_supplicant/wpa_supplicant.conf\
-		-B
-	sudo dhcpcd ${WIFI_INTERFACE}
-
 .PHONY: enable_dhcpcd
 enable_dhcpcd:
 	sudo systemctl enable dhcpcd.service
@@ -328,3 +323,7 @@ remind_downgrade:
 	@echo "downgrade tmux (3.3_a-7) and ncurses (6.4_20230520-2)"
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	sudo downgrade tmux nccurses
+
+enable_bluetooth:
+	sudo systemctl enable bluetooth.service
+	sudo systemctl start bluetooth.service
