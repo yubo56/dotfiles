@@ -82,7 +82,7 @@ yssu ALL=(ALL) NOPASSWD: /usr/bin/reboot
 yssu ALL=(ALL) NOPASSWD: /usr/bin/shutdown
 yssu ALL=(ALL) NOPASSWD: /usr/bin/tee
 yssu ALL=(ALL) NOPASSWD: /usr/bin/mount
-yssu ALL=(ALL) NOPASSWD: /usr/bin/wpa_supplicant
+yssu ALL=(ALL) NOPASSWD: /usr/bin/systemctl
 
 ## Same thing without a password
 # %wheel ALL=(ALL) NOPASSWD: ALL

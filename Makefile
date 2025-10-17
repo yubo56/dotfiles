@@ -33,12 +33,11 @@ linux: \
 	ntp\
 	etc\
 	ctags\
-	enable_dhcpcd\
+	enable_services\
 	undodir\
 	systemd_user\
 	remind_downgrade\
 	dropbox\
-	enable_bluetooth\
 	wifi
 
 .PHONY: root
@@ -111,6 +110,8 @@ decode_keys: # install_keybase
 etc:
 	cd .setup/etc && for i in $$('find' . -type f); do sudo rm -rf /etc/$$i &&\
 		sudo ln -s ${PWD}/$$i /etc/$$i; done
+	sudo rm /etc/systemd/logind.conf
+	sudo cp ${PWD}/.setup/etc/systemd/logind.conf /etc/systemd/logind.conf
 
 # to install pacman packages
 .PHONY: pacman
@@ -206,9 +207,9 @@ wifi: # pacman
 		sudo ln -s wpa_supplicant.conf wpa_supplicant-${WIFI_INTERFACE}.conf\
 		2> /dev/null
 
-.PHONY: enable_dhcpcd
-enable_dhcpcd:
-	sudo systemctl enable dhcpcd.service
+.PHONY: enable_services
+enable_services:
+	sudo systemctl enable dhcpcd.service bluetooth.service sshd.service
 
 .PHONY: screensaver
 screensaver: # pacman
@@ -323,7 +324,3 @@ remind_downgrade:
 	@echo "downgrade tmux (3.3_a-7) and ncurses (6.4_20230520-2)"
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	sudo downgrade tmux nccurses
-
-enable_bluetooth:
-	sudo systemctl enable bluetooth.service
-	sudo systemctl start bluetooth.service

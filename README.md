@@ -191,3 +191,4 @@ ctl.!default {
 - `/sys/devices/system/cpu/cpufreq/boost` controls turbo mode on processors
     - `turbostat` can show governor & stats, and `cpupower` can help set these
       on boot
+- `logind.conf` won't work with symlink!
