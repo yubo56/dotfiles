@@ -136,7 +136,7 @@ yay: package-query
 	cd ${YAY_TMP_DIR} && makepkg -si --noconfirm
 	rm -rf ${PQ_TMP_DIR}
 	gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
-	${YAY} -S downgrade zoom slack-desktop transset-df
+	${YAY} -S downgrade zoom slack-desktop transset-df wechat-bin
 
 dropbox:
 	${YAY} dropbox dropbox-cli
