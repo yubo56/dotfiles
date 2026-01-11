@@ -188,6 +188,15 @@ mirrorlist: # pacman
 	@sudo rankmirrors /etc/pacman.d/mirrorlist.full | sudo tee /etc/pacman.d/mirrorlist > /dev/null
 	@printf '*** Done generating mirrorlist! ***\n\n'
 
+# remake mirrorlist
+.PHONY: remirrorlist
+remirrorlist: # pacman
+	@sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.full
+	@sudo mv /etc/pacman.d/mirrorlist.pacnew /etc/pacman.d/mirrorlist
+	@printf '*** Generating mirrorlist... ***\n'
+	@sudo rankmirrors /etc/pacman.d/mirrorlist.full | sudo tee /etc/pacman.d/mirrorlist > /dev/null
+	@printf '*** Done generating mirrorlist! ***\n\n'
+
 # set up git to use ssh key + ssh clone URL
 .PHONY: git_ssh
 git_ssh: # pacman stow

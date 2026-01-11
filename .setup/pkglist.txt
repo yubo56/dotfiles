@@ -51,6 +51,7 @@ texlive-fontsrecommended
 texlive-latexextra
 texlive-latexrecommended
 texlive-plaingeneric
+texlive-langcjk
 tmux
 ttf-arphic-ukai
 ttf-baekmuk
