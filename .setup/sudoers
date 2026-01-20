@@ -83,6 +83,7 @@ yssu ALL=(ALL) NOPASSWD: /usr/bin/shutdown
 yssu ALL=(ALL) NOPASSWD: /usr/bin/tee
 yssu ALL=(ALL) NOPASSWD: /usr/bin/mount
 yssu ALL=(ALL) NOPASSWD: /usr/bin/systemctl
+yssu ALL=(ALL) NOPASSWD: /usr/bin/cpupower
 
 ## Same thing without a password
 # %wheel ALL=(ALL) NOPASSWD: ALL
