@@ -36,9 +36,9 @@ linux: \
 	enable_services\
 	undodir\
 	systemd_user\
-	remind_downgrade\
 	dropbox\
-	wifi
+	wifi\
+	remind_downgrade
 
 .PHONY: root
 root: timezone create_user sudoers hostname install_wpa_supplicant
@@ -88,11 +88,6 @@ install_wpa_supplicant:
 .PHONY: change_git_repo
 change_git_repo:
 	git remote set-url origin git@github.com:yubo56/dotfiles.git
-
-.PHONY: mod_user
-mod_user: # pacman (need sudo, zsh)
-	sudo groupadd sudo
-	su -c 'usermod -g sudo yssu -s /bin/zsh'
 
 .PHONY: install_keybase
 install_keybase:
@@ -154,15 +149,6 @@ dwm: # pacman
 		rm -rf pkg $$(makepkg --packagelist | grep x86_64)${PKGEXT}
 	@cd ~/dotfiles/.setup/custom/dwmalt/src/dwmalt-6.0 && make clean
 
-.PHONY: pacupdate
-PU_PATH=/etc/systemd/system
-pacupdate: #pacman
-	cd .setup/pu && for i in $$('ls'); do\
-		sudo rm -f ${PU_PATH}/$$i &&\
-		sudo ln -s ${PWD}/$$i ${PU_PATH}/$$i; done
-	sudo systemctl enable ${PU_PATH}/pacupdate.service
-	sudo systemctl enable ${PU_PATH}/pacupdate.timer
-
 # stow files. Requires pacman to have stow installed
 # Tries stow -R if normal stow fails
 .PHONY: stow
@@ -184,15 +170,6 @@ stow: # pacman
 mirrorlist: # pacman
 	sudo ${PACMAN} -S pacman-contrib
 	@sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.full
-	@printf '*** Generating mirrorlist... ***\n'
-	@sudo rankmirrors /etc/pacman.d/mirrorlist.full | sudo tee /etc/pacman.d/mirrorlist > /dev/null
-	@printf '*** Done generating mirrorlist! ***\n\n'
-
-# remake mirrorlist
-.PHONY: remirrorlist
-remirrorlist: # pacman
-	@sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.full
-	@sudo mv /etc/pacman.d/mirrorlist.pacnew /etc/pacman.d/mirrorlist
 	@printf '*** Generating mirrorlist... ***\n'
 	@sudo rankmirrors /etc/pacman.d/mirrorlist.full | sudo tee /etc/pacman.d/mirrorlist > /dev/null
 	@printf '*** Done generating mirrorlist! ***\n\n'
@@ -219,19 +196,6 @@ wifi: # pacman
 .PHONY: enable_services
 enable_services:
 	sudo systemctl enable dhcpcd.service bluetooth.service sshd.service
-
-.PHONY: screensaver
-screensaver: # pacman
-	sudo rm -f /usr/lib/pm-utils/sleep.d/00xscreensaver
-	sudo ln ${PWD}/.setup/misc/00xscreensaver \
-		/usr/lib/pm-utils/sleep.d/00xscreensaver
-
-.PHONY: fonts
-fonts:
-	sudo sed -i.bak 's/KaitiM\ GB/UKai CN/g' \
-		/etc/fonts/conf.d/65-nonlatin.conf
-	sudo sed -i.bak 's/Baekmuk Dotum/Baekmuk Batang/g' \
-		/etc/fonts/conf.d/*
 
 .PHONY: lm_sensors
 lm_sensors: # pacman
@@ -265,38 +229,12 @@ submodules_to_ssh:
 	rm .gitmodules.bak
 	git submodule sync
 
-change_git_repo_https:
-	git remote set-url origin https://yubo56@github.com/yubo56/dotfiles.git
-
 .PHONY: re_encode_keys
 re_encode_keys:
 	cd private && for i in $$(find . -iname *.kb); do\
 		chmod 644 "$${i%.*}" &&\
 		keybase encrypt yssu -i "$${i%.*}" -o $$i &&\
 		chmod 600 "$${i%.*}"; done
-
-.PHONY: re_encode_wpasupplicant
-re_encode_wpasupplicant:
-	keybase encrypt yssu -i .setup/wpa_supplicant.conf -o .setup/wpa_supplicant.conf.kb
-
-PULL_CMD=((git checkout master && git pull) || true)
-.PHONY: pull
-pull:
-	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
-		do (cd $$i && ${PULL_CMD}); done
-	git reset && ${PULL_CMD}
-	(cd vim && git submodule update --init)
-
-PUSH_CMD=((git add . && git commit -m "Push" && git push) || true)
-.PHONY: push
-push:
-	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
-		do (cd $$i && ${PUSH_CMD}); done
-	${PUSH_CMD}
-	cd ~/HWSets && ${PUSH_CMD} &&\
-		cd ~/ClassNotes && ${PUSH_CMD} &&\
-		cd ~/research/nonlinear_breaking && ${PUSH_CMD} &&\
-		cd ~/su_self_study && ${PUSH_CMD}
 
 .PHONY: ntp
 ntp: pacman
@@ -324,16 +262,69 @@ systemd_user:
 	for i in $$('ls' ${SUSER_PATH}); do ln -s ${SUSER_PATH}/$$i ~/.config/systemd/user/$$i; done
 	for i in $$('ls' ${SUSER_PATH}/*.timer); do systemctl --user enable $$i; done
 
-# TODO maybe already cloned in vim repo
-vim_pathogen:
-	mkdir -p ~/.vim/autoload
-	curl -LSso ~/.vim/autoload/pathogen.vim https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
-
 remind_downgrade:
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	@echo "downgrade tmux (3.3_a-7) and ncurses (6.4_20230520-2)"
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	sudo downgrade tmux nccurses
+
+
+##############################################################################
+#####################    MANUAL / MAYBE UNUSED    ############################
+##############################################################################
+
+PULL_CMD=((git checkout master && git pull) || true)
+.PHONY: pull
+pull:
+	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
+		do (cd $$i && ${PULL_CMD}); done
+	git reset && ${PULL_CMD}
+	(cd vim && git submodule update --init)
+
+PUSH_CMD=((git add . && git commit -m "Push" && git push) || true)
+.PHONY: push
+push:
+	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
+		do (cd $$i && ${PUSH_CMD}); done
+	${PUSH_CMD}
+	cd ~/HWSets && ${PUSH_CMD} &&\
+		cd ~/ClassNotes && ${PUSH_CMD} &&\
+		cd ~/research/nonlinear_breaking && ${PUSH_CMD} &&\
+		cd ~/su_self_study && ${PUSH_CMD}
+
+.PHONY: mod_user
+mod_user: # pacman (need sudo, zsh)
+	sudo groupadd sudo
+	su -c 'usermod -g sudo yssu -s /bin/zsh'
+
+.PHONY: pacupdate
+PU_PATH=/etc/systemd/system
+pacupdate: #pacman
+	cd .setup/pu && for i in $$('ls'); do\
+		sudo rm -f ${PU_PATH}/$$i &&\
+		sudo ln -s ${PWD}/$$i ${PU_PATH}/$$i; done
+	sudo systemctl enable ${PU_PATH}/pacupdate.service
+	sudo systemctl enable ${PU_PATH}/pacupdate.timer
+
+# remake mirrorlist
+.PHONY: remirrorlist
+remirrorlist: # pacman
+	@sudo mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.full
+	@sudo mv /etc/pacman.d/mirrorlist.pacnew /etc/pacman.d/mirrorlist
+	@printf '*** Generating mirrorlist... ***\n'
+	@sudo rankmirrors /etc/pacman.d/mirrorlist.full | sudo tee /etc/pacman.d/mirrorlist > /dev/null
+	@printf '*** Done generating mirrorlist! ***\n\n'
+
+.PHONY: fonts
+fonts:
+	sudo sed -i.bak 's/KaitiM\ GB/UKai CN/g' \
+		/etc/fonts/conf.d/65-nonlatin.conf
+	sudo sed -i.bak 's/Baekmuk Dotum/Baekmuk Batang/g' \
+		/etc/fonts/conf.d/*
+
+.PHONY: re_encode_wpasupplicant
+re_encode_wpasupplicant:
+	keybase encrypt yssu -i .setup/wpa_supplicant.conf -o .setup/wpa_supplicant.conf.kb
 
 # check https://github.com/CachyOS/linux-cachyos for latest
 cachyos_install:
