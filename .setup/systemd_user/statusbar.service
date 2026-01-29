@@ -8,6 +8,3 @@ Nice=-1
 Type=oneshot
 Environment=DISPLAY=:0
 ExecStart=/home/yssu/bin/update_status
-
-[Install]
-WantedBy=multi-user.target

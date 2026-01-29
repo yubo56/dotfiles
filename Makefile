@@ -321,7 +321,8 @@ undodir:
 SUSER_PATH=/home/${USERNAME}/dotfiles/.setup/systemd_user
 systemd_user:
 	mkdir -p ~/.config/systemd/user
-	for i in $$('ls' ${SUSER_PATH}); do ln -s ${SUSER_PATH}/$$i ~/.config/systemd/user/$$i; systemctl --user enable $$i; done
+	for i in $$('ls' ${SUSER_PATH}); do ln -s ${SUSER_PATH}/$$i ~/.config/systemd/user/$$i; done
+	for i in $$('ls' ${SUSER_PATH}/*.timer); do systemctl --user enable $$i; done
 
 # TODO maybe already cloned in vim repo
 vim_pathogen:
@@ -333,3 +334,18 @@ remind_downgrade:
 	@echo "downgrade tmux (3.3_a-7) and ncurses (6.4_20230520-2)"
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 	sudo downgrade tmux nccurses
+
+# check https://github.com/CachyOS/linux-cachyos for latest
+cachyos_install:
+	cd /tmp && \
+		curl -O https://mirror.cachyos.org/cachyos-repo.tar.xz && \
+		tar xvf cachyos-repo.tar.xz && \
+		cd cachyos-repo &&\
+		sudo ./cachyos-repo.sh
+
+cachyos_uninstall:
+	cd /tmp && \
+		curl https://mirror.cachyos.org/cachyos-repo.tar.xz -o cachyos-repo.tar.xz && \
+		tar xvf cachyos-repo.tar.xz && \
+		cd cachyos-repo && \
+		sudo ./cachyos-repo.sh --remove
