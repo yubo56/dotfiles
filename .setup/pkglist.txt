@@ -26,6 +26,7 @@ imagemagick
 iw
 jq
 jre8-openjdk
+libimobiledevice
 lm_sensors
 man
 moreutils
@@ -48,10 +49,10 @@ stow
 terminus-font
 texlive-fontsextra
 texlive-fontsrecommended
+texlive-langcjk
 texlive-latexextra
 texlive-latexrecommended
 texlive-plaingeneric
-texlive-langcjk
 tmux
 ttf-arphic-ukai
 ttf-baekmuk
@@ -60,6 +61,7 @@ ttf-dejavu
 turbostat
 unrar
 unzip
+usbmuxd
 usbutils
 valgrind
 wget
