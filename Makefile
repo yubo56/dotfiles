@@ -262,12 +262,6 @@ systemd_user:
 	for i in $$('ls' ${SUSER_PATH}); do ln -s ${SUSER_PATH}/$$i ~/.config/systemd/user/$$i; done
 	for i in $$('ls' ${SUSER_PATH}/*.timer); do systemctl --user enable $$i; done
 
-remind_downgrade:
-	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-	@echo "downgrade tmux (3.3_a-7) and ncurses (6.4_20230520-2)"
-	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
-	sudo downgrade tmux nccurses
-
 
 ##############################################################################
 #####################    MANUAL / MAYBE UNUSED    ############################
