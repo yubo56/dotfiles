@@ -49,6 +49,7 @@ stow
 terminus-font
 texlive-fontsextra
 texlive-fontsrecommended
+texlive-fontutils
 texlive-langcjk
 texlive-latexextra
 texlive-latexrecommended
