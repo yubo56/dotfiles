@@ -41,6 +41,7 @@ pulseaudio-bluetooth
 python
 redshift
 rfkill
+ripgrep
 rlwrap
 rsync
 rtorrent
