@@ -11,3 +11,6 @@
 [submodule "private"]
 	path = private
 	url = git@github.com:yubo56/dotfiles-private.git
+[submodule ".setup/custom/dwlalt"]
+	path = .setup/custom/dwlalt
+	url = git@github.com:yubo56/dwl-yubo.git
