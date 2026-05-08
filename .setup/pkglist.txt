@@ -17,6 +17,7 @@ git
 git-lfs
 gnupg
 gnuplot
+grim
 gsl
 gvim
 htop
