@@ -68,10 +68,8 @@ options rw root=UUID=<...>
           private, `make decode_keys`, `make submodule_to_git`, then `git
           submodule update --recursive`
     - install brew
-    - brew install stow, tmux, coreutils, moreutils
+    - brew install stow, tmux, coreutils, moreutils, python, vim
         - linearmouse for disable mouse accel
-    - may need to cp `python3` and `pip3` in brew bin to un-namespaced
-    - `brew install vim`
     - if Intel silicon, will need to change $PATH
 
 - Secure Keyboard Entry seems to automatically get enabled in Terminal.app.
