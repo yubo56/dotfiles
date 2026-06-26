@@ -29,6 +29,7 @@ jq
 jre8-openjdk
 libimobiledevice
 lm_sensors
+mailutils
 man
 moreutils
 mplayer

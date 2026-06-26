@@ -149,6 +149,14 @@ dwm: # pacman
 		rm -rf pkg $$(makepkg --packagelist | grep x86_64)${PKGEXT}
 	@cd ~/dotfiles/.setup/custom/dwmalt/src/dwmalt-6.0 && make clean
 
+# dwl window manager
+.PHONY: dwl
+dwl: # pacman
+	@cd ~/dotfiles/.setup/custom/dwlalt &&\
+		PKGEXT=${PKGEXT} makepkg -efi --noconfirm &&\
+		rm -rf pkg $$(makepkg --packagelist | grep x86_64)${PKGEXT}
+	@cd ~/dotfiles/.setup/custom/dwlalt/src/dwlalt-v0.8 && make clean
+
 # stow files. Requires pacman to have stow installed
 # Tries stow -R if normal stow fails
 .PHONY: stow
