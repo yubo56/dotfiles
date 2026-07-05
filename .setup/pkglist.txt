@@ -27,6 +27,7 @@ imagemagick
 iw
 jq
 jre8-openjdk
+kanshi
 libimobiledevice
 lm_sensors
 mailutils
@@ -34,6 +35,7 @@ man
 moreutils
 mplayer
 ntfs-3g
+openai-codex
 openssh
 pdfgrep
 pdftk
@@ -49,6 +51,9 @@ rsync
 rtorrent
 rxvt-unicode
 stow
+swaybg
+swayidle
+swaylock
 terminus-font
 texlive-fontsextra
 texlive-fontsrecommended
@@ -70,9 +75,13 @@ usbutils
 valgrind
 wget
 wireless_tools
+wl-clipboard
+wlr-randr
 wpa_supplicant
+wtype
 xclip
 xcompmgr
+xcursor-themes
 xdotool
 xf86-video-fbdev
 xorg-apps
