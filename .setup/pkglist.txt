@@ -63,6 +63,7 @@ texlive-langcjk
 texlive-latexextra
 texlive-latexrecommended
 texlive-plaingeneric
+tllist
 tmux
 ttf-arphic-ukai
 ttf-baekmuk
