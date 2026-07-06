@@ -50,6 +50,7 @@ rlwrap
 rsync
 rtorrent
 rxvt-unicode
+slurp
 stow
 swaybg
 swayidle
@@ -77,6 +78,8 @@ wget
 wireless_tools
 wl-clipboard
 wlr-randr
+wlroots0.19
+wlsunset
 wpa_supplicant
 wtype
 xclip
