@@ -74,6 +74,7 @@ unzip
 usbmuxd
 usbutils
 valgrind
+wev
 wget
 wireless_tools
 wl-clipboard
