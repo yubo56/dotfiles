@@ -63,6 +63,7 @@ texlive-langcjk
 texlive-latexextra
 texlive-latexrecommended
 texlive-plaingeneric
+tllist
 tmux
 ttf-arphic-ukai
 ttf-baekmuk
@@ -81,6 +82,7 @@ wl-clipboard
 wlr-randr
 wlroots0.19
 wlsunset
+wmenu
 wpa_supplicant
 wtype
 xclip
