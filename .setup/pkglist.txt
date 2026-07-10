@@ -81,6 +81,7 @@ wl-clipboard
 wlr-randr
 wlroots0.19
 wlsunset
+wmenu
 wpa_supplicant
 wtype
 xclip
