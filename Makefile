@@ -342,3 +342,7 @@ cachyos_uninstall:
 		tar xvf cachyos-repo.tar.xz && \
 		cd cachyos-repo && \
 		sudo ./cachyos-repo.sh --remove
+
+globalpip:
+	python -m venv ~/venv --prompt global
+	source ~/venv/bin/activate && pip install -r ~/dotfiles/.setup/requirements.pip
