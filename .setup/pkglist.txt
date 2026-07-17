@@ -37,6 +37,7 @@ mplayer
 ntfs-3g
 openai-codex
 openssh
+pandoc-cli
 pdfgrep
 pdftk
 perl-xml-simple
@@ -56,13 +57,7 @@ swaybg
 swayidle
 swaylock
 terminus-font
-texlive-fontsextra
-texlive-fontsrecommended
-texlive-fontutils
-texlive-langcjk
-texlive-latexextra
-texlive-latexrecommended
-texlive-plaingeneric
+texlive
 tllist
 tmux
 ttf-arphic-ukai
