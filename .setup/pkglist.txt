@@ -23,6 +23,7 @@ gvim
 htop
 ibus
 ibus-rime
+ifuse
 imagemagick
 iw
 jq
