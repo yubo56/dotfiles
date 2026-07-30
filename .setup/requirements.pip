@@ -1,5 +1,5 @@
 astropy
-bibtexparser
+bibtexparser>=2.0.0a0
 bs4
 corner
 cython
