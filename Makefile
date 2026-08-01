@@ -275,25 +275,6 @@ systemd_user:
 #####################    MANUAL / MAYBE UNUSED    ############################
 ##############################################################################
 
-PULL_CMD=((git checkout master && git pull) || true)
-.PHONY: pull
-pull:
-	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
-		do (cd $$i && ${PULL_CMD}); done
-	git reset && ${PULL_CMD}
-	(cd vim && git submodule update --init)
-
-PUSH_CMD=((git add . && git commit -m "Push" && git push) || true)
-.PHONY: push
-push:
-	for i in $$(cat .gitmodules | grep path | sed -n -E 's/.*= (.*)$$/\1/p');\
-		do (cd $$i && ${PUSH_CMD}); done
-	${PUSH_CMD}
-	cd ~/HWSets && ${PUSH_CMD} &&\
-		cd ~/ClassNotes && ${PUSH_CMD} &&\
-		cd ~/research/nonlinear_breaking && ${PUSH_CMD} &&\
-		cd ~/su_self_study && ${PUSH_CMD}
-
 .PHONY: mod_user
 mod_user: # pacman (need sudo, zsh)
 	sudo groupadd sudo
@@ -346,3 +327,37 @@ cachyos_uninstall:
 globalpip:
 	python -m venv ~/venv --prompt global
 	source ~/venv/bin/activate && pip install -r ~/dotfiles/.setup/requirements.pip
+
+# git helpers
+
+GITDIRS = $$( \
+	git config -f .gitmodules --get-regexp '^submodule\..*\.path$$' 2>/dev/null | sed 's/^[^ ]* //'; \
+	printf '.\n'; \
+	for repo in "$$HOME"/code/* "$$HOME"/research/*; do [ ! -d "$$repo" ] || printf '%s\n' "$$repo"; done; \
+	)
+
+.PHONY: gitpush
+gitpush:
+	printf '%s\n' "$(GITDIRS)" | while IFS= read -r repo; do \
+		[ -e "$$repo/.git" ] && \
+		printf '\n==> %s\n' "$$repo" && \
+		git -C "$$repo" add . && \
+		git -C "$$repo" commit -m "sync" && \
+		git -C "$$repo" push || true; \
+	done
+
+.PHONY: gitpull
+gitpull:
+	printf '%s\n' "$(GITDIRS)" | while IFS= read -r repo; do \
+		[ -e "$$repo/.git" ] && \
+		printf '\n==> %s\n' "$$repo" && \
+		git -C "$$repo" pull || true; \
+	done
+
+.PHONY: gitstatus
+gitstatus:
+	printf '%s\n' "$(GITDIRS)" | while IFS= read -r repo; do \
+		[ -e "$$repo/.git" ] && \
+		printf '\n==> %s\n' "$$repo" && \
+		git -C "$$repo" status || true; \
+	done
