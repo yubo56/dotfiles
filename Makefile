@@ -338,7 +338,7 @@ GITDIRS = $$( \
 
 .PHONY: gitpush
 gitpush:
-	printf '%s\n' "$(GITDIRS)" | while IFS= read -r repo; do \
+	@printf '%s\n' "$(GITDIRS)" | while IFS= read -r repo; do \
 		[ -e "$$repo/.git" ] && \
 		printf '\n==> %s\n' "$$repo" && \
 		git -C "$$repo" add . && \
@@ -348,7 +348,7 @@ gitpush:
 
 .PHONY: gitpull
 gitpull:
-	printf '%s\n' "$(GITDIRS)" | while IFS= read -r repo; do \
+	@printf '%s\n' "$(GITDIRS)" | while IFS= read -r repo; do \
 		[ -e "$$repo/.git" ] && \
 		printf '\n==> %s\n' "$$repo" && \
 		git -C "$$repo" pull || true; \
@@ -356,7 +356,7 @@ gitpull:
 
 .PHONY: gitstatus
 gitstatus:
-	printf '%s\n' "$(GITDIRS)" | while IFS= read -r repo; do \
+	@printf '%s\n' "$(GITDIRS)" | while IFS= read -r repo; do \
 		[ -e "$$repo/.git" ] && \
 		printf '\n==> %s\n' "$$repo" && \
 		git -C "$$repo" status || true; \
