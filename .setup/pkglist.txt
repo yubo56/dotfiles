@@ -35,6 +35,8 @@ mailutils
 man
 moreutils
 mplayer
+nodejs
+npm
 ntfs-3g
 openai-codex
 openssh
