@@ -40,7 +40,6 @@ npm
 ntfs-3g
 openai-codex
 openssh
-pandoc-cli
 pdfgrep
 pdftk
 perl-xml-simple
