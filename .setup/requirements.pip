@@ -15,6 +15,7 @@ numba
 numpy
 pandas
 pandoc
+pylint
 pytz
 pyvista
 rebound
