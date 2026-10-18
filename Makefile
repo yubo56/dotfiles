@@ -55,8 +55,8 @@ create_user:
 	grep '^${USERNAME}' /etc/passwd || useradd -m -s /bin/bash ${USERNAME}
 	passwd ${USERNAME}
 	cp -r . ~${USERNAME}/dotfiles
-	chown -R yssu ~${USERNAME}/dotfiles
-	chown -R yssu ~${USERNAME}/dotfiles/.git
+	chown -R ${USERNAME} ~${USERNAME}/dotfiles
+	chown -R ${USERNAME} ~${USERNAME}/dotfiles/.git
 
 .PHONY: sudoers
 sudoers:
@@ -241,7 +241,7 @@ submodules_to_ssh:
 re_encode_keys:
 	cd private && for i in $$(find . -iname *.kb); do\
 		chmod 644 "$${i%.*}" &&\
-		keybase encrypt yssu -i "$${i%.*}" -o $$i &&\
+		keybase encrypt ${USERNAME} -i "$${i%.*}" -o $$i &&\
 		chmod 600 "$${i%.*}"; done
 
 .PHONY: ntp
@@ -278,7 +278,7 @@ systemd_user:
 .PHONY: mod_user
 mod_user: # pacman (need sudo, zsh)
 	sudo groupadd sudo
-	su -c 'usermod -g sudo yssu -s /bin/zsh'
+	su -c 'usermod -g sudo ${USERNAME} -s /bin/zsh'
 
 .PHONY: pacupdate
 PU_PATH=/etc/systemd/system
@@ -361,3 +361,11 @@ gitstatus:
 		printf '\n==> %s\n' "$$repo" && \
 		git -C "$$repo" status || true; \
 	done
+
+.PHONY: samba
+samba:
+	sudo mount /dev/sda1 /mnt_nas
+	sudo chown ${USERNAME} /mnt_nas
+	sudo smbpasswd -a ${USERNAME}
+	sudo systemctl enable --now smb.service
+	echo "Now run `sudo systemctl edit smb.service` and add `[Unit] RequiresMountsFor=/mnt_nas`"
