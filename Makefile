@@ -362,6 +362,9 @@ gitstatus:
 		git -C "$$repo" status || true; \
 	done
 
+.PHONY: archserver
+server: samba sshd
+
 .PHONY: samba
 samba:
 	sudo mount /dev/sda1 /mnt_nas
@@ -369,3 +372,6 @@ samba:
 	sudo smbpasswd -a ${USERNAME}
 	sudo systemctl enable --now smb.service
 	echo "Now run `sudo systemctl edit smb.service` and add `[Unit] RequiresMountsFor=/mnt_nas`"
+
+.PHONY: sshd
+	sudo systemctl enable --now sshd.service
