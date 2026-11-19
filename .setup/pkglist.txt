@@ -39,11 +39,12 @@ nodejs
 npm
 ntfs-3g
 openai-codex
+openresolv
 openssh
 pdfgrep
 pdftk
-perl-xml-simple
 perl-rename
+perl-xml-simple
 pulseaudio-alsa
 pulseaudio-bluetooth
 python
